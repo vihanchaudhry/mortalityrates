@@ -90,6 +90,7 @@ private:
 template<class ItemType>
 BinaryNode<ItemType>* BinaryTree<ItemType>::copyTree(const BinaryNode<ItemType>* nodePtr)
 {
+    BinaryNode<ItemType> *TempPtr;
 	//If the pointer is null then a null value is returned to the caller
 	if (!nodePtr)
 	{
@@ -101,7 +102,7 @@ BinaryNode<ItemType>* BinaryTree<ItemType>::copyTree(const BinaryNode<ItemType>*
 	//pointers to the previous node
 	else
 	{
-		BinaryNode<ItemType> *TempPtr = new BinaryNode<ItemType>(nodePtr->getItem());
+		TempPtr = new BinaryNode<ItemType>(nodePtr->getItem());
 		TempPtr->setLeftPtr(copyTree(nodePtr->getLeftPtr()));
 		TempPtr->setRightPtr(copyTree(nodePtr->getRightPtr()));
 		//return TempPtr;		
@@ -150,7 +151,7 @@ void BinaryTree<ItemType>::destroyTree(BinaryNode<ItemType>* nodePtr)
 template<class ItemType>
 void BinaryTree<ItemType>::_breadthFirst(void visit(ItemType &), BinaryNode<ItemType> *nodePtr) const {
 
-	//Variable declaration
+	/*//Variable declaration
 	Queue<BinaryNode<ItemType> *> q1;
 	BinaryNode<ItemType> *item;
 
@@ -162,7 +163,8 @@ void BinaryTree<ItemType>::_breadthFirst(void visit(ItemType &), BinaryNode<Item
 	q1.enqueue(nodePtr);
 
 	//While the queue is populated dequeue the first item and print. Enqueue the pointers associated with this pointer starting from left to right.
-	while (!q1.isEmpty())
+
+    while (!q1.isEmpty())
 	{
 
 		q1.dequeue(item);
@@ -174,7 +176,24 @@ void BinaryTree<ItemType>::_breadthFirst(void visit(ItemType &), BinaryNode<Item
 		if (item->getRightPtr())
 			q1.enqueue(item->getRightPtr());
 
-	}
+	}*/
+    Queue<BinaryNode<ItemType>*> q;
+    q.enqueue(rootPtr);
+    
+    BinaryNode<ItemType> *nodePtr2;
+    
+    ItemType item;
+    
+    while(!q.isEmpty())
+    {
+        q.dequeue(nodePtr);
+        item = nodePtr2->getItem();
+        visit(item);
+        if (nodePtr->getLeftPtr() != NULL)
+            q.enqueue(nodePtr2->getLeftPtr());
+        if (nodePtr->getRightPtr() != NULL)
+            q.enqueue(nodePtr2->getRightPtr());
+    }
 }
 
 //****************************************************************************************
@@ -277,7 +296,7 @@ void BinaryTree<ItemType>::_range(void visit(ItemType &), BinaryNode<ItemType>* 
 //	it utilises the setw function to format the data							*
 //*******************************************************************************
 template<class ItemType>
-void BinaryTree<ItemType>::_print(BinaryNode<ItemType> *nodePtr, int n=1){
+void BinaryTree<ItemType>::_print(BinaryNode<ItemType> *nodePtr, int n ){
 
 	//If node pointer is null then the function returns to the caller
 	if (!nodePtr)

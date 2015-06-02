@@ -11,6 +11,8 @@ template<class ItemType>
 class BinarySearchTree : public BinaryTree<ItemType>
 {
 private:
+    using BinaryTree<ItemType>::rootPtr;
+    using BinaryTree<ItemType>::count;
    
 	// internal insert node: insert newNode in nodePtr subtree
     BinaryNode<ItemType>* _insert(BinaryNode<ItemType>* nodePtr, BinaryNode<ItemType>* newNode);            
