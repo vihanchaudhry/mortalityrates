@@ -3,6 +3,7 @@
 #include <string>
 #include "BinarySearchTree.h"
 #include "Country.h"
+#include "HashTable.h"
 #include <time.h>
 using namespace std;
 
@@ -10,19 +11,23 @@ void parser(BinarySearchTree<Country> *countryList);
 void display(Country & anItem);
 void menu(BinarySearchTree<Country> *classList);
 
-int main(){
-
+int main()
+{
 	//Creates a new binarysearchtree
 	BinarySearchTree<Country>* countryList = new BinarySearchTree<Country>();
-
+    
+    //Creates a new Hash Table
+    HashTable<Country>* hashTable = new HashTable<Country>();
+    
 	//Reads the file and populates the class list
 	parser(countryList);
 
 	//Displays the menu
 	menu(countryList);
 
-	//Deletes the allocated object
+	//Deletes the allocated objects
 	delete countryList;
+    delete hashTable;
 
 	//stops the program from terminating
 	system("pause");
