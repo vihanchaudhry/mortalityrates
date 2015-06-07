@@ -7,30 +7,45 @@
 #include <time.h>
 using namespace std;
 
+// Functions by JAISON
 void parser(BinarySearchTree<Country> *countryList);
 void display(Country & anItem);
-void menu(BinarySearchTree<Country> *classList);
+void commandManager(BinarySearchTree<Country> *classList);
+// End functions by JAISON
+
+// Functions by VIHAN
+
+// End functions by VIHAN
+
+// Functions by VICTOR
+
+// End functions by VICTOR
+
+// Functions by JASON
+void IntroduceProgram();
+void displayMenu();
+void searchHashTable(HashTable<Country> *hashTable);
+void displayHashTableList(HashTable<Country> *hashTable);
+void printHashTable(HashTable<Country> *hashTable);
+void printHashTableStatistics(HashTable<Country> * hashTable);
+// End Functions by JASON
 
 int main()
 {
-	//Creates a new binarysearchtree
-	BinarySearchTree<Country>* countryList = new BinarySearchTree<Country>();
+	BinarySearchTree<Country>* countryList = new BinarySearchTree<Country>(); // Create BST
     
-    //Creates a new Hash Table
-    HashTable<Country>* hashTable = new HashTable<Country>();
+    HashTable<Country>* hashTable = new HashTable<Country>();           // Create Hash Table
     
-	//Reads the file and populates the class list
-	parser(countryList);
+	parser(countryList);                                // Read file and populate data structures.
+    
+    displayMenu();
+    
+	commandManager(countryList);                        // Read commands and execute.
 
-	//Displays the menu
-	menu(countryList);
-
-	//Deletes the allocated objects
 	delete countryList;
     delete hashTable;
 
-	//stops the program from terminating
-	system("pause");
+	system("pause");                //stops the program from terminating
 
 	return 0;
 }
@@ -71,8 +86,8 @@ void display(Country & anItem)
 }
 
 
-void menu(BinarySearchTree<Country> *classList){
-
+void commandManager(BinarySearchTree<Country> *classList)
+{
 	//Variable declaration and intialization
 	bool run = true;
 	char choice;
@@ -81,64 +96,67 @@ void menu(BinarySearchTree<Country> *classList){
 	Country targetCountry;
 	Country foundCountry;
 	string country, year;
+    
 	clock_t start;
+    
 	//Continues to run while the user hasn't designated to quit
 	while (run){
 
 		cout << "Enter a choice: ";
 		cin >> choice;
 
-		switch (choice){
-		case 'B':
-			cout << endl << "Breadth First Traversal" << endl << endl;
-			classList->breadthFirst(display);
-			cout << endl;
-			break;
+		switch (choice)
+        {
+            case 'B':                                           // Bread First Traversal
+                    cout << endl << "Breadth First Traversal" << endl << endl;
+                    classList->breadthFirst(display);
+                    cout << endl;
+                break;
 
-		case 'D':
+            case 'D':
 
-			cout << endl << "Inorder Traversal" << endl << endl;
-			classList->inOrder(display);
+                    cout << endl << "Inorder Traversal" << endl << endl;
+                    classList->inOrder(display);
 
-			cout << endl << "Preorder Traversal" << endl << endl;
-			classList->preOrder(display);
+                    cout << endl << "Preorder Traversal" << endl << endl;
+                    classList->preOrder(display);
 
-			cout << endl << "Postoreder Traversal" << endl << endl;
-			classList->postOrder(display);
-			cout << endl;
-			break;
-		case 'I':
-			cout << endl << "Not Coded" << endl << endl;
-			break;
-		case 'T':
-
-			cout << "Print by Level" << endl << endl;
-			classList->print();
-			break;
+                    cout << endl << "Postoreder Traversal" << endl << endl;
+                    classList->postOrder(display);
+                    cout << endl;
+                break;
+            
+            case 'I':
+                    cout << endl << "Not Coded" << endl << endl;
+                break;
+            case 'T':
+                    cout << "Print by Level" << endl << endl;
+                    classList->print();
+                break;
 
 			
-		case 'S':
-			do{
-				cin.clear();
-				cin.ignore(256, '\n');
-				cout << "Enter the name of the country you want to find: ";
-				getline(cin, country);
-				cout << "Enter the year of the country you want to find: ";
-				cin >> year;
-				if (!cin)
-					cout << endl << "Error - Invalid Input" << endl << endl;
-			} while (!cin);
+            case 'S':
+                    do{
+                        cin.clear();
+                        cin.ignore(256, '\n');
+                        cout << "Enter the name of the country you want to find: ";
+                        getline(cin, country);
+                        cout << "Enter the year of the country you want to find: ";
+                        cin >> year;
+                    if (!cin)
+                        cout << endl << "Error - Invalid Input" << endl << endl;
+                    } while (!cin);
 
-			targetCountry.setID(country + year);
-			start = clock();
-			if (classList->getEntry(targetCountry, foundCountry)){
-				cout << endl << "Country Found" << endl << endl;
-				cout << foundCountry << endl;
-				cout << "Time Elapsed: " << (double)(clock() - start) / CLOCKS_PER_SEC << endl << endl;
-			}
-			else
-				cout << endl << "Country not Found" << endl << endl;
-			break;
+                    targetCountry.setID(country + year);
+                    start = clock();
+                    if (classList->getEntry(targetCountry, foundCountry)){
+                        cout << endl << "Country Found" << endl << endl;
+                        cout << foundCountry << endl;
+                        cout << "Time Elapsed: " << (double)(clock() - start) / CLOCKS_PER_SEC << endl << endl;
+                    }
+                    else
+                        cout << endl << "Country not Found" << endl << endl;
+                break;
 	/*
 		case 'R':
 			int smallest, largest;
@@ -208,6 +226,113 @@ void menu(BinarySearchTree<Country> *classList){
 		}
 
 	}
+}
+
+/*~~~~~~~~~~~
+ Introduction of the program to the user.
+*/
+void introduceProgram()
+{
+    cout << "Hello!  Bonjour! Hola!\n"
+        << "Did you know there are 196 countries in world??\n"
+        << "This program has been developed by Jaison, Jaison, Vihan and Victor.\n"
+        << "This program utilizes two Binary Search Trees and a Hash Table\n"
+        << "to organize the mortality data of the countries of the world!\n\n";
+}
+
+/*~~~~~~~~~~~~
+ Display the menu.
+ */
+void displayMenu()
+{
+    cout << "S - Search by unique key\n"
+    << "D - Display Hash Table List\n"
+    << "P - Print hash table\n"
+    << "T - Show statistics\n"
+    << "M - Show Menu\n"
+    << "Q - Quit\n"
+    << "Enter an option: ";
+}
+
+/*~~~~~~~~~~~
+ Search Manager manages the search option.
+ */
+void searchHashTable(HashTable<Country> *hashTable)
+{
+    cout << "Enter name: ";
+    string name;
+    
+    getline(cin, name);
+    
+    Country *countryPtr = hashTable->search(name);
+    
+    if (countryPtr == NULL)
+    {
+        cout << name << " was not found.\n";
+    }
+    else
+    {
+        cout << "Country: " << countryPtr->getName() << endl
+             << "Year: " << countryPtr->getYear() << endl
+             << "Male mortality: " << countryPtr->getMaleMortality() << endl
+             << "Female mortality: " << countryPtr->getFemaleMortality() << endl
+             << "Combined mortality: " << countryPtr->getCombinedMortality() << endl << endl;
+    }
+}
+
+/*~~~~~~~~~~~~~
+ Display the hash table. (just the first elements if set).
+ */
+void displayHashTableList(HashTable<Country> *hashTable)
+{
+    cout << "\nHere are the items in the hash table:\n";
+    for (int i = 0; i < HASH_TABLE_SIZE; i++)
+    {
+        if (hashTable->getTable()[i].size() > 0)
+        {
+            cout << hashTable->getTable()[i][0]->getName() << endl;
+        }
+    }
+}
 
 
+/*~~~~~~~~~~~~~
+ Display the entire Hash table and it's collisions or if elements are not set.
+ */
+void printHashTable(HashTable<Country> *hashTable)
+{
+    cout << "\nPrinting the Hash Table:\n\n";
+    
+    for (int i = 0; i < HASH_TABLE_SIZE; i++)
+    {
+        cout << "\nIndex " << i << ": ";
+        
+        if (hashTable->getTable()[i].size() == 0)
+        {
+            cout << "//empty\n";
+        }
+        else
+        {
+            cout << hashTable->getTable()[i][0]->getName() << endl;
+            
+            for (int j = 1; j < hashTable->getTable()[i].size(); j++)
+            {
+                cout << "\t\t\t" << hashTable->getTable()[i][j]->getName() << endl;
+            }
+        }
+    }
+}
+
+/*~~~~~~~~~~~~~~
+ Print statistics: number of collisions, load factor, number of full buckets, number of empty buckets,
+ average number of nodes stored at index 1 or 2.
+ */
+void printHashTableStatistics(HashTable<Country> *hashTable)
+{
+    cout << "\nStatistics:\n"
+    << "Load factor: " << hashTable->getLoadFactor() << endl
+    << "Number of full buckets: " << hashTable->getFullBuckets() << endl
+    << "Average number of nodes in buckets: " << hashTable->getAverageNodesInBucket() << endl
+    << "Collision count: " << hashTable->getCollisionCount() << endl
+    << "Overflow count: " << hashTable->getOverflowCount() << endl;
 }
