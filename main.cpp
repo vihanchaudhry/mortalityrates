@@ -8,13 +8,13 @@
 using namespace std;
 
 // Functions by JAISON
-void parser(BinarySearchTree<Country> *countryList);
+void parser(BinarySearchTree<Country> *uniqueList, BinarySearchTree<Country> *secondaryList, HashTable<Country> *hashTable);
 void display(Country & anItem);
-void commandManager(BinarySearchTree<Country> *classList);
+void mainCommandManager(BinarySearchTree<Country> *uniqueList, BinarySearchTree<Country> *secondaryList,HashTable<Country> *hashTable);
 // End functions by JAISON
 
 // Functions by VIHAN
-
+void secondaryBSTCommandManager(BinarySearchTree<Country> *secondaryList);    //VIHAN AND VICTOR DO THIS
 // End functions by VIHAN
 
 // Functions by VICTOR
@@ -22,8 +22,12 @@ void commandManager(BinarySearchTree<Country> *classList);
 // End functions by VICTOR
 
 // Functions by JASON
-void IntroduceProgram();
-void displayMenu();
+void introduceProgram();
+void displayMainMenu();
+void displayHashTableMenu();
+void hashTableCommandManager(HashTable<Country> *hashTable);
+void uniqueBSTCommandManager(BinarySearchTree<Country> *uniqueList);
+void displayBSTMenu(bool unique);
 void searchHashTable(HashTable<Country> *hashTable);
 void displayHashTableList(HashTable<Country> *hashTable);
 void printHashTable(HashTable<Country> *hashTable);
@@ -32,17 +36,20 @@ void printHashTableStatistics(HashTable<Country> * hashTable);
 
 int main()
 {
-	BinarySearchTree<Country>* countryList = new BinarySearchTree<Country>(); // Create BST
+	BinarySearchTree<Country>* uniqueList = new BinarySearchTree<Country>(); // Create BST
+    
+    BinarySearchTree<Country>* secondaryList = new BinarySearchTree<Country>(); // Create BST
     
     HashTable<Country>* hashTable = new HashTable<Country>();           // Create Hash Table
     
-	parser(countryList);                                // Read file and populate data structures.
+	parser(uniqueList, secondaryList, hashTable);             // Read file and populate data structures.
     
-    displayMenu();
+    introduceProgram();
     
-	commandManager(countryList);                        // Read commands and execute.
+	mainCommandManager(uniqueList, secondaryList, hashTable);        // Read commands and execute.
 
-	delete countryList;
+	delete uniqueList;
+    delete secondaryList;
     delete hashTable;
 
 	system("pause");                //stops the program from terminating
@@ -50,7 +57,7 @@ int main()
 	return 0;
 }
 
-void parser(BinarySearchTree<Country> *countryList){
+void parser(BinarySearchTree<Country> *uniqueList, BinarySearchTree<Country> *secondaryList, HashTable<Country> *hashTable){
 
 	ifstream infile("data.csv");
 	if (infile.fail()){
@@ -63,6 +70,7 @@ void parser(BinarySearchTree<Country> *countryList){
 	string maleData;
 	string femaleData;
 	string both;
+    Country *countryPtr;
 	cout << "Building Binary Search Tree..." << endl;
 	clock_t start = clock();
 	while(!infile.eof()){
@@ -72,8 +80,17 @@ void parser(BinarySearchTree<Country> *countryList){
 		getline(infile, femaleData, ',');
 		getline(infile, both);
 		
+        
+        //Inserting into BST
 		Country tempCountry(country, atoi(year.c_str()), atoi(maleData.c_str()), atoi(femaleData.c_str()), atoi(both.c_str()));
-		countryList->insert(tempCountry);
+		uniqueList->insert(tempCountry);
+        
+        //Inserting into second BST
+        
+        //Inserting into hash table
+        
+        countryPtr = new Country(country, atoi(year.c_str()), atoi(maleData.c_str()), atoi(femaleData.c_str()), atoi(both.c_str()));
+        hashTable->insert(countryPtr);
 		i++;
 	}
 	cout << "Building Finished " << i << " Unique Entries entered." << endl;
@@ -86,146 +103,42 @@ void display(Country & anItem)
 }
 
 
-void commandManager(BinarySearchTree<Country> *classList)
+void mainCommandManager(BinarySearchTree<Country> *uniqueList, BinarySearchTree<Country> *secondaryList, HashTable<Country> *hashTable)
 {
 	//Variable declaration and intialization
 	bool run = true;
 	char choice;
-	Country smallCountry;
-	Country largeCountry;
-	Country targetCountry;
-	Country foundCountry;
-	string country, year;
     
-	clock_t start;
+    displayMainMenu();
     
-	//Continues to run while the user hasn't designated to quit
-	while (run){
-
-		cout << "Enter a choice: ";
-		cin >> choice;
-
-		switch (choice)
+    while (run)
+    {
+        cout << "Enter a choice: ";
+        cin >> choice;
+        
+        switch (choice)
         {
-            case 'B':                                           // Bread First Traversal
-                    cout << endl << "Breadth First Traversal" << endl << endl;
-                    classList->breadthFirst(display);
-                    cout << endl;
-                break;
-
-            case 'D':
-
-                    cout << endl << "Inorder Traversal" << endl << endl;
-                    classList->inOrder(display);
-
-                    cout << endl << "Preorder Traversal" << endl << endl;
-                    classList->preOrder(display);
-
-                    cout << endl << "Postoreder Traversal" << endl << endl;
-                    classList->postOrder(display);
-                    cout << endl;
-                break;
-            
-            case 'I':
-                    cout << endl << "Not Coded" << endl << endl;
-                break;
-            case 'T':
-                    cout << "Print by Level" << endl << endl;
-                    classList->print();
-                break;
-
-			
-            case 'S':
-                    do{
-                        cin.clear();
-                        cin.ignore(256, '\n');
-                        cout << "Enter the name of the country you want to find: ";
-                        getline(cin, country);
-                        cout << "Enter the year of the country you want to find: ";
-                        cin >> year;
-                    if (!cin)
-                        cout << endl << "Error - Invalid Input" << endl << endl;
-                    } while (!cin);
-
-                    targetCountry.setID(country + year);
-                    start = clock();
-                    if (classList->getEntry(targetCountry, foundCountry)){
-                        cout << endl << "Country Found" << endl << endl;
-                        cout << foundCountry << endl;
-                        cout << "Time Elapsed: " << (double)(clock() - start) / CLOCKS_PER_SEC << endl << endl;
-                    }
-                    else
-                        cout << endl << "Country not Found" << endl << endl;
-                break;
-	/*
-		case 'R':
-			int smallest, largest;
-
-			do{
-
-				do{
-					cin.clear();
-					cin.ignore(256, '\n');
-					cout << "Enter smallest ID: ";
-					cin >> smallest;
-					if (!cin)
-						cout << endl << "Error - Invalid Input" << endl << endl;
-				} while (!cin);
-
-				smallStudent.setID(smallest);
-
-				do{
-					cin.clear();
-					cin.ignore(256, '\n');
-					cout << "Enter largest ID: ";
-					cin >> largest;
-					if (!cin)
-						cout << endl << "Error - Invalid Input" << endl << endl;
-				} while (!cin);
-
-				largeStudent.setID(largest);
-				if (largest < smallest)
-					cout << "Error - 'Largest' value must be greater than 'smallest' value";
-			} while (largest < smallest);
-			cout << endl;
-
-			classList->range(display, smallStudent, largeStudent);
-
-			cout << endl;
-			break;
-			*/
-		case 'A':
-			cout << endl << "Hw4 - 22C, Binary Trees" << endl;
-			cout << "Developer : Jaison William M. Tiu" << endl;
-			cout << "Date : May 26, 2014" << endl << endl;
-			break;
-
-		case 'H':
-			cout << endl << "HELP" << endl << endl
-				<< "B - Tree Breadth-First Traversal: Print by level" << endl
-				<< "D - Depth-First Traversals: inorder, preorder, postorder" << endl
-				<< "I - Iterative Depth - First Traversals : inorder, preorder, postorder" << endl
-				<< "T - Print tree as an indented list" << endl
-				<< "S - Search by a unique key" << endl
-				<< "R - Print the items within a given range in the tree." << endl
-				<< "H - Help - to show the menu" << endl
-				<< "Q - Quit. " << endl << endl;
-
-			break;
-
-		case 'Q':
-			run = false;
-			break;
-
-			//Input validation if anything other than the choices is chosen then the user is prompted again
-		default:
-			cout << endl << "Invalid input" << endl << endl;
-
-			break;
-
-		}
-
-	}
+                case 'H':
+                case 'h':
+                        hashTableCommandManager(hashTable);
+                        displayMainMenu();
+                    break;
+                case 'U':
+                case 'u':
+                        uniqueBSTCommandManager(uniqueList);
+                        displayMainMenu();
+                    break;
+                case 'S':
+                case 's':
+                        secondaryBSTCommandManager(secondaryList);
+                        displayMainMenu();
+                    break;
+                case 'Q':
+                case 'q':
+                    run = false;
+                    break;
+        }
+    }
 }
 
 /*~~~~~~~~~~~
@@ -241,22 +154,241 @@ void introduceProgram()
 }
 
 /*~~~~~~~~~~~~
- Display the menu.
+ Display the main menu.
  */
-void displayMenu()
+void displayMainMenu()
 {
-    cout << "S - Search by unique key\n"
+    cout
+    << "\n======Main Menu=======\n"
+    << "H - Hash Table menu\n"
+    << "U - Binary Search Tree by unique key\n"
+    << "S - Binary Search Tree by secondary key menu\n"
+    << "Q - Quit\n";
+}
+
+/*~~~~~~~~~~~~
+ Display the Hash Table's menu.
+*/
+void displayHashTableMenu()
+{
+    cout
+    << "\n======Hash Table Menu=======\n"
+    << "S - Search by unique key\n"
     << "D - Display Hash Table List\n"
     << "P - Print hash table\n"
     << "T - Show statistics\n"
     << "M - Show Menu\n"
-    << "Q - Quit\n"
-    << "Enter an option: ";
+    << "Q - Quit\n";
+}
+
+/*~~~~~~~~~~~~
+ Manage the hash table menu.
+*/
+void hashTableCommandManager(HashTable<Country> *hashTable)
+{
+    bool run = true;
+    char choice;
+    
+    displayHashTableMenu();
+    
+    while (run)
+    {
+        cout << "Enter a choice: ";
+        cin >> choice;
+        
+        switch(choice)
+        {
+            case 'S':
+            case 's':
+                searchHashTable(hashTable);
+                break;
+            case 'D':
+            case 'd':
+                displayHashTableList(hashTable);
+                break;
+            case 'P':
+            case 'p':
+                printHashTable(hashTable);
+                break;
+            case 'T':
+            case 't':
+                printHashTableStatistics(hashTable);
+                break;
+            case 'M':
+            case 'm':
+                displayHashTableMenu();
+                break;
+            case 'Q':
+            case 'q':
+                run = false;
+                break;
+        }
+    }
+}
+
+
+/*~~~~~~~~~~~~
+ Display the BST's menu.
+*/
+void displayBSTMenu(bool unique)
+{
+    if (unique)
+        cout << "\n======BST using unique key menu======\n";
+    else
+        cout << "\n======BST using secondary key menu======\n";
+    
+    cout
+    << "B - Tree Breadth-First Traversal: Print by level" << endl
+    << "D - Depth-First Traversals: inorder, preorder, postorder" << endl
+    << "I - Iterative Depth - First Traversals : inorder, preorder, postorder" << endl
+    << "T - Print tree as an indented list" << endl
+    << "S - Search by a unique key" << endl
+    << "R - Print the items within a given range in the tree." << endl
+    << "H - Help - to show the menu" << endl
+    << "Q - Quit. " << endl << endl;
+}
+
+/*~~~~~~~~~~~~
+ Manage the BST by unique key menu.
+*/
+void uniqueBSTCommandManager(BinarySearchTree<Country> *uniqueList)
+{
+    bool run = true;
+    char choice;
+    Country smallCountry;
+    Country largeCountry;
+    Country targetCountry;
+    Country foundCountry;
+    string country, year;
+    
+    clock_t start;
+    
+    displayBSTMenu(true);
+    
+    while (run)
+    {
+        cout << "Enter a choice: ";
+        cin >> choice;
+            
+        switch (choice)
+        {
+                case 'B':                                           // Bread First Traversal
+                    cout << endl << "Breadth First Traversal" << endl << endl;
+                    uniqueList->breadthFirst(display);
+                    cout << endl;
+                    break;
+                    
+                case 'D':
+                    
+                    cout << endl << "Inorder Traversal" << endl << endl;
+                    uniqueList->inOrder(display);
+                    
+                    cout << endl << "Preorder Traversal" << endl << endl;
+                    uniqueList->preOrder(display);
+                    
+                    cout << endl << "Postoreder Traversal" << endl << endl;
+                    uniqueList->postOrder(display);
+                    cout << endl;
+                    break;
+                    
+                case 'I':
+                    cout << endl << "Not Coded" << endl << endl;
+                    break;
+                case 'T':
+                    cout << "Print by Level" << endl << endl;
+                    uniqueList->print();
+                    break;
+                    
+                    
+                case 'S':
+                    do{
+                        cin.clear();
+                        cin.ignore(256, '\n');
+                        cout << "Enter the name of the country you want to find: ";
+                        getline(cin, country);
+                        cout << "Enter the year of the country you want to find: ";
+                        cin >> year;
+                        if (!cin)
+                            cout << endl << "Error - Invalid Input" << endl << endl;
+                    } while (!cin);
+                    
+                    targetCountry.setID(country + year);
+                    start = clock();
+                    if (uniqueList->getEntry(targetCountry, foundCountry)){
+                        cout << endl << "Country Found" << endl << endl;
+                        cout << foundCountry << endl;
+                        cout << "Time Elapsed: " << (double)(clock() - start) / CLOCKS_PER_SEC << endl << endl;
+                    }
+                    else
+                        cout << endl << "Country not Found" << endl << endl;
+                    break;
+                    /*
+                     case 'R':
+                     int smallest, largest;
+                     
+                     do{
+                     
+                     do{
+                     cin.clear();
+                     cin.ignore(256, '\n');
+                     cout << "Enter smallest ID: ";
+                     cin >> smallest;
+                     if (!cin)
+                     cout << endl << "Error - Invalid Input" << endl << endl;
+                     } while (!cin);
+                     
+                     smallStudent.setID(smallest);
+                     
+                     do{
+                     cin.clear();
+                     cin.ignore(256, '\n');
+                     cout << "Enter largest ID: ";
+                     cin >> largest;
+                     if (!cin)
+                     cout << endl << "Error - Invalid Input" << endl << endl;
+                     } while (!cin);
+                     
+                     largeStudent.setID(largest);
+                     if (largest < smallest)
+                     cout << "Error - 'Largest' value must be greater than 'smallest' value";
+                     } while (largest < smallest);
+                     cout << endl;
+                     
+                     classList->range(display, smallStudent, largeStudent);
+                     
+                     cout << endl;
+                     break;
+                     */
+                    
+                case 'H':
+                displayBSTMenu(true);
+                    break;
+                    
+                case 'Q':
+                    run = false;
+                    break;
+                    
+                    //Input validation if anything other than the choices is chosen then the user is prompted again
+                default:
+                    cout << endl << "Invalid input" << endl << endl;
+                    
+                    break;
+                    
+            }
+        }
+}
+
+/*~~~~~~~~~~~~
+ Manage the BST by secondary key menu.
+*/
+void secondaryBSTCommandManager(BinarySearchTree<Country> *secondaryList)
+{
+    //CODECODECODE
 }
 
 /*~~~~~~~~~~~
  Search Manager manages the search option.
- */
+*/
 void searchHashTable(HashTable<Country> *hashTable)
 {
     cout << "Enter name: ";
