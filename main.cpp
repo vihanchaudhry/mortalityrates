@@ -391,16 +391,28 @@ void secondaryBSTCommandManager(BinarySearchTree<Country> *secondaryList)
 */
 void searchHashTable(HashTable<Country> *hashTable)
 {
-    cout << "Enter name: ";
-    string name;
+    string country;
+    string year;
+    do{
+        cin.clear();
+        cin.ignore(256, '\n');
+        cout << "Enter the name of the country you want to find: ";
+        getline(cin, country);
+        cout << "Enter the year of the country you want to find: ";
+        cin >> year;
+        if (!cin)
+            cout << endl << "Error - Invalid Input" << endl << endl;
+    } while (!cin);
     
-    getline(cin, name);
+    string ID = country + year;
+
     
-    Country *countryPtr = hashTable->search(name);
+    clock_t start = clock();
+    Country *countryPtr = hashTable->search(ID);
     
     if (countryPtr == NULL)
     {
-        cout << name << " was not found.\n";
+        cout << ID << " was not found.\n";
     }
     else
     {
@@ -410,6 +422,7 @@ void searchHashTable(HashTable<Country> *hashTable)
              << "Female mortality: " << countryPtr->getFemaleMortality() << endl
              << "Combined mortality: " << countryPtr->getCombinedMortality() << endl << endl;
     }
+    cout << "Time elapsed : " << (double)(clock() - start)/CLOCKS_PER_SEC << " seconds" << endl << endl;
 }
 
 /*~~~~~~~~~~~~~
