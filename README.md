@@ -1,2 +1,2 @@
 # mortalityrates
-Find out which countries you wouldn't want to live in.
+Efficient algorithms for finding out which countries you wouldn't want to be born in.
