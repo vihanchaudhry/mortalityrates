@@ -17,7 +17,7 @@
 using namespace std;
 
 const int HASH_TABLE_SIZE = 776;
-const int BUCKET_SIZE = 10;
+const int BUCKET_SIZE = 4;
 
 template <class T>
 class HashTable
@@ -119,7 +119,7 @@ int HashTable<T>::getHash(string key)
         sum += (key[i]*key[i] *key[i]);
     }
     
-    return sum % HASH_TABLE_SIZE;
+    return (sum % HASH_TABLE_SIZE);
 }
 
 /*~~~~~~~~~~~
@@ -128,16 +128,16 @@ int HashTable<T>::getHash(string key)
 template <class T>
 bool HashTable<T>::insert(T *itemPtr)
 {
-    if (table[getHash(itemPtr->getName())].size() < BUCKET_SIZE)
+    if (table[getHash(itemPtr->getID())].size() < BUCKET_SIZE)
     {
-        table[getHash(itemPtr->getName())].push_back(itemPtr);
+        table[getHash(itemPtr->getID())].push_back(itemPtr);
         
-        if (table[getHash(itemPtr->getName())].size() == 1)
+        if (table[getHash(itemPtr->getID())].size() == 1)
             elementsFilled++;
         else
             collisionCount++;
         
-        if (table[getHash(itemPtr->getName())].size() == BUCKET_SIZE)
+        if (table[getHash(itemPtr->getID())].size() == BUCKET_SIZE)
             fullBuckets++;
         
         return true;
@@ -154,14 +154,14 @@ bool HashTable<T>::insert(T *itemPtr)
  Search the hash table for item identified by the argument.
  */
 template <class T>
-T *HashTable<T>::search(string name)
+T *HashTable<T>::search(string ID)
 {
     
-    for (int i = 0; i < table[getHash(name)].size(); i++)
+    for (int i = 0; i < table[getHash(ID)].size(); i++)
     {
-        if (table[getHash(name)][i]->getName() == name)
+        if (table[getHash(ID)][i]->getID() == ID )
         {
-            return table[getHash(name)][i];
+            return table[getHash(ID)][i];
         }
     }
     
@@ -169,7 +169,7 @@ T *HashTable<T>::search(string name)
     
     for (int i = 0; i < overflow.size(); i++)
     {
-        if (overflow[i]->getName() == name)
+        if (overflow[i]->getID() == ID)
         {
             return overflow[i];
         }
