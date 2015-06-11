@@ -16,8 +16,8 @@
 
 using namespace std;
 
-const int HASH_TABLE_SIZE = 10;
-const int BUCKET_SIZE = 3;
+const int HASH_TABLE_SIZE = 776;
+const int BUCKET_SIZE = 10;
 
 template <class T>
 class HashTable
@@ -114,9 +114,9 @@ int HashTable<T>::getHash(string key)
 {
     int sum = 0;
     
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < key.length(); i++)
     {
-        sum += key[0] * key[0] * key[0];
+        sum += (key[i]*key[i] *key[i]);
     }
     
     return sum % HASH_TABLE_SIZE;
