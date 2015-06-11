@@ -81,7 +81,6 @@
     <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="Country.h" />
     <ClInclude Include="HashTable.h" />
-    <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Queue.h" />
   </ItemGroup>
   <ItemGroup>
