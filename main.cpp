@@ -272,13 +272,14 @@ void uniqueBSTCommandManager(BinarySearchTree<Country> *uniqueList)
             
         switch (choice)
         {
-                case 'B':                                           // Bread First Traversal
+		case 'b':
+        case 'B':                                           // Bread First Traversal
                     cout << endl << "Breadth First Traversal" << endl << endl;
                     uniqueList->breadthFirst(display);
                     cout << endl;
                     break;
-                    
-                case 'D':
+		case 'd':
+        case 'D':
                     
                     cout << endl << "Inorder Traversal" << endl << endl;
                     uniqueList->inOrder(display);
@@ -290,17 +291,18 @@ void uniqueBSTCommandManager(BinarySearchTree<Country> *uniqueList)
                     uniqueList->postOrder(display);
                     cout << endl;
                     break;
-                    
-                case 'I':
+		case 'i':
+        case 'I':
                     cout << endl << "Not Coded" << endl << endl;
                     break;
-                case 'T':
+		case 't':
+        case 'T':
                     cout << "Print by Level" << endl << endl;
                     uniqueList->print();
                     break;
                     
-                    
-                case 'S':
+		case 's':
+        case 'S':
                     do{
                         cin.clear();
                         cin.ignore(256, '\n');
@@ -322,49 +324,12 @@ void uniqueBSTCommandManager(BinarySearchTree<Country> *uniqueList)
                     else
                         cout << endl << "Country not Found" << endl << endl;
                     break;
-                    /*
-                     case 'R':
-                     int smallest, largest;
-                     
-                     do{
-                     
-                     do{
-                     cin.clear();
-                     cin.ignore(256, '\n');
-                     cout << "Enter smallest ID: ";
-                     cin >> smallest;
-                     if (!cin)
-                     cout << endl << "Error - Invalid Input" << endl << endl;
-                     } while (!cin);
-                     
-                     smallStudent.setID(smallest);
-                     
-                     do{
-                     cin.clear();
-                     cin.ignore(256, '\n');
-                     cout << "Enter largest ID: ";
-                     cin >> largest;
-                     if (!cin)
-                     cout << endl << "Error - Invalid Input" << endl << endl;
-                     } while (!cin);
-                     
-                     largeStudent.setID(largest);
-                     if (largest < smallest)
-                     cout << "Error - 'Largest' value must be greater than 'smallest' value";
-                     } while (largest < smallest);
-                     cout << endl;
-                     
-                     classList->range(display, smallStudent, largeStudent);
-                     
-                     cout << endl;
-                     break;
-                     */
-                    
-                case 'H':
+		case 'h':
+        case 'H':
                 displayBSTMenu(true);
                     break;
-                    
-                case 'Q':
+		case 'q':
+        case 'Q':
                     run = false;
                     break;
                     
