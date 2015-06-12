@@ -5,6 +5,7 @@
 using namespace std;
 class Country{
 private:
+	string compare;
 	string id;
 	string name;
 	int year;
@@ -14,8 +15,12 @@ private:
 
 public:
 	Country(){ id = ""; name = ""; maleMortality = 0; femaleMortality = 0; combinedMortality = 0; };
+	Country(string compareCode){ compare = compareCode; };
 	Country(string countryName, int countryYear, int maleNumber, int femaleNumber, int combinedNumber){ name = countryName; year = countryYear; id = countryName + to_string(countryYear); maleMortality = maleNumber; femaleMortality = femaleNumber; combinedMortality = combinedNumber; };
 	~Country(){};
+
+	void setCompare(string compareCode) { compare = compareCode; };
+	string getCompare() const { return compare; };
 
 	void setName(string countryName) { name = countryName; };
 	string getName() const { return name; };
@@ -36,12 +41,45 @@ public:
 	int getCombinedMortality()const { return combinedMortality; };
 
 	//Overloaded operators
-	friend bool operator<= (Country country, Country otherCountry){ return country.getID() <= otherCountry.getID(); };
-	friend bool operator>=(Country country, Country otherCountry){ return country.getID() >= otherCountry.getID(); };
-	friend bool operator< (Country country, Country otherCountry){ return country.getID() < otherCountry.getID(); };
-	friend bool operator==(Country country, Country otherCountry){ return country.getID() == otherCountry.getID(); };
-	friend bool operator>(Country country, Country otherCountry){ return country.getID() > otherCountry.getID(); };
+	friend bool operator<= (Country country, Country otherCountry);
+	friend bool operator>=(Country country, Country otherCountry);
+	friend bool operator< (Country country, Country otherCountry);
+	friend bool operator==(Country country, Country otherCountry);
+	friend bool operator>(Country country, Country otherCountry);
 	friend ostream& operator<<(ostream& os, const Country& student);
+};
+
+bool operator<= (Country country, Country otherCountry){
+	if (otherCountry.getCompare() == "ID"){
+		return country.getID() <= otherCountry.getID();
+	}
+	return country.getName() <= otherCountry.getName();
+};
+
+bool operator>=(Country country, Country otherCountry){
+	if (otherCountry.getCompare() == "ID"){
+		return country.getID() >= otherCountry.getID();
+	}
+	return country.getName() >= otherCountry.getName();
+};
+
+bool operator< (Country country, Country otherCountry){
+	if (otherCountry.getCompare() == "ID"){
+		return country.getID() < otherCountry.getID();
+	}
+	return country.getName() < otherCountry.getName();
+};
+
+bool operator==(Country country, Country otherCountry){
+
+	return country.getID() == otherCountry.getID();
+};
+
+bool operator>(Country country, Country otherCountry){ 
+	if (otherCountry.getCompare() == "ID"){
+		return country.getID() > otherCountry.getID();
+	}
+	return country.getName() > otherCountry.getName();
 };
 
 ostream& operator<<(ostream& os, const Country& country)

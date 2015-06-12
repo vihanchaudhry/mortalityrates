@@ -20,6 +20,8 @@ class BinaryTree
 {
 protected:
 
+	string compare;
+
 	//Pointer to root node
     BinaryNode<ItemType>* rootPtr;
 
@@ -30,8 +32,10 @@ public:
 
     // Constructor
     BinaryTree() {rootPtr = 0; count = 0;}
-    BinaryTree(const BinaryTree<ItemType> & tree){rootPtr = tree.rootPtr; count = tree.size();}     
-   
+	BinaryTree(const BinaryTree<ItemType> & tree){rootPtr = tree.rootPtr; count = tree.size();}     
+	
+	BinaryTree(const BinaryTree<ItemType> & tree, string compareCode){ rootPtr = tree.rootPtr; count = tree.size(); compare = compareCode; }
+
 	//Destructor
 	~BinaryTree() {destroyTree(rootPtr); rootPtr = NULL; count = 0;}    
 
@@ -44,14 +48,14 @@ public:
     void clear()			{destroyTree(rootPtr); rootPtr = 0; count = 0;}          
 
 	//Tree traversals
-	void breadthFirst(void visit(ItemType &)) const {_breadthFirst(visit, rootPtr); }
-	void preOrder(void visit(ItemType &)) const {_preorder(visit, rootPtr);}                
-    void inOrder(void visit(ItemType &)) const  {_inorder(visit, rootPtr);}                
-    void postOrder(void visit(ItemType &)) const{_postorder(visit, rootPtr);}  
+	void breadthFirst(void visit(ItemType )) const {_breadthFirst(visit, rootPtr); }
+	void preOrder(void visit(ItemType )) const {_preorder(visit, rootPtr);}                
+    void inOrder(void visit(ItemType )) const  {_inorder(visit, rootPtr);}                
+    void postOrder(void visit(ItemType )) const{_postorder(visit, rootPtr);}  
 
 	//Special functions for the project
 	void print(){ _print(rootPtr); };
-	void range(void visit(ItemType &), ItemType smallest, ItemType largest) const{ _range(visit, rootPtr, smallest, largest); }
+	void range(void visit(ItemType ), ItemType smallest, ItemType largest) const{ _range(visit, rootPtr, smallest, largest); }
 
     //Functions implemented by the derived class
     virtual bool insert(const ItemType & newData) = 0;
@@ -68,14 +72,14 @@ private:
 	BinaryNode<ItemType>* copyTree(const BinaryNode<ItemType>* nodePtr);
 
 	//Internal Range and Print Functions
-	void _range(void visit(ItemType &), BinaryNode<ItemType>* nodePtr, ItemType smallest, ItemType largest) const;
+	void _range(void visit(ItemType ), BinaryNode<ItemType>* nodePtr, ItemType smallest, ItemType largest) const;
 	void _print(BinaryNode<ItemType> *, int n = 1);
 	
     //Internal Traversal Functions
-	void _breadthFirst(void visit(ItemType &), BinaryNode<ItemType> *nodePtr) const;
-    void _preorder(void visit(ItemType &), BinaryNode<ItemType>* nodePtr) const;            
-    void _inorder(void visit(ItemType &), BinaryNode<ItemType>* nodePtr) const;             
-    void _postorder(void visit(ItemType &), BinaryNode<ItemType>* nodePtr) const;           
+	void _breadthFirst(void visit(ItemType ), BinaryNode<ItemType> *nodePtr) const;
+    void _preorder(void visit(ItemType ), BinaryNode<ItemType>* nodePtr) const;            
+    void _inorder(void visit(ItemType ), BinaryNode<ItemType>* nodePtr) const;             
+    void _postorder(void visit(ItemType ), BinaryNode<ItemType>* nodePtr) const;           
 	
 };
 
@@ -149,9 +153,9 @@ void BinaryTree<ItemType>::destroyTree(BinaryNode<ItemType>* nodePtr)
 //	the queue if it isn't null/															 *
 //****************************************************************************************
 template<class ItemType>
-void BinaryTree<ItemType>::_breadthFirst(void visit(ItemType &), BinaryNode<ItemType> *nodePtr) const {
+void BinaryTree<ItemType>::_breadthFirst(void visit(ItemType ), BinaryNode<ItemType> *nodePtr) const {
 
-	/*//Variable declaration
+	//Variable declaration
 	Queue<BinaryNode<ItemType> *> q1;
 	BinaryNode<ItemType> *item;
 
@@ -176,7 +180,8 @@ void BinaryTree<ItemType>::_breadthFirst(void visit(ItemType &), BinaryNode<Item
 		if (item->getRightPtr())
 			q1.enqueue(item->getRightPtr());
 
-	}*/
+	}
+	/*
     Queue<BinaryNode<ItemType>*> q;
     q.enqueue(rootPtr);
     
@@ -194,6 +199,7 @@ void BinaryTree<ItemType>::_breadthFirst(void visit(ItemType &), BinaryNode<Item
         if (nodePtr->getRightPtr() != NULL)
             q.enqueue(nodePtr2->getRightPtr());
     }
+	*/
 }
 
 //****************************************************************************************
@@ -202,7 +208,7 @@ void BinaryTree<ItemType>::_breadthFirst(void visit(ItemType &), BinaryNode<Item
 //	recursively																			 *
 //****************************************************************************************
 template<class ItemType>
-void BinaryTree<ItemType>::_preorder(void visit(ItemType &), BinaryNode<ItemType>* nodePtr) const
+void BinaryTree<ItemType>::_preorder(void visit(ItemType ), BinaryNode<ItemType>* nodePtr) const
 {
 	//If the pointer isn't null then the value of the pointer is extracted and printed
 	//The function then goes recursively through the tree starting with the left pointer then
@@ -223,7 +229,7 @@ void BinaryTree<ItemType>::_preorder(void visit(ItemType &), BinaryNode<ItemType
 //	recursively																			 *
 //****************************************************************************************
 template<class ItemType>
-void BinaryTree<ItemType>::_inorder(void visit(ItemType &), BinaryNode<ItemType>* nodePtr) const
+void BinaryTree<ItemType>::_inorder(void visit(ItemType ), BinaryNode<ItemType>* nodePtr) const
 {
 	//If the pointer isn't null then the value of the current node is extracted. The function then
 	//makes a recursive call passing in the left pointer. It then prints the value of the node
@@ -243,7 +249,7 @@ void BinaryTree<ItemType>::_inorder(void visit(ItemType &), BinaryNode<ItemType>
 //	recursively																			 *
 //****************************************************************************************
 template<class ItemType>
-void BinaryTree<ItemType>::_postorder(void visit(ItemType &), BinaryNode<ItemType>* nodePtr) const
+void BinaryTree<ItemType>::_postorder(void visit(ItemType ), BinaryNode<ItemType>* nodePtr) const
 {
 	//If the pointer isn't null then the value of the current node is extracted. The function then
 	//makes a recursivel call passing in the left pointer. It then makes a recursive call passing in
@@ -268,7 +274,7 @@ void BinaryTree<ItemType>::_postorder(void visit(ItemType &), BinaryNode<ItemTyp
 //	smallest value and that are less than or equal to the largest value			*
 //*******************************************************************************
 template<class ItemType>
-void BinaryTree<ItemType>::_range(void visit(ItemType &), BinaryNode<ItemType>* nodePtr, ItemType smallest, ItemType largest) const
+void BinaryTree<ItemType>::_range(void visit(ItemType ), BinaryNode<ItemType>* nodePtr, ItemType smallest, ItemType largest) const
 {
 	//If the node pointer isn't null then the item of the current node is extracted and stored
 	//the function the goes recursively through the list in an inorder traversal. The function
@@ -280,7 +286,7 @@ void BinaryTree<ItemType>::_range(void visit(ItemType &), BinaryNode<ItemType>* 
 
 		_range(visit, nodePtr->getLeftPtr(), smallest, largest);
 
-		if (item >= smallest && item <= largest)
+		if (*item >= *smallest && *item <= *largest)
 			visit(item);
 		
 		
@@ -305,7 +311,7 @@ void BinaryTree<ItemType>::_print(BinaryNode<ItemType> *nodePtr, int n ){
 	//If the nodePointer is a leaf then it prints the value with the approriate width
 	if (nodePtr->isLeaf())
 	{
-		cout << setw((n-1)*5) << n << ". " << nodePtr->getItem() << endl;
+		cout << setw((n-1)*5) << n << ". " << *(nodePtr->getItem()) << endl;
 		return;
 	}
 
@@ -313,7 +319,7 @@ void BinaryTree<ItemType>::_print(BinaryNode<ItemType> *nodePtr, int n ){
 	else
 	{
 		_print(nodePtr->getRightPtr(), n + 1);
-		cout << setw((n-1)*5) << n << ". " << nodePtr->getItem()<< endl;
+		cout << setw((n-1)*5) << n << ". " << *(nodePtr->getItem())<< endl;
 		_print(nodePtr->getLeftPtr(), n + 1);
 
 	}

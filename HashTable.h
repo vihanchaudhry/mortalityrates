@@ -46,6 +46,7 @@ public:
     int getHash(string key);
     bool insert(T *itemPtr);
     T *search(string name);
+	bool deleteItem(string key);
 };
 
 // Function Definitions
@@ -148,6 +149,19 @@ bool HashTable<T>::insert(T *itemPtr)
         collisionCount++;
         return false;
     }
+}
+
+template <class T>
+bool HashTable<T>::deleteItem(string ID){
+	int address = getHash(ID);
+	for (int i = 0; i < table[address].size(); i++){
+		if (table[address][i]->getID() == ID){
+			delete table[address][i];
+			table[address].erase(table[address].begin() + i);
+			return true;
+		}
+	}
+	return false;
 }
 
 /*~~~~~~~~~~~~

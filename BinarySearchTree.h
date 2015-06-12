@@ -30,6 +30,8 @@ private:
     BinaryNode<ItemType>* findNode(BinaryNode<ItemType>* treePtr, const ItemType & target) const;
     
 public:
+	BinarySearchTree(string compareCode) { compare = compareCode; };
+
     // insert a node at the correct location
     bool insert(const ItemType & newEntry);
     // remove a node if found
@@ -75,15 +77,15 @@ bool BinarySearchTree<ItemType>::getEntry(const ItemType& anEntry, ItemType & re
 
 	while (nodePtr != NULL)
 	{
-		if (nodePtr->getItem() == anEntry)
+		if (*(nodePtr->getItem()) == *anEntry)
 		{
 			returnedItem = nodePtr->getItem();
 			return true;
 		}
-		else if (anEntry < nodePtr->getItem())
-			nodePtr = nodePtr->getLeftPtr();
-		else
+		else if (*(nodePtr->getItem()) <= *anEntry)
 			nodePtr = nodePtr->getRightPtr();
+		else
+			nodePtr = nodePtr->getLeftPtr();
 	}
 
 	return false;
@@ -101,6 +103,8 @@ template<class ItemType>
 BinaryNode<ItemType>* BinarySearchTree<ItemType>::_insert(BinaryNode<ItemType>* nodePtr,
                                                           BinaryNode<ItemType>* newNodePtr)
 {
+	
+	newNodePtr->getItem()->setCompare(compare);
 	//If the nodePtr is null then it increments the count and returns the newNodePtr to the call
     if (!nodePtr)
     {
@@ -112,13 +116,13 @@ BinaryNode<ItemType>* BinarySearchTree<ItemType>::_insert(BinaryNode<ItemType>* 
 	//the currentNode then it goes through the currentNode's left pointer. the current pointer's left
 	//value is then set to the return statement of the recursive function call. Otherwise it goes through
 	//the right pointer
-    if (newNodePtr->getItem() < nodePtr->getItem())
+	if (*(newNodePtr->getItem()) >= *(nodePtr->getItem()))
     {
-        nodePtr->setLeftPtr(_insert(nodePtr->getLeftPtr(), newNodePtr));
+        nodePtr->setRightPtr(_insert(nodePtr->getRightPtr(), newNodePtr));
     }
     else
     {
-        nodePtr->setRightPtr(_insert(nodePtr->getRightPtr(), newNodePtr));
+        nodePtr->setLeftPtr(_insert(nodePtr->getLeftPtr(), newNodePtr));
     }
     return nodePtr;
 }
@@ -145,11 +149,11 @@ BinaryNode<ItemType>* BinarySearchTree<ItemType>::_remove(BinaryNode<ItemType>* 
     }
 
 	//If the node is greater than the target then we go through the left subtree
-    if (nodePtr->getItem() > target)
+    if (*(nodePtr->getItem()) > *target)
         nodePtr->setLeftPtr(_remove(nodePtr->getLeftPtr(), target, success));
     
 	//If the node is less than the target then we go through the right subtree
-	else if (nodePtr->getItem() < target)
+	else if (*(nodePtr->getItem()) < *target)
         nodePtr->setRightPtr(_remove(nodePtr->getRightPtr(), target, success));
     
 	//Otherwise the node has the value we are looking for and we delete the node
@@ -230,11 +234,11 @@ BinaryNode<ItemType>* BinarySearchTree<ItemType>::findNode(BinaryNode<ItemType>*
 	// nodePtr's value is greater than the targer if it is then go through the left
 	//sub tree otherwise go through the right subtree
 	while (nodePtr){
-
-		if (nodePtr->getItem == target)
+		cout << "Finding node" << endl;
+		if (*(nodePtr->getItem) == *target)
 			return nodePtr;
 
-		else if (nodePtr->getItem() > target)
+		else if (*(nodePtr->getItem()) > *target)
 			nodePtr = nodePtr->getLeftPtr();
 		
 		else
