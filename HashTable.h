@@ -24,7 +24,7 @@ class HashTable
 {
 private:
     vector<T *> *table;
-    vector<T *> overflow;
+    vector<T *> *overflow;
     int collisionCount;
     int elementsFilled;
     int fullBuckets;
@@ -35,10 +35,10 @@ public:
     int getCollisionCount() {return collisionCount;}
     int getElementsFilled() {return elementsFilled;}
     int getFullBuckets() {return fullBuckets;}
-    int getOverflowCount() {return overflow.size();}
+    int getOverflowCount() {return overflow->size();}
     
     vector<T *> *getTable() {return table;}
-    vector<T *> getOverflow() {return overflow;}
+    vector<T *> *getOverflow() {return overflow;}
     
     double getLoadFactor() {return (double)elementsFilled / HASH_TABLE_SIZE;}
     double getAverageNodesInBucket();
@@ -59,6 +59,7 @@ template <class T>
 HashTable<T>::HashTable()
 {
     table = new vector<T *>[HASH_TABLE_SIZE];
+	overflow = new vector<T *>;
     collisionCount = 0;
     elementsFilled = 0.0;
     fullBuckets = 0;
@@ -80,12 +81,12 @@ HashTable<T>::~HashTable()
         table[i].clear();
     }
     
-    for (int i = 0; i < overflow.size(); i++)
+    for (int i = 0; i < overflow->size(); i++)
     {
-        delete overflow[i];
+        delete (*overflow)[i];
     }
     
-    overflow.clear();
+    overflow->clear();
     
     delete table;
     delete overflow;
@@ -149,7 +150,7 @@ bool HashTable<T>::insert(T *itemPtr)
     }
     else                                        // Push into overflow.
     {
-        overflow.push_back(itemPtr);
+        overflow->push_back(itemPtr);
         collisionCount++;                       // else collision occured.
         return false;
     }
@@ -169,6 +170,16 @@ bool HashTable<T>::deleteItem(string ID)
         {
 			delete table[address][i];
 			table[address].erase(table[address].begin() + i);
+			return true;
+		}
+	}
+
+	for (int i = 0; i < (*overflow).size(); i++)
+	{
+		if ((*overflow)[i]->getID() == ID)
+		{
+			delete (*overflow)[i];
+			(*overflow).erase((*overflow).begin() + i);
 			return true;
 		}
 	}
@@ -194,11 +205,11 @@ T *HashTable<T>::search(string ID)
     
     // Not found in buckets; check overflow
     
-    for (int i = 0; i < overflow.size(); i++)
+    for (int i = 0; i < overflow->size(); i++)
     {
-        if (overflow[i]->getID() == ID)
+        if ((*overflow)[i]->getID() == ID)
         {
-            return overflow[i];
+            return (*overflow)[i];
         }
     }
     
