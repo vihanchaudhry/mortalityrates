@@ -84,11 +84,11 @@ bool operator>(Country country, Country otherCountry){
 
 ostream& operator<<(ostream& os, const Country& country)
 {
-	os << "Country Name: " << country.getName() << endl;
-	   //<< "Country Year: " << country.getYear() << endl
-	   //<< "Male Mortality per Thousand: " << country.getMaleMortality() << endl
-	   //<< "Female Mortality per Thousand: " << country.getFemaleMortality() << endl
-	   //<< "Male and Female Mortality per Thousand: " << country.getCombinedMortality() << endl;
+	os << "Country Name: " << country.getName() << endl
+	   << "Country Year: " << country.getYear() << endl
+	   << "Male Mortality per Thousand: " << country.getMaleMortality() << endl
+	   << "Female Mortality per Thousand: " << country.getFemaleMortality() << endl
+	   << "Male and Female Mortality per Thousand: " << country.getCombinedMortality() << endl;
 	return os;
 }
 #endif

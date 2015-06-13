@@ -99,9 +99,13 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 	cout << "Time elapsed : " << (double)(clock() - start)/CLOCKS_PER_SEC << " seconds" << endl << endl;
 }
 
-void display(Country * anItem)
+void display(Country * countryPtr)
 {
-	cout << "Displaying item - " << anItem->getID() << endl;// << " " << anItem.getName() << " " << anItem.getGpa() << endl;
+    cout << "Country: " << countryPtr->getName() << endl
+    << "Year: " << countryPtr->getYear() << endl
+    << "Male mortality: " << countryPtr->getMaleMortality() << endl
+    << "Female mortality: " << countryPtr->getFemaleMortality() << endl
+    << "Combined mortality: " << countryPtr->getCombinedMortality() << endl << endl;
 }
 
 
@@ -576,11 +580,7 @@ void searchHashTable(HashTable<Country> *hashTable)
     }
     else
     {
-        cout << "Country: " << countryPtr->getName() << endl
-             << "Year: " << countryPtr->getYear() << endl
-             << "Male mortality: " << countryPtr->getMaleMortality() << endl
-             << "Female mortality: " << countryPtr->getFemaleMortality() << endl
-             << "Combined mortality: " << countryPtr->getCombinedMortality() << endl << endl;
+        cout << *countryPtr;
     }
     cout << "Time elapsed : " << (double)(clock() - start)/CLOCKS_PER_SEC << " seconds" << endl << endl;
 }
