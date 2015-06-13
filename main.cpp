@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -11,10 +12,11 @@ using namespace std;
 void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable);
 void display(Country & anItem);
 void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList,HashTable<Country> *hashTable);
+void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable);
 // End functions by JAISON
 
 // Functions by VIHAN
-void secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList);    //VIHAN AND VICTOR DO THIS
+char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList);    //VIHAN AND VICTOR DO THIS
 // End functions by VIHAN
 
 // Functions by VICTOR
@@ -25,8 +27,8 @@ void secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList);    
 void introduceProgram();
 void displayMainMenu();
 void displayHashTableMenu();
-void hashTableCommandManager(HashTable<Country> *hashTable);
-void uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList);
+char hashTableCommandManager(HashTable<Country> *hashTable);
+char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList);
 void displayBSTMenu(bool unique);
 void searchHashTable(HashTable<Country> *hashTable);
 void displayHashTableList(HashTable<Country> *hashTable);
@@ -74,8 +76,8 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
     Country *countryPtr;
 	cout << "Building Binary Search Tree..." << endl;
 	clock_t start = clock();
-	//while(!infile.eof()){
-	while (i<25){
+	while(!infile.eof()){
+	//while (i<25){
 		getline(infile, country, ',');
 		getline(infile, year, ',');
 		getline(infile, maleData, ',');
@@ -107,31 +109,35 @@ void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTre
 {
 	//Variable declaration and intialization
 	bool run = true;
-	char choice;
+	char choice = '/0';
     
-    displayMainMenu();
     
     while (run)
     {
-        cout << "Enter a choice: ";
-        cin >> choice;
+		if (choice == 'u' || choice == 's' || choice == 'h'){
+			removeStuffGlobal(uniqueList, secondaryList, hashTable);
+		}
+		else{
+			displayMainMenu();
+			cout << "Enter a choice: ";
+			cin >> choice;
+		}
         
         switch (choice)
         {
                 case 'H':
                 case 'h':
-                        hashTableCommandManager(hashTable);
-                        displayMainMenu();
-                    break;
+                        choice = hashTableCommandManager(hashTable);
+                        break;
                 case 'U':
                 case 'u':
-                        uniqueBSTCommandManager(uniqueList);
-                        displayMainMenu();
+                        choice = uniqueBSTCommandManager(uniqueList);
+                        //displayMainMenu();
                     break;
                 case 'S':
                 case 's':
-                        secondaryBSTCommandManager(secondaryList);
-                        displayMainMenu();
+                        choice = secondaryBSTCommandManager(secondaryList);
+                        //displayMainMenu();
                     break;
 				
 				case'R':
@@ -189,7 +195,7 @@ void displayHashTableMenu()
 /*~~~~~~~~~~~~
  Manage the hash table menu.
 */
-void hashTableCommandManager(HashTable<Country> *hashTable)
+char hashTableCommandManager(HashTable<Country> *hashTable)
 {
     bool run = true;
     char choice;
@@ -225,7 +231,7 @@ void hashTableCommandManager(HashTable<Country> *hashTable)
                 break;
 			case 'R':
 			case 'r':
-				hashTable->deleteItem("Zimbabwe2000");
+				return 'h';
 				break;
             case 'Q':
             case 'q':
@@ -233,6 +239,7 @@ void hashTableCommandManager(HashTable<Country> *hashTable)
                 break;
         }
     }
+	return '/0';
 }
 
 
@@ -260,7 +267,7 @@ void displayBSTMenu(bool unique)
 /*~~~~~~~~~~~~
  Manage the BST by unique key menu.
 */
-void uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
+char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 {
     bool run = true;
     char choice;
@@ -337,6 +344,8 @@ void uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 
 		case 'r':
 		case 'R':
+			return 'u';
+			/*
 			do{
 				cin.clear();
 				cin.ignore(256, '\n');
@@ -357,6 +366,7 @@ void uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 			else
 				cout << endl << "Country not Found" << endl << endl;
 			break;
+			*/
 		case 'h':
         case 'H':
                 displayBSTMenu(true);
@@ -374,12 +384,13 @@ void uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
                     
             }
         }
+		return '/0';
 }
 
 /*~~~~~~~~~~~~
  Manage the BST by secondary key menu.
 */
-void secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
+char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 {
     //CODECODECODE
 	bool run = true;
@@ -457,6 +468,8 @@ void secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 
 		case 'r':
 		case 'R':
+			return 's';
+			/*
 			do{
 				cin.clear();
 				cin.ignore(256, '\n');
@@ -477,6 +490,7 @@ void secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 			}
 			else
 				cout << endl << "Country not Found" << endl << endl;
+				*/
 			break;
 
 		case 'h':
@@ -496,9 +510,39 @@ void secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 
 		}
 	}
+	return '/0';
 }
 
-void removeStuffGlobal(){
+void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable){
+	string country;
+	string year;
+	string id;
+	time_t start;
+	Country *removeCountryID = new Country("ID");
+	Country *removeCountryName = new Country("Country");
+
+	do{
+		cin.clear();
+		cin.ignore(256, '\n');
+		cout << "Enter the name of the country you want to delete: ";
+		getline(cin, country);
+		cout << "Enter the year of the country you want to delete: ";
+		cin >> year;
+		if (!cin)
+			cout << endl << "Error - Invalid Input" << endl << endl;
+	} while (!cin);
+	id = country + year;
+	removeCountryID->setID(id);
+	removeCountryName->setID(id);
+	start = clock();
+	if (uniqueList->remove(removeCountryID)){
+		secondaryList->remove(removeCountryName);
+		hashTable->deleteItem(id);
+		cout << endl << "Country Deleted" << endl << endl;
+		cout << "Time Elapsed: " << (double)(clock() - start) / CLOCKS_PER_SEC << endl << endl;
+	}
+	else
+		cout << endl << "Country not Found" << endl << endl;
 
 }
 
