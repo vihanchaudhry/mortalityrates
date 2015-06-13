@@ -53,7 +53,8 @@ public:
 
 /*~~~~~~
  Default constructor for preparing hash table to be used.
- */
+ Dynamically allocate an array of vectors, and set all statistic fields to 0.
+*/
 template <class T>
 HashTable<T>::HashTable()
 {
@@ -69,7 +70,6 @@ HashTable<T>::HashTable()
 template <class T>
 HashTable<T>::~HashTable()
 {
-    
     for (int i = 0; i < HASH_TABLE_SIZE; i++)
     {
         for (int j = 0; j < table[i].size(); j++)
@@ -86,10 +86,13 @@ HashTable<T>::~HashTable()
     }
     
     overflow.clear();
+    
+    delete table;
+    delete overflow;
 }
 
 /*~~~~
- return on average how many nodes are in each bucket.
+ Return on average how many nodes are in each bucket.
  */
 template <class T>
 double HashTable<T>::getAverageNodesInBucket()
@@ -108,8 +111,8 @@ double HashTable<T>::getAverageNodesInBucket()
 }
 
 /*~~~~~~~~~~~~~
- Hash function returns a suitable key
- */
+ Hash function returns a suitable key.
+*/
 template <class T>
 int HashTable<T>::getHash(string key)
 {
@@ -124,38 +127,46 @@ int HashTable<T>::getHash(string key)
 }
 
 /*~~~~~~~~~~~
- insert into hash table.  If inserted into overflow, return false, else true.
- */
+ Insert into hash table.  If inserted into overflow, return false, else true.
+*/
 template <class T>
 bool HashTable<T>::insert(T *itemPtr)
 {
-    if (table[getHash(itemPtr->getID())].size() < BUCKET_SIZE)
+    int address = getHash(itemPtr->getID());
+    if (table[address].size() < BUCKET_SIZE)
     {
-        table[getHash(itemPtr->getID())].push_back(itemPtr);
+        table[address].push_back(itemPtr);
         
-        if (table[getHash(itemPtr->getID())].size() == 1)
+        if (table[address].size() == 1)     // First element in vector is filled,
             elementsFilled++;
-        else
+        else                                // else collision occured.
             collisionCount++;
         
-        if (table[getHash(itemPtr->getID())].size() == BUCKET_SIZE)
+        if (table[address].size() == BUCKET_SIZE)       // Bucket is full.
             fullBuckets++;
         
         return true;
     }
-    else
+    else                                        // Push into overflow.
     {
         overflow.push_back(itemPtr);
-        collisionCount++;
+        collisionCount++;                       // else collision occured.
         return false;
     }
 }
 
+/*~~~~~~~~~~~~~~
+ Delete a particular item in the hash table.
+*/
 template <class T>
-bool HashTable<T>::deleteItem(string ID){
+bool HashTable<T>::deleteItem(string ID)
+{
 	int address = getHash(ID);
-	for (int i = 0; i < table[address].size(); i++){
-		if (table[address][i]->getID() == ID){
+    
+	for (int i = 0; i < table[address].size(); i++)
+    {
+		if (table[address][i]->getID() == ID)
+        {
 			delete table[address][i];
 			table[address].erase(table[address].begin() + i);
 			return true;
@@ -166,14 +177,16 @@ bool HashTable<T>::deleteItem(string ID){
 
 /*~~~~~~~~~~~~
  Search the hash table for item identified by the argument.
+ Return the pointer to the object.
  */
 template <class T>
 T *HashTable<T>::search(string ID)
 {
+    int address = getHash(ID);
     
-    for (int i = 0; i < table[getHash(ID)].size(); i++)
+    for (int i = 0; i < table[address].size(); i++)
     {
-        if (table[getHash(ID)][i]->getID() == ID )
+        if (table[address][i]->getID() == ID )
         {
             return table[getHash(ID)][i];
         }
@@ -189,7 +202,7 @@ T *HashTable<T>::search(string ID)
         }
     }
     
-    return NULL;
+    return NULL;        // not found.
 }
 
 #endif /* defined(__Jason_Liang_HW5_22C_HashTableWithVectors__HashTable__) */
