@@ -170,14 +170,6 @@ void introduceProgram()
  */
 void displayMainMenu()
 {
-<<<<<<< HEAD
-    cout
-    << "\n======Main Menu=======\n"
-    << "H - Hash Table menu\n"
-    << "U - Binary Search Tree by unique key\n"
-    << "S - Binary Search Tree by secondary key menu\n"
-    << "Q - Quit\n";
-=======
 	cout << "\t\t _________________________________________" << endl
 		 << "\t\t|                 MAIN MENU               |" << endl
 		 << "\t\t| H : Hash Table Menu                     |" << endl
@@ -185,7 +177,6 @@ void displayMainMenu()
 		 << "\t\t| S : Binary Search Tree by Secondary Key |" << endl
 		 << "\t\t| Q : Quit                                |" << endl
 		 << "\t\t|_________________________________________|" << endl << endl;
->>>>>>> 52573225be4e1ba04a9a2f0016fb4254fb94f665
 }
 
 /*~~~~~~~~~~~~
