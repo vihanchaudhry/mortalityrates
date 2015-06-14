@@ -35,6 +35,7 @@ void searchHashTable(HashTable<Country> *hashTable);
 void displayHashTableList(HashTable<Country> *hashTable);
 void printHashTable(HashTable<Country> *hashTable);
 void printHashTableStatistics(HashTable<Country> * hashTable);
+void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable);
 // End Functions by JASON
 
 int main()
@@ -46,7 +47,7 @@ int main()
     
     HashTable<Country>* hashTable = new HashTable<Country>();           // Create Hash Table
     
-	parser(uniqueList, secondaryList, hashTable);             // Read file and populate data structures.
+	//parser(uniqueList, secondaryList, hashTable);             // Read file and populate data structures.
     
     introduceProgram();
     
@@ -116,7 +117,17 @@ void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTre
     while (run)
     {
 		if (choice == 'u' || choice == 's' || choice == 'h'){
+			displayMainMenu();
 			removeStuffGlobal(uniqueList, secondaryList, hashTable);
+		}
+		else if (choice == 'a' || choice == 'b' || choice == 'c'){
+			insertStuffGlobal(uniqueList, secondaryList, hashTable);
+			if (choice == 'a')
+				choice = 'u';
+			else if (choice == 'b')
+				choice = 's';
+			else
+				choice = 'h';
 		}
 		else{
 			displayMainMenu();
@@ -212,6 +223,10 @@ char hashTableCommandManager(HashTable<Country> *hashTable)
         
         switch(choice)
         {
+			case 'n':
+			case 'N':
+				return 'c';
+				break;
             case 'S':
             case 's':
                 searchHashTable(hashTable);
@@ -278,6 +293,7 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
     bool run = true;
     char choice;
 	string code = "ID";
+	Country *newCountry = new Country(code);
     Country *smallCountry = new Country(code);
     Country *largeCountry = new Country(code);
 	Country *targetCountry = new Country(code);
@@ -295,6 +311,10 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 
 		switch (choice)
 		{
+		case 'n':
+		case 'N':
+			return 'b';
+
 		case 'i':
 		case 'I':
 			cout << endl << "In-order Traversal" << endl << endl;
@@ -409,6 +429,7 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 	bool run = true;
 	char choice;
 	string code = "Country";
+	Country *newCountry = new Country(code);
 	Country *smallCountry = new Country(code);
 	Country *largeCountry = new Country(code);
 	Country *targetCountry = new Country(code);
@@ -426,6 +447,9 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 
 		switch (choice)
 		{
+		case 'n':
+		case 'N':
+			return 'a';
 		case 'i':
 		case 'I':
 			cout << endl << "In-order Traversal" << endl << endl;
@@ -526,6 +550,35 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 		}
 	}
 	return '/0';
+}
+
+void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable){
+	string name;
+	int year, maleMortality, femaleMortality, combinedMortality;
+	cin.clear();
+	cin.ignore(256,'\n');
+	cout << "Enter country Name: ";
+	getline(cin, name);
+	cout << "Enter country year: ";
+	cin >> year;
+	cout << "Enter male Mortality: ";
+	cin >> maleMortality;
+	cout << "Enter female Mortality: ";
+	cin >> femaleMortality;
+	cout << endl;
+	combinedMortality = (maleMortality + femaleMortality) / 2;
+	Country *newCountry = new Country(name, year, maleMortality, femaleMortality, combinedMortality);
+	newCountry->setCompare("ID");
+	if (!(uniqueList->getEntry(newCountry, newCountry, display))){
+		uniqueList->insert(newCountry);
+		newCountry->setCompare("Country");
+		secondaryList->insert(newCountry);
+		hashTable->insert(newCountry);
+		cout << "Insert finished" << endl;
+	}
+	else{
+		cout << "Country and year already in data set and is displayed above" << endl;
+	}
 }
 
 void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable){

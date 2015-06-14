@@ -125,7 +125,7 @@ BinaryNode<ItemType>* BinarySearchTree<ItemType>::_insert(BinaryNode<ItemType>* 
 	//the currentNode then it goes through the currentNode's left pointer. the current pointer's left
 	//value is then set to the return statement of the recursive function call. Otherwise it goes through
 	//the right pointer
-	if (*(newNodePtr->getItem()) >= *(nodePtr->getItem()))
+	if (*(nodePtr->getItem()) <= *(newNodePtr->getItem()))
     {
         nodePtr->setRightPtr(_insert(nodePtr->getRightPtr(), newNodePtr));
     }
