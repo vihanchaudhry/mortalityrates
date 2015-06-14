@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <iomanip>
 #include <fstream>
 #include <string>
 #include "BinarySearchTree.h"
@@ -21,7 +22,7 @@ char secondaryBSTCommandManager(BinarySearchTree<ItemPointer *> *secondaryList);
 // End functions by VIHAN
 
 // Functions by VICTOR
-
+void display(ItemPointer & anItem);
 // End functions by VICTOR
 
 // Functions by JASON
@@ -35,6 +36,7 @@ void searchHashTable(HashTable<Country> *hashTable);
 void displayHashTableList(HashTable<Country> *hashTable);
 void printHashTable(HashTable<Country> *hashTable);
 void printHashTableStatistics(HashTable<Country> * hashTable);
+void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointer *> *secondaryList, HashTable<Country> *hashTable);
 // End Functions by JASON
 
 int main()
@@ -46,10 +48,10 @@ int main()
     
     HashTable<Country>* hashTable = new HashTable<Country>();           // Create Hash Table
     
-	parser(uniqueList, secondaryList, hashTable);             // Read file and populate data structures.
+	//parser(uniqueList, secondaryList, hashTable);             // Read file and populate data structures.
     
     introduceProgram();
-    
+	parser(uniqueList, secondaryList, hashTable);
 	mainCommandManager(uniqueList, secondaryList, hashTable);        // Read commands and execute.
 
 	delete uniqueList;
@@ -108,13 +110,9 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointe
 	cout << "Time elapsed : " << (double)(clock() - start)/CLOCKS_PER_SEC << " seconds" << endl << endl;
 }
 
-void display(Country * countryPtr)
+void display(Country * anItem)
 {
-    cout << "Country: " << countryPtr->getName() << endl
-    << "Year: " << countryPtr->getYear() << endl
-    << "Male mortality: " << countryPtr->getMaleMortality() << endl
-    << "Female mortality: " << countryPtr->getFemaleMortality() << endl
-    << "Combined mortality: " << countryPtr->getCombinedMortality() << endl << endl;
+	cout << "Displaying item - " << anItem->getID() << endl;// << " " << anItem.getName() << " " << anItem.getGpa() << endl;
 }
 
 void display(ItemPointer * itemPtr) {
@@ -135,7 +133,17 @@ void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTre
     while (run)
     {
 		if (choice == 'u' || choice == 's' || choice == 'h'){
+			displayMainMenu();
 			removeStuffGlobal(uniqueList, secondaryList, hashTable);
+		}
+		else if (choice == 'a' || choice == 'b' || choice == 'c'){
+			insertStuffGlobal(uniqueList, secondaryList, hashTable);
+			if (choice == 'a')
+				choice = 'u';
+			else if (choice == 'b')
+				choice = 's';
+			else
+				choice = 'h';
 		}
 		else{
 			displayMainMenu();
@@ -177,11 +185,11 @@ void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTre
 */
 void introduceProgram()
 {
-    cout << "Hello!  Bonjour! Hola!\n"
-        << "Did you know there are 196 countries in world??\n"
-        << "This program has been developed by Jaison, Jaison, Vihan and Victor.\n"
-        << "This program utilizes two Binary Search Trees and a Hash Table\n"
-        << "to organize the mortality data of the countries of the world!\n\n";
+	cout << "Hello! Welcome to Mortality Rates!\n"
+         << "Did you know that there are 196 countries in world?\n"
+         << "This program was developed by Jason Liang, Jaison Tiu, Vihan Chaudhry and Victor La.\n"
+         << "It utilizes two Binary Search Trees and a Hash Table\n"
+         << "to organize the mortality data of the countries of the world!\n\n";
 }
 
 /*~~~~~~~~~~~~
@@ -189,13 +197,13 @@ void introduceProgram()
  */
 void displayMainMenu()
 {
-	cout << "\t\t ______________________________________" << endl
-		 << "\t\t|              MAIN MENU               |" << endl
-		 << "\t\t| H : Hash Table Menu                  |" << endl
-		 << "\t\t| U : Binary Search Tree By Unique Key |" << endl
-		 << "\t\t| S : Show statistics                  |" << endl
-		 << "\t\t| Q : Quit                             |" << endl
-		 << "\t\t|_____________________________________ |" << endl << endl;
+	cout << "\t\t _________________________________________" << endl
+		 << "\t\t|                 MAIN MENU               |" << endl
+		 << "\t\t| H : Hash Table Menu                     |" << endl
+		 << "\t\t| U : Binary Search Tree by Unique Key    |" << endl
+		 << "\t\t| S : Binary Search Tree by Secondary Key |" << endl
+		 << "\t\t| Q : Quit                                |" << endl
+		 << "\t\t|_________________________________________|" << endl << endl;
 }
 
 /*~~~~~~~~~~~~
@@ -203,14 +211,15 @@ void displayMainMenu()
 */
 void displayHashTableMenu()
 {
-    cout
-    << "\n======Hash Table Menu=======\n"
-    << "S - Search by unique key\n"
-    << "D - Display Hash Table List\n"
-    << "P - Print hash table\n"
-    << "T - Show statistics\n"
-    << "M - Show Menu\n"
-    << "Q - Quit\n";
+	cout << "\t\t ______________________________________" << endl
+ 		 << "\t\t|           HASH TABLE MENU            |" << endl
+		 << "\t\t| S : Search by Unique Key             |" << endl
+		 << "\t\t| D : Display Hash Table as a List     |" << endl
+		 << "\t\t| P : Print the Indented Hash Table    |" << endl
+		 << "\t\t| T : Show Hash Table Statistics       |" << endl
+		 << "\t\t| H : Help (Show Menu)                 |" << endl
+		 << "\t\t| B : Back                             |" << endl
+	 	 << "\t\t|_____________________________________ |" << endl << endl;
 }
 
 /*~~~~~~~~~~~~
@@ -230,6 +239,10 @@ char hashTableCommandManager(HashTable<Country> *hashTable)
         
         switch(choice)
         {
+			case 'n':
+			case 'N':
+				return 'c';
+				break;
             case 'S':
             case 's':
                 searchHashTable(hashTable);
@@ -246,16 +259,16 @@ char hashTableCommandManager(HashTable<Country> *hashTable)
             case 't':
                 printHashTableStatistics(hashTable);
                 break;
-            case 'M':
-            case 'm':
+            case 'H':
+            case 'h':
                 displayHashTableMenu();
                 break;
 			case 'R':
 			case 'r':
 				return 'h';
 				break;
-            case 'Q':
-            case 'q':
+            case 'B':
+            case 'b':
                 run = false;
                 break;
         }
@@ -270,19 +283,22 @@ char hashTableCommandManager(HashTable<Country> *hashTable)
 void displayBSTMenu(bool unique)
 {
     if (unique)
-        cout << "\n======BST using unique key menu======\n";
+        cout << "\n======BST (Unique Key) Menu======\n";
     else
-        cout << "\n======BST using secondary key menu======\n";
-    
-    cout
-    << "B - Tree Breadth-First Traversal: Print by level" << endl
-    << "D - Depth-First Traversals: inorder, preorder, postorder" << endl
-    << "I - Iterative Depth - First Traversals : inorder, preorder, postorder" << endl
-    << "T - Print tree as an indented list" << endl
-    << "S - Search by a unique key" << endl
-    << "R - Print the items within a given range in the tree." << endl
-    << "H - Help - to show the menu" << endl
-    << "Q - Quit. " << endl << endl;
+        cout << "\n======BST (Secondary Key) Menu======\n";
+
+	cout << "\t\t ______________________________________" << endl
+		 << "\t\t|              MAIN MENU               |" << endl
+		 << "\t\t| I : In-order Traversal               |" << endl
+		 << "\t\t| E : Pre-order Traversal              |" << endl
+		 << "\t\t| O : Post-order Traversal             |" << endl
+		 << "\t\t| U : Breadth-first Traversal          |" << endl
+		 << "\t\t| T : Print by Level                   |" << endl
+		 << "\t\t| R : Print by Range                   |" << endl
+		 << "\t\t| S : Search                           |" << endl
+		 << "\t\t| H : Help (Show Menu)                 |" << endl
+		 << "\t\t| B : Back                             |" << endl
+		 << "\t\t|_____________________________________ |" << endl << endl;
 }
 
 /*~~~~~~~~~~~~
@@ -293,6 +309,7 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
     bool run = true;
     char choice;
 	string code = "ID";
+	Country *newCountry = new Country(code);
     Country *smallCountry = new Country(code);
     Country *largeCountry = new Country(code);
 	Country *targetCountry = new Country(code);
@@ -303,42 +320,43 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
     
     displayBSTMenu(true);
     
-    while (run)
-    {
-        cout << "Enter a choice: ";
-        cin >> choice;
-            
-        switch (choice)
-        {
-		case 'b':
-        case 'B':                                           // Bread First Traversal
-                    cout << endl << "Breadth First Traversal" << endl << endl;
-                    uniqueList->breadthFirst(display);
-                    cout << endl;
-                    break;
-		case 'd':
-        case 'D':
-                    
-                    cout << endl << "Inorder Traversal" << endl << endl;
-                    uniqueList->inOrder(display);
-                    
-                    cout << endl << "Preorder Traversal" << endl << endl;
-                    uniqueList->preOrder(display);
-                    
-                    cout << endl << "Postoreder Traversal" << endl << endl;
-                    uniqueList->postOrder(display);
-                    cout << endl;
-                    break;
+	while (run)
+	{
+		cout << "Enter a choice: ";
+		cin >> choice;
+
+		switch (choice)
+		{
+		case 'n':
+		case 'N':
+			return 'b';
+
 		case 'i':
-        case 'I':
-                    cout << endl << "Not Coded" << endl << endl;
-                    break;
+		case 'I':
+			cout << endl << "In-order Traversal" << endl << endl;
+			uniqueList->inOrder(display);
+			break;
+		case 'e':
+		case 'E':
+			cout << endl << "Pre-order Traversal" << endl << endl;
+			uniqueList->preOrder(display);
+			break;
+		case 'o':
+		case 'O':
+			cout << endl << "Post-order Traversal" << endl << endl;
+			uniqueList->postOrder(display);
+			cout << endl;
+			break;
+		case 'u':
+		case 'U':
+			cout << endl << "Breadth-first Traversal" << endl << endl;
+			uniqueList->breadthFirst(display);
+			cout << endl;
 		case 't':
-        case 'T':
-                    cout << "Print by Level" << endl << endl;
-                    uniqueList->print();
-                    break;
-                    
+		case 'T':
+			cout << "Print by Level" << endl << endl;
+			uniqueList->print();
+			break;
 		case 's':
         case 'S':
                     do{
@@ -354,21 +372,18 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
                     
                     targetCountry->setID(country + year);
                     start = clock();
-                    if (uniqueList->getEntry(targetCountry, foundCountry)){
+					if(uniqueList->getEntry(targetCountry, foundCountry, display)){
                         cout << endl << "Country Found" << endl << endl;
-                        cout << *foundCountry << endl;
+                        //cout << *foundCountry << endl;
                         cout << "Time Elapsed: " << (double)(clock() - start) / CLOCKS_PER_SEC << endl << endl;
                     }
+					//;
                     else
                         cout << endl << "Country not Found" << endl << endl;
                     break;
-
-		case 'r':
-		case 'R':
-			return 'u';
 			
-		case 'U':
-		case 'u':
+		case 'R':
+		case 'r':
 
 				do{
 					cin.clear();
@@ -403,24 +418,23 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 
 			cout << endl;
 			break;
+
 		case 'h':
-        case 'H':
-                displayBSTMenu(true);
-                    break;
-		case 'q':
-        case 'Q':
-                    run = false;
-                    break;
-                    
-                    //Input validation if anything other than the choices is chosen then the user is prompted again
-                default:
-                    cout << endl << "Invalid input" << endl << endl;
-                    
-                    break;
-                    
-            }
-        }
-		return '/0';
+		case 'H':
+			displayBSTMenu(true);
+			break;
+		case 'b':
+		case 'B':
+			run = false;
+			break;
+
+			//Input validation if anything other than the choices is chosen then the user is prompted again
+		default:
+			cout << endl << "Invalid input" << endl << endl;
+			break;
+		}
+	}
+	return '/0';
 }
 
 /*~~~~~~~~~~~~
@@ -428,15 +442,17 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 */
 char secondaryBSTCommandManager(BinarySearchTree<ItemPointer *> *secondaryList)
 {
-    //CODECODECODE
 	bool run = true;
 	char choice;
 	string code = "Country";
+	Country *newC = new Country(code);
 	Country *small = new Country(code);
 	Country *large = new Country(code);
 	Country *target = new Country(code);
-	Country *found = new Country(code); string country, year;
+	Country *found = new Country(code); 
+	string country, year;
 
+	ItemPointer *newCountry = new ItemPointer(newC);
 	ItemPointer *smallCountry = new ItemPointer(small);
 	ItemPointer *largeCountry = new ItemPointer(large);
 	ItemPointer *targetCountry = new ItemPointer(target);
@@ -444,7 +460,7 @@ char secondaryBSTCommandManager(BinarySearchTree<ItemPointer *> *secondaryList)
 
 	clock_t start;
 
-	displayBSTMenu(true);
+	displayBSTMenu(false);
 
 	while (run)
 	{
@@ -453,35 +469,35 @@ char secondaryBSTCommandManager(BinarySearchTree<ItemPointer *> *secondaryList)
 
 		switch (choice)
 		{
-		case 'b':
-		case 'B':                                           // Bread First Traversal
-			cout << endl << "Breadth First Traversal" << endl << endl;
-			secondaryList->breadthFirst(display);
-			cout << endl;
-			break;
-		case 'd':
-		case 'D':
-
-			cout << endl << "Inorder Traversal" << endl << endl;
+		case 'n':
+		case 'N':
+			return 'a';
+		case 'i':
+		case 'I':
+			cout << endl << "In-order Traversal" << endl << endl;
 			secondaryList->inOrder(display);
-
-			cout << endl << "Preorder Traversal" << endl << endl;
+			break;
+		case 'e':
+		case 'E':
+			cout << endl << "Pre-order Traversal" << endl << endl;
 			secondaryList->preOrder(display);
-
-			cout << endl << "Postoreder Traversal" << endl << endl;
+			break;
+		case 'o':
+		case 'O':
+			cout << endl << "Post-order Traversal" << endl << endl;
 			secondaryList->postOrder(display);
 			cout << endl;
 			break;
-		case 'i':
-		case 'I':
-			cout << endl << "Not Coded" << endl << endl;
-			break;
+		case 'u':
+		case 'U':
+			cout << endl << "Breadth-first Traversal" << endl << endl;
+			secondaryList->breadthFirst(display);
+			cout << endl;
 		case 't':
 		case 'T':
 			cout << "Print by Level" << endl << endl;
 			secondaryList->print();
 			break;
-
 		case 's':
 		case 'S':
 			do{
@@ -489,49 +505,28 @@ char secondaryBSTCommandManager(BinarySearchTree<ItemPointer *> *secondaryList)
 				cin.ignore(256, '\n');
 				cout << "Enter the name of the country you want to find: ";
 				getline(cin, country);
+
+				//cout << "Enter the year of the country you want to find: ";
+				//cin >> year;
+
 				if (!cin)
 					cout << endl << "Error - Invalid Input" << endl << endl;
 			} while (!cin);
 
 			targetCountry->getItem()->setName(country);
+
 			start = clock();
-			if (secondaryList->getEntry(targetCountry, foundCountry)){
+			if (secondaryList->getEntry(targetCountry, foundCountry, display)){
 				cout << endl << "Country Found" << endl << endl;
-				cout << *foundCountry << endl;
+				//cout << *foundCountry << endl;
 				cout << "Time Elapsed: " << (double)(clock() - start) / CLOCKS_PER_SEC << endl << endl;
 			}
+			//;
 			else
 				cout << endl << "Country not Found" << endl << endl;
 			break;
-
 		case 'r':
 		case 'R':
-			return 's';
-			/*
-			do{
-				cin.clear();
-				cin.ignore(256, '\n');
-				cout << "Enter the name of the country you want to delete: ";
-				getline(cin, country);
-				cout << "Enter the year of the country you want to delete: ";
-				cin >> year;
-				if (!cin)
-					cout << endl << "Error - Invalid Input" << endl << endl;
-			} while (!cin);
-
-			targetCountry->setID(country + year);
-			targetCountry->setName(country);
-			start = clock();
-			if (secondaryList->remove(targetCountry)){
-				cout << endl << "Country Deleted" << endl << endl;
-				cout << "Time Elapsed: " << (double)(clock() - start) / CLOCKS_PER_SEC << endl << endl;
-			}
-			else
-				cout << endl << "Country not Found" << endl << endl;
-				*/
-			break;
-		case 'u':
-		case'U':
 			do{
 				cin.clear();
 				cin.ignore(256, '\n');
@@ -563,27 +558,56 @@ char secondaryBSTCommandManager(BinarySearchTree<ItemPointer *> *secondaryList)
 
 			secondaryList->range(display, smallCountry, largeCountry);
 			break;
+
 		case 'h':
 		case 'H':
-			displayBSTMenu(true);
+			displayBSTMenu(false);
 			break;
-		case 'q':
-		case 'Q':
+		case 'b':
+		case 'B':
 			run = false;
 			break;
-
 			//Input validation if anything other than the choices is chosen then the user is prompted again
 		default:
 			cout << endl << "Invalid input" << endl << endl;
-
 			break;
-
 		}
 	}
 	return '/0';
 }
 
-void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointer *> *secondaryList, HashTable<Country> *hashTable){
+void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointer *> *secondaryList, HashTable<Country> *hashTable){
+	string name;
+	int year, maleMortality, femaleMortality, combinedMortality;
+	cin.clear();
+	cin.ignore(256,'\n');
+	cout << "Enter country Name: ";
+	getline(cin, name);
+	cout << "Enter country year: ";
+	cin >> year;
+	cout << "Enter male Mortality: ";
+	cin >> maleMortality;
+	cout << "Enter female Mortality: ";
+	cin >> femaleMortality;
+	cout << endl;
+	combinedMortality = (maleMortality + femaleMortality) / 2;
+	Country *newCountry = new Country(name, year, maleMortality, femaleMortality, combinedMortality);
+	ItemPointer *newCountryPtr = new ItemPointer(newCountry);
+	newCountry->setCompare("ID");
+	if (!(uniqueList->getEntry(newCountry, newCountry, display))){
+		uniqueList->insert(newCountry);
+		newCountry->setCompare("Country");
+		secondaryList->insert(newCountryPtr);
+		hashTable->insert(newCountry);
+		cout << "Insert finished" << endl;
+	}
+	else{
+		cout << "Country and year already in data set and is displayed above" << endl;
+	}
+}
+
+void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointer *> *secondaryList, HashTable<Country> *hashTable)
+{
 	string country;
 	string year;
 	string id;
@@ -613,7 +637,6 @@ void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 	}
 	else
 		cout << endl << "Country not Found" << endl << endl;
-
 }
 
 /*~~~~~~~~~~~
@@ -633,10 +656,8 @@ void searchHashTable(HashTable<Country> *hashTable)
         if (!cin)
             cout << endl << "Error - Invalid Input" << endl << endl;
     } while (!cin);
-    
-    string ID = country + year;
 
-    
+    string ID = country + year;
     clock_t start = clock();
     Country *countryPtr = hashTable->search(ID);
     
@@ -646,7 +667,11 @@ void searchHashTable(HashTable<Country> *hashTable)
     }
     else
     {
-        cout << *countryPtr;
+        cout << "Country: " << countryPtr->getName() << endl
+             << "Year: " << countryPtr->getYear() << endl
+             << "Male mortality: " << countryPtr->getMaleMortality() << endl
+             << "Female mortality: " << countryPtr->getFemaleMortality() << endl
+             << "Combined mortality: " << countryPtr->getCombinedMortality() << endl << endl;
     }
     cout << "Time elapsed : " << (double)(clock() - start)/CLOCKS_PER_SEC << " seconds" << endl << endl;
 }
@@ -701,9 +726,9 @@ void printHashTable(HashTable<Country> *hashTable)
 void printHashTableStatistics(HashTable<Country> *hashTable)
 {
     cout << "\nStatistics:\n"
-    << "Load factor: " << hashTable->getLoadFactor() << endl
-    << "Number of full buckets: " << hashTable->getFullBuckets() << endl
-    << "Average number of nodes in buckets: " << hashTable->getAverageNodesInBucket() << endl
-    << "Collision count: " << hashTable->getCollisionCount() << endl
-    << "Overflow count: " << hashTable->getOverflowCount() << endl;
+    << "\tLoad factor: " << fixed << setprecision(2) << hashTable->getLoadFactor()*100 << "%" << endl
+    << "\tNumber of full buckets: " << hashTable->getFullBuckets() << endl
+    << "\tAverage number of nodes in buckets: " << hashTable->getAverageNodesInBucket() << endl
+    << "\tCollision count: " << hashTable->getCollisionCount() << endl
+    << "\tOverflow count: " << hashTable->getOverflowCount() << endl << endl;
 }

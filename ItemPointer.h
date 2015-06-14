@@ -20,6 +20,7 @@ public:
 	Country *getItem() const{ return itemPointer; }
 	void setItem(Country *item) { itemPointer = item; }
 	void setCompare(string compare) { itemPointer->setCompare(compare); }
+	string getCompare() { return itemPointer->getCompare(); }
 
 	// overloaded operators
 	bool operator < (const ItemPointer & other)
