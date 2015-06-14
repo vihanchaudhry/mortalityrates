@@ -60,7 +60,7 @@ public:
     //Functions implemented by the derived class
     virtual bool insert(const ItemType & newData) = 0;
     virtual bool remove(const ItemType & data) = 0;
-    virtual bool getEntry(const ItemType & anEntry, ItemType & returnedItem) const = 0;
+	virtual bool getEntry(const ItemType & anEntry, ItemType & returnedItem, void visit(ItemType)) const = 0;
     
 private:
 	//Functions within this class are declared to protect the rootptr from the main

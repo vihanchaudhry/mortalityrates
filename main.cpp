@@ -100,13 +100,9 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 	cout << "Time elapsed : " << (double)(clock() - start)/CLOCKS_PER_SEC << " seconds" << endl << endl;
 }
 
-void display(Country * countryPtr)
+void display(Country * anItem)
 {
-    cout << "Country: " << countryPtr->getName() << endl
-    << "Year: " << countryPtr->getYear() << endl
-    << "Male mortality: " << countryPtr->getMaleMortality() << endl
-    << "Female mortality: " << countryPtr->getFemaleMortality() << endl
-    << "Combined mortality: " << countryPtr->getCombinedMortality() << endl << endl;
+	cout << "Displaying item - " << anItem->getID() << endl;// << " " << anItem.getName() << " " << anItem.getGpa() << endl;
 }
 
 
@@ -174,6 +170,14 @@ void introduceProgram()
  */
 void displayMainMenu()
 {
+<<<<<<< HEAD
+    cout
+    << "\n======Main Menu=======\n"
+    << "H - Hash Table menu\n"
+    << "U - Binary Search Tree by unique key\n"
+    << "S - Binary Search Tree by secondary key menu\n"
+    << "Q - Quit\n";
+=======
 	cout << "\t\t _________________________________________" << endl
 		 << "\t\t|                 MAIN MENU               |" << endl
 		 << "\t\t| H : Hash Table Menu                     |" << endl
@@ -181,6 +185,7 @@ void displayMainMenu()
 		 << "\t\t| S : Binary Search Tree by Secondary Key |" << endl
 		 << "\t\t| Q : Quit                                |" << endl
 		 << "\t\t|_________________________________________|" << endl << endl;
+>>>>>>> 52573225be4e1ba04a9a2f0016fb4254fb94f665
 }
 
 /*~~~~~~~~~~~~
@@ -340,11 +345,12 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
                     
                     targetCountry->setID(country + year);
                     start = clock();
-                    if (uniqueList->getEntry(targetCountry, foundCountry)){
+					if(uniqueList->getEntry(targetCountry, foundCountry, display)){
                         cout << endl << "Country Found" << endl << endl;
-                        cout << *foundCountry << endl;
+                        //cout << *foundCountry << endl;
                         cout << "Time Elapsed: " << (double)(clock() - start) / CLOCKS_PER_SEC << endl << endl;
                     }
+					//;
                     else
                         cout << endl << "Country not Found" << endl << endl;
                     break;
@@ -462,20 +468,21 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 				cin.ignore(256, '\n');
 				cout << "Enter the name of the country you want to find: ";
 				getline(cin, country);
-				cout << "Enter the year of the country you want to find: ";
-				cin >> year;
+				//cout << "Enter the year of the country you want to find: ";
+				//cin >> year;
 				if (!cin)
 					cout << endl << "Error - Invalid Input" << endl << endl;
 			} while (!cin);
 
-			targetCountry->setID(country + year);
+			//targetCountry->setID(country + year);
 			targetCountry->setName(country);
 			start = clock();
-			if (secondaryList->getEntry(targetCountry, foundCountry)){
+			if (secondaryList->getEntry(targetCountry, foundCountry, display)){
 				cout << endl << "Country Found" << endl << endl;
-				cout << *foundCountry << endl;
+				//cout << *foundCountry << endl;
 				cout << "Time Elapsed: " << (double)(clock() - start) / CLOCKS_PER_SEC << endl << endl;
 			}
+			//;
 			else
 				cout << endl << "Country not Found" << endl << endl;
 			break;
@@ -590,7 +597,11 @@ void searchHashTable(HashTable<Country> *hashTable)
     }
     else
     {
-        cout << *countryPtr;
+        cout << "Country: " << countryPtr->getName() << endl
+             << "Year: " << countryPtr->getYear() << endl
+             << "Male mortality: " << countryPtr->getMaleMortality() << endl
+             << "Female mortality: " << countryPtr->getFemaleMortality() << endl
+             << "Combined mortality: " << countryPtr->getCombinedMortality() << endl << endl;
     }
     cout << "Time elapsed : " << (double)(clock() - start)/CLOCKS_PER_SEC << " seconds" << endl << endl;
 }

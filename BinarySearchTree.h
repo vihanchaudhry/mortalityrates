@@ -38,7 +38,7 @@ public:
     // remove a node if found
     bool remove(const ItemType & anEntry);
     // find a target node
-	bool getEntry(const ItemType & target, ItemType & returnedItem) const;	
+	bool getEntry(const ItemType & target, ItemType & returnedItem, void visit(ItemType)) const;
 };
 
 //************************************************************************************
@@ -72,16 +72,24 @@ bool BinarySearchTree<ItemType>::remove(const ItemType & target)
 //	returns true otherwise it returns false											 *
 //************************************************************************************
 template<class ItemType>
-bool BinarySearchTree<ItemType>::getEntry(const ItemType& anEntry, ItemType & returnedItem) const
+bool BinarySearchTree<ItemType>::getEntry(const ItemType& anEntry, ItemType & returnedItem, void visit(ItemType)) const
 {
 	BinaryNode<ItemType>* nodePtr = rootPtr;
-
+	bool success = false;
 	while (nodePtr != NULL)
 	{
 		if (*(nodePtr->getItem()) == *anEntry)
 		{
-			returnedItem = nodePtr->getItem();
-			return true;
+			success = true;
+			//returnedItem = nodePtr->getItem();
+			visit(nodePtr->getItem());
+			if (anEntry->getCompare() == "ID"){
+				return success;
+			}
+			else{
+				nodePtr = nodePtr->getRightPtr();
+			}
+			//return true;
 		}
 		else if (*(nodePtr->getItem()) <= *anEntry)
 			nodePtr = nodePtr->getRightPtr();
@@ -89,7 +97,7 @@ bool BinarySearchTree<ItemType>::getEntry(const ItemType& anEntry, ItemType & re
 			nodePtr = nodePtr->getLeftPtr();
 	}
 
-	return false;
+	return success;
 }
 
 

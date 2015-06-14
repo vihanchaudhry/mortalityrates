@@ -72,8 +72,11 @@ bool operator< (Country country, Country otherCountry){
 
 bool operator==(Country country, Country otherCountry){
 
-	return country.getID() == otherCountry.getID();
-};
+	if (otherCountry.getCompare() == "ID"){
+		return country.getID() == otherCountry.getID();
+	}
+	return country.getName() == otherCountry.getName();
+	};
 
 bool operator>(Country country, Country otherCountry){ 
 	if (otherCountry.getCompare() == "ID"){
