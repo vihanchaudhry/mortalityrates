@@ -88,8 +88,8 @@ HashTable<T>::~HashTable()
     
     overflow->clear();
     
-    delete table;
-    delete overflow;
+    //delete table;
+    //delete overflow;
 }
 
 /*~~~~

@@ -345,28 +345,43 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 		case 'r':
 		case 'R':
 			return 'u';
-			/*
-			do{
-				cin.clear();
-				cin.ignore(256, '\n');
-				cout << "Enter the name of the country you want to delete: ";
-				getline(cin, country);
-				cout << "Enter the year of the country you want to delete: ";
-				cin >> year;
-				if (!cin)
-					cout << endl << "Error - Invalid Input" << endl << endl;
-			} while (!cin);
+			
+		case 'U':
+		case 'u':
 
-			targetCountry->setID(country + year);
-			start = clock();
-			if (uniqueList->remove(targetCountry)){
-				cout << endl << "Country Deleted" << endl << endl;
-				cout << "Time Elapsed: " << (double)(clock() - start) / CLOCKS_PER_SEC << endl << endl;
-			}
-			else
-				cout << endl << "Country not Found" << endl << endl;
+				do{
+					cin.clear();
+					cin.ignore(256, '\n');
+					cout << "Enter Lower bound Country Name: ";
+					getline(cin, country);
+					cout << "Enter the year of the lower bound country: ";
+					cin >> year;
+
+					if (!cin)
+						cout << endl << "Error - Invalid Input" << endl << endl;
+				} while (!cin);
+
+				smallCountry->setID(country + year);
+
+				do{
+					cin.clear();
+					cin.ignore(256, '\n');
+					cout << "Enter Upper bound Country Name: ";
+					getline(cin, country);
+					cout << "Enter the year of the uppper bound country: ";
+					cin >> year;
+
+					if (!cin)
+						cout << endl << "Error - Invalid Input" << endl << endl;
+				} while (!cin);
+
+				largeCountry->setID(country + year);
+				cout << endl;
+
+			uniqueList->range(display, smallCountry, largeCountry);
+
+			cout << endl;
 			break;
-			*/
 		case 'h':
         case 'H':
                 displayBSTMenu(true);
@@ -492,7 +507,39 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 				cout << endl << "Country not Found" << endl << endl;
 				*/
 			break;
+		case 'u':
+		case'U':
+			do{
+				cin.clear();
+				cin.ignore(256, '\n');
+				cout << "Enter Lower bound Country Name: ";
+				getline(cin, country);
+				cout << "Enter the year of the lower bound country: ";
+				cin >> year;
 
+				if (!cin)
+					cout << endl << "Error - Invalid Input" << endl << endl;
+			} while (!cin);
+
+			smallCountry->setName(country);
+
+			do{
+				cin.clear();
+				cin.ignore(256, '\n');
+				cout << "Enter Upper bound Country Name: ";
+				getline(cin, country);
+				cout << "Enter the year of the uppper bound country: ";
+				cin >> year;
+
+				if (!cin)
+					cout << endl << "Error - Invalid Input" << endl << endl;
+			} while (!cin);
+
+			largeCountry->setName(country);
+			cout << endl;
+
+			secondaryList->range(display, smallCountry, largeCountry);
+			break;
 		case 'h':
 		case 'H':
 			displayBSTMenu(true);
