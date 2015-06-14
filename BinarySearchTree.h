@@ -11,6 +11,7 @@ template<class ItemType>
 class BinarySearchTree : public BinaryTree<ItemType>
 {
 private:
+    using BinaryTree<ItemType>::compare;
     using BinaryTree<ItemType>::rootPtr;
     using BinaryTree<ItemType>::count;
    

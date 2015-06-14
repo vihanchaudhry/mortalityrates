@@ -87,9 +87,12 @@ HashTable<T>::~HashTable()
     }
     
     overflow->clear();
+<<<<<<< HEAD
     
     //delete table;
     //delete overflow;
+=======
+>>>>>>> 08ae1b9950351e4e8f9d6e579cd8d871c30d1d10
 }
 
 /*~~~~

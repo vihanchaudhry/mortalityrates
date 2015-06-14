@@ -99,9 +99,13 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 	cout << "Time elapsed : " << (double)(clock() - start)/CLOCKS_PER_SEC << " seconds" << endl << endl;
 }
 
-void display(Country * anItem)
+void display(Country * countryPtr)
 {
-	cout << "Displaying item - " << anItem->getID() << endl;// << " " << anItem.getName() << " " << anItem.getGpa() << endl;
+    cout << "Country: " << countryPtr->getName() << endl
+    << "Year: " << countryPtr->getYear() << endl
+    << "Male mortality: " << countryPtr->getMaleMortality() << endl
+    << "Female mortality: " << countryPtr->getFemaleMortality() << endl
+    << "Combined mortality: " << countryPtr->getCombinedMortality() << endl << endl;
 }
 
 
@@ -169,12 +173,13 @@ void introduceProgram()
  */
 void displayMainMenu()
 {
-    cout
-    << "\n======Main Menu=======\n"
-    << "H - Hash Table menu\n"
-    << "U - Binary Search Tree by unique key\n"
-    << "S - Binary Search Tree by secondary key menu\n"
-    << "Q - Quit\n";
+	cout << "\t\t ______________________________________" << endl
+		 << "\t\t|              MAIN MENU               |" << endl
+		 << "\t\t| H : Hash Table Menu                  |" << endl
+		 << "\t\t| U : Binary Search Tree By Unique Key |" << endl
+		 << "\t\t| S : Show statistics                  |" << endl
+		 << "\t\t| Q : Quit                             |" << endl
+		 << "\t\t|_____________________________________ |" << endl << endl;
 }
 
 /*~~~~~~~~~~~~
@@ -623,11 +628,7 @@ void searchHashTable(HashTable<Country> *hashTable)
     }
     else
     {
-        cout << "Country: " << countryPtr->getName() << endl
-             << "Year: " << countryPtr->getYear() << endl
-             << "Male mortality: " << countryPtr->getMaleMortality() << endl
-             << "Female mortality: " << countryPtr->getFemaleMortality() << endl
-             << "Combined mortality: " << countryPtr->getCombinedMortality() << endl << endl;
+        cout << *countryPtr;
     }
     cout << "Time elapsed : " << (double)(clock() - start)/CLOCKS_PER_SEC << " seconds" << endl << endl;
 }
