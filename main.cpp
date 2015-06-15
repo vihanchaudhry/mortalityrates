@@ -15,6 +15,7 @@ Developers: Jason Liang, Jaison Tiu, Vihan Chaudhry, Victor La
 //#include "ItemPointer.h"
 using namespace std;
 
+// Function Prototypes
 void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable);
 void display(Country &anItem);
 void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable);
@@ -36,15 +37,19 @@ void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 
 int main()
 {
+	// Create data structures
 	BinarySearchTree<Country *>* uniqueList = new BinarySearchTree<Country *>("ID"); // Create BST
 	BinarySearchTree<Country *>* secondaryList = new BinarySearchTree<Country *>("Country"); // Create BST
     HashTable<Country>* hashTable = new HashTable<Country>();           // Create Hash Table
     
+	// Welcome message and read from file
     introduceProgram();
 	parser(uniqueList, secondaryList, hashTable);
 
+	// Launch menu
 	mainCommandManager(uniqueList, secondaryList, hashTable);        // Read commands and execute.
 
+	// Delete data structures to avoid memory leaks
 	delete uniqueList;
     delete secondaryList;
     delete hashTable;
@@ -68,8 +73,7 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 	string femaleData;
 	string both;
     Country *countryPtr;
-	//ItemPointer *itemPtr;
-	cout << "Building Binary Search Tree..." << endl;
+	cout << "Building data structures..." << endl;
 	clock_t start = clock();
 	while(!infile.eof()){
 	//while (i<25){
@@ -95,6 +99,7 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 
 
 	cout << "Building Finished " << i << " Unique Entries entered." << endl;
+
 	cout << "Time elapsed : " << (double)(clock() - start)/CLOCKS_PER_SEC << " seconds" << endl << endl;
 }
 
@@ -104,6 +109,7 @@ void display(Country * anItem)
 }
 
 void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable)
+
 {
 	//Variable declaration and intialization
 	bool run = true;
