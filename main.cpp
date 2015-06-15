@@ -11,15 +11,17 @@ Developers: Jason Liang, Jaison Tiu, Vihan Chaudhry, Victor La
 #include "BinarySearchTree.h"
 #include "Country.h"
 #include "HashTable.h"
+#include "ItemPointer.h"
 #include <time.h>
 using namespace std;
 
-// Function Prototypes
-void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable);
+// Functions by JAISON
+void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointer *> *secondaryList, HashTable<Country> *hashTable);
 void display(Country & anItem);
-void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList,HashTable<Country> *hashTable);
-void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable);
-char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList); 
+void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointer *> *secondaryList, HashTable<Country> *hashTable);
+void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointer *> *secondaryList, HashTable<Country> *hashTable);
+char secondaryBSTCommandManager(BinarySearchTree<ItemPointer *> *secondaryList);
+void display(ItemPointer & anItem);
 void introduceProgram();
 void displayMainMenu();
 void displayHashTableMenu();
@@ -30,17 +32,18 @@ void searchHashTable(HashTable<Country> *hashTable);
 void displayHashTableList(HashTable<Country> *hashTable);
 void printHashTable(HashTable<Country> *hashTable);
 void printHashTableStatistics(HashTable<Country> * hashTable);
+void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointer *> *secondaryList, HashTable<Country> *hashTable);
 
 int main()
 {
 	BinarySearchTree<Country *>* uniqueList = new BinarySearchTree<Country *>("ID"); // Create BST
-    BinarySearchTree<Country *>* secondaryList = new BinarySearchTree<Country *>("Country"); // Create BST
-    HashTable<Country>* hashTable = new HashTable<Country>(); // Create Hash Table
+	BinarySearchTree<ItemPointer *>* secondaryList = new BinarySearchTree<ItemPointer *>("Country"); // Create BST
+    HashTable<Country>* hashTable = new HashTable<Country>();           // Create Hash Table
     
-	parser(uniqueList, secondaryList, hashTable); // Read file and populate data structures.
     introduceProgram();
-    
-	mainCommandManager(uniqueList, secondaryList, hashTable); // Read commands and execute.
+	parser(uniqueList, secondaryList, hashTable);
+
+	mainCommandManager(uniqueList, secondaryList, hashTable);        // Read commands and execute.
 
 	delete uniqueList;
     delete secondaryList;
@@ -50,11 +53,12 @@ int main()
 	return 0;
 }
 
-void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable){
-
+void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointer *> *secondaryList, HashTable<Country> *hashTable)
+{
 	ifstream infile("data.csv");
-	if (infile.fail()){
-		cout << "File not found";
+	if (!infile.is_open())
+	{
+		cout << "File not found" << endl;
 		return;
 	}
 	int i = 0;
@@ -64,6 +68,7 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 	string femaleData;
 	string both;
     Country *countryPtr;
+	ItemPointer *itemPtr;
 	cout << "Building Binary Search Tree..." << endl;
 	clock_t start = clock();
 	while(!infile.eof()){
@@ -79,12 +84,19 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 		uniqueList->insert(countryPtr);
         
         //Inserting into second BST
-		secondaryList->insert(countryPtr);
+		itemPtr = new ItemPointer(countryPtr);
+		secondaryList->insert(itemPtr);
         //Inserting into hash table
         
         hashTable->insert(countryPtr);
 		i++;
 	}
+
+	if ("Japan2013" > "Japan2000")
+		cout << "Success." << endl;
+	if ("Japan2011" > "Japan2013")
+		cout << "Fail." << endl;
+
 	cout << "Building Finished " << i << " Unique Entries entered." << endl;
 	cout << "Time elapsed : " << (double)(clock() - start)/CLOCKS_PER_SEC << " seconds" << endl << endl;
 }
@@ -94,7 +106,15 @@ void display(Country * anItem)
 	cout << "Displaying item - " << anItem->getID() << endl;// << " " << anItem.getName() << " " << anItem.getGpa() << endl;
 }
 
-void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable)
+void display(ItemPointer * itemPtr) {
+	cout << "Country: " << itemPtr->getItem()->getName() << endl
+		<< "Year: " << itemPtr->getItem()->getYear() << endl
+		<< "Male mortality: " << itemPtr->getItem()->getMaleMortality() << endl
+		<< "Female mortality: " << itemPtr->getItem()->getFemaleMortality() << endl
+		<< "Combined mortality: " << itemPtr->getItem()->getCombinedMortality() << endl << endl;
+}
+
+void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointer *> *secondaryList, HashTable<Country> *hashTable)
 {
 	//Variable declaration and intialization
 	bool run = true;
@@ -103,7 +123,17 @@ void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTre
     while (run)
     {
 		if (choice == 'u' || choice == 's' || choice == 'h'){
+			displayMainMenu();
 			removeStuffGlobal(uniqueList, secondaryList, hashTable);
+		}
+		else if (choice == 'a' || choice == 'b' || choice == 'c'){
+			insertStuffGlobal(uniqueList, secondaryList, hashTable);
+			if (choice == 'a')
+				choice = 'u';
+			else if (choice == 'b')
+				choice = 's';
+			else
+				choice = 'h';
 		}
 		else{
 			displayMainMenu();
@@ -197,6 +227,10 @@ char hashTableCommandManager(HashTable<Country> *hashTable)
         
         switch(choice)
         {
+			case 'n':
+			case 'N':
+				return 'c';
+				break;
             case 'S':
             case 's':
                 searchHashTable(hashTable);
@@ -262,6 +296,7 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
     bool run = true;
     char choice;
 	string code = "ID";
+	Country *newCountry = new Country(code);
     Country *smallCountry = new Country(code);
     Country *largeCountry = new Country(code);
 	Country *targetCountry = new Country(code);
@@ -278,6 +313,10 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 
 		switch (choice)
 		{
+		case 'n':
+		case 'N':
+			return 'b';
+
 		case 'i':
 		case 'I':
 			cout << endl << "In-order Traversal" << endl << endl;
@@ -378,16 +417,24 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 /*~~~~~~~~~~~~
  Manage the BST by secondary key menu.
 */
-char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
+char secondaryBSTCommandManager(BinarySearchTree<ItemPointer *> *secondaryList)
 {
 	bool run = true;
 	char choice;
 	string code = "Country";
-	Country *smallCountry = new Country(code);
-	Country *largeCountry = new Country(code);
-	Country *targetCountry = new Country(code);
-	Country *foundCountry = new Country(code); 
+	Country *newC = new Country(code);
+	Country *small = new Country(code);
+	Country *large = new Country(code);
+	Country *target = new Country(code);
+	Country *found = new Country(code); 
 	string country, year;
+
+	ItemPointer *newCountry = new ItemPointer(newC);
+	ItemPointer *smallCountry = new ItemPointer(small);
+	ItemPointer *largeCountry = new ItemPointer(large);
+	ItemPointer *targetCountry = new ItemPointer(target);
+	ItemPointer *foundCountry = new ItemPointer(found);
+
 	clock_t start;
 
 	displayBSTMenu(false);
@@ -399,6 +446,9 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 
 		switch (choice)
 		{
+		case 'n':
+		case 'N':
+			return 'a';
 		case 'i':
 		case 'I':
 			cout << endl << "In-order Traversal" << endl << endl;
@@ -432,11 +482,13 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 				cin.ignore(256, '\n');
 				cout << "Enter the name of the country you want to find: ";
 				getline(cin, country);
+
 				if (!cin)
 					cout << endl << "Error - Invalid Input" << endl << endl;
 			} while (!cin);
 
-			targetCountry->setName(country);
+			targetCountry->getItem()->setName(country);
+
 			start = clock();
 			if (secondaryList->getEntry(targetCountry, foundCountry, display)){
 				cout << endl << "Country Found" << endl << endl;
@@ -459,7 +511,8 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 					cout << endl << "Error - Invalid Input" << endl << endl;
 			} while (!cin);
 
-			smallCountry->setName(country);
+			smallCountry->getItem()->setName(country);
+
 			do{
 				cin.clear();
 				cin.ignore(256, '\n');
@@ -471,7 +524,7 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 					cout << endl << "Error - Invalid Input" << endl << endl;
 			} while (!cin);
 
-			largeCountry->setName(country);
+			largeCountry->getItem()->setName(country);
 			cout << endl;
 			secondaryList->range(display, smallCountry, largeCountry);
 			break;
@@ -492,7 +545,38 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 	return '/0';
 }
 
-void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable){
+void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointer *> *secondaryList, HashTable<Country> *hashTable){
+	string name;
+	int year, maleMortality, femaleMortality, combinedMortality;
+	cin.clear();
+	cin.ignore(256,'\n');
+	cout << "Enter country Name: ";
+	getline(cin, name);
+	cout << "Enter country year: ";
+	cin >> year;
+	cout << "Enter male Mortality: ";
+	cin >> maleMortality;
+	cout << "Enter female Mortality: ";
+	cin >> femaleMortality;
+	cout << endl;
+	combinedMortality = (maleMortality + femaleMortality) / 2;
+	Country *newCountry = new Country(name, year, maleMortality, femaleMortality, combinedMortality);
+	ItemPointer *newCountryPtr = new ItemPointer(newCountry);
+	newCountry->setCompare("ID");
+	if (!(uniqueList->getEntry(newCountry, newCountry, display))){
+		uniqueList->insert(newCountry);
+		newCountry->setCompare("Country");
+		secondaryList->insert(newCountryPtr);
+		hashTable->insert(newCountry);
+		cout << "Insert finished" << endl;
+	}
+	else{
+		cout << "Country and year already in data set and is displayed above" << endl;
+	}
+}
+
+void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointer *> *secondaryList, HashTable<Country> *hashTable)
+{
 	string country;
 	string year;
 	string id;
@@ -500,6 +584,7 @@ void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 	Country *removeCountryID = new Country("ID");
 	Country *removeCountryName = new Country("Country");
 
+	ItemPointer *removeCountry = new ItemPointer(removeCountryName);
 	do
 	{
 		cin.clear();
@@ -516,7 +601,7 @@ void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 	removeCountryName->setID(id);
 	start = clock();
 	if (uniqueList->remove(removeCountryID)){
-		secondaryList->remove(removeCountryName);
+		secondaryList->remove(removeCountry);
 		hashTable->deleteItem(id);
 		cout << endl << "Country Deleted" << endl << endl;
 		cout << "Time Elapsed: " << (double)(clock() - start) / CLOCKS_PER_SEC << endl << endl;
