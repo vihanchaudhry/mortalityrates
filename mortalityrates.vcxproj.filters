@@ -33,7 +33,7 @@
     <ClInclude Include="HashTable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Developer%27s Guild\mortalityrates\ItemPointer.h">
+    <ClInclude Include="ItemPointer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
