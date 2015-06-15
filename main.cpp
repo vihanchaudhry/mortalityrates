@@ -22,7 +22,7 @@ void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTre
 void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable);
 void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable);
 char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList);
-//void display(ItemPointer & anItem);
+void writeToFile(HashTable<Country> *hashTable);
 void introduceProgram();
 void displayMainMenu();
 void displayHashTableMenu();
@@ -49,6 +49,8 @@ int main()
 	// Launch menu
 	mainCommandManager(uniqueList, secondaryList, hashTable);        // Read commands and execute.
 
+	writeToFile(hashTable);
+	cout << "Exiting program"  << endl;
 	// Delete data structures to avoid memory leaks
 	delete uniqueList;
     delete secondaryList;
@@ -56,6 +58,20 @@ int main()
 
 	system("pause"); //stops the program from terminating
 	return 0;
+}
+
+void writeToFile(HashTable<Country> *hashTable){
+	ofstream output("output.txt");
+	cout << "Writing data to output.txt"<<endl;
+	for (int i = 0; i < HASH_TABLE_SIZE; i++)
+	{
+		if (hashTable->getTable()[i].size() > 0)
+		{
+			output << *(hashTable->getTable()[i][0]) << endl;
+		}
+	}
+
+	output.close();
 }
 
 void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable)
@@ -97,7 +113,7 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 		i++;
 	}
 
-
+	infile.close();
 	cout << "Building Finished " << i << " Unique Entries entered." << endl;
 
 	cout << "Time elapsed : " << (double)(clock() - start)/CLOCKS_PER_SEC << " seconds" << endl << endl;
