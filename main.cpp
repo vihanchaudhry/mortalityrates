@@ -15,6 +15,7 @@ Developers: Jason Liang, Jaison Tiu, Vihan Chaudhry, Victor La
 #include "ItemPointer.h"
 using namespace std;
 
+// Function Prototypes
 void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointer *> *secondaryList, HashTable<Country> *hashTable);
 void display(Country &anItem);
 void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointer *> *secondaryList, HashTable<Country> *hashTable);
@@ -36,15 +37,19 @@ void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 
 int main()
 {
+	// Create data structures
 	BinarySearchTree<Country *>* uniqueList = new BinarySearchTree<Country *>("ID"); // Create BST
 	BinarySearchTree<ItemPointer *>* secondaryList = new BinarySearchTree<ItemPointer *>("Country"); // Create BST
     HashTable<Country>* hashTable = new HashTable<Country>();           // Create Hash Table
     
+	// Welcome message and read from file
     introduceProgram();
 	parser(uniqueList, secondaryList, hashTable);
 
+	// Launch menu
 	mainCommandManager(uniqueList, secondaryList, hashTable);        // Read commands and execute.
 
+	// Delete data structures to avoid memory leaks
 	delete uniqueList;
     delete secondaryList;
     delete hashTable;
@@ -69,7 +74,7 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointe
 	string both;
     Country *countryPtr;
 	ItemPointer *itemPtr;
-	cout << "Building Binary Search Tree..." << endl;
+	cout << "Building data structures..." << endl;
 	clock_t start = clock();
 	while(!infile.eof()){
 	//while (i<25){
@@ -92,12 +97,7 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointe
 		i++;
 	}
 
-	if ("Japan2013" > "Japan2000")
-		cout << "Success." << endl;
-	if ("Japan2011" > "Japan2013")
-		cout << "Fail." << endl;
-
-	cout << "Building Finished " << i << " Unique Entries entered." << endl;
+	cout << "Building finished. " << i << " unique entries entered." << endl;
 	cout << "Time elapsed : " << (double)(clock() - start)/CLOCKS_PER_SEC << " seconds" << endl << endl;
 }
 
@@ -108,10 +108,10 @@ void display(Country * anItem)
 
 void display(ItemPointer * itemPtr) {
 	cout << "Country: " << itemPtr->getItem()->getName() << endl
-		<< "Year: " << itemPtr->getItem()->getYear() << endl
-		<< "Male mortality: " << itemPtr->getItem()->getMaleMortality() << endl
-		<< "Female mortality: " << itemPtr->getItem()->getFemaleMortality() << endl
-		<< "Combined mortality: " << itemPtr->getItem()->getCombinedMortality() << endl << endl;
+		 << "Year: " << itemPtr->getItem()->getYear() << endl
+		 << "Male mortality: " << itemPtr->getItem()->getMaleMortality() << endl
+		 << "Female mortality: " << itemPtr->getItem()->getFemaleMortality() << endl
+		 << "Combined mortality: " << itemPtr->getItem()->getCombinedMortality() << endl << endl;
 }
 
 void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<ItemPointer *> *secondaryList, HashTable<Country> *hashTable)
