@@ -1,9 +1,6 @@
-// Node for a binary tree
-// Created by: Frank M. Carrano and Tim Henry
-// Modified by: Jason Tiu
-
-#ifndef _BINARY_NODE
-#define _BINARY_NODE
+// Specification and implementation file for the BinaryNode ADT class
+#ifndef BINARYNODE_H
+#define BINARYNODE_H
 
 template<class ItemType>
 class BinaryNode

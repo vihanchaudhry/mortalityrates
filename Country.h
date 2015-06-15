@@ -1,9 +1,12 @@
+// Specification and implementation file for the Country class
 #ifndef COUNTRY_H
 #define COUNTRY_H
-#include<string>
+#include <string>
 #include <iostream>
 using namespace std;
-class Country{
+
+class Country
+{
 private:
 	string compare;
 	string id;

@@ -1,10 +1,6 @@
-// Binary Search Tree ADT
-// Created by: Frank M. Carrano and Tim Henry
-// Modified by: Jason Tiu
-
-#ifndef _BINARY_SEARCH_TREE
-#define _BINARY_SEARCH_TREE
-
+// Specification and implementation file for the BinarySearchTree ADT class
+#ifndef BINARYSEARCHTREE_H
+#define BINARYSEARCHTREE_H
 #include "BinaryTree.h"
 
 template<class ItemType>

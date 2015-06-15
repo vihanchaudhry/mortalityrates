@@ -1,25 +1,19 @@
-// Binary tree abstract base class
-// Created by: Frank M. Carrano and Tim Henry
-// Modified by: Jason Tiu
-
-
-
-#ifndef _BINARY_TREE
-#define _BINARY_TREE
-
-#include "BinaryNode.h"
-#include "Queue.h"
+// Specification and implementation file for the BinaryTree ADT class
+#ifndef BINARYTREE_H
+#define BINARYTREE_H
 #include <stdlib.h>
 #include <time.h>
 #include <iomanip>
 #include <string>
 #include <iostream>
+#include "BinaryNode.h"
+#include "Queue.h"
 using namespace std;
+
 template <class ItemType>
 class BinaryTree
 {
 protected:
-
 	string compare;
 
 	//Pointer to root node
@@ -29,7 +23,6 @@ protected:
     int count;							
     
 public:
-
     // Constructor
     BinaryTree() {rootPtr = 0; count = 0;}
 	BinaryTree(const BinaryTree<ItemType> & tree){rootPtr = tree.rootPtr; count = tree.size();}     

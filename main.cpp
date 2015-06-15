@@ -1,4 +1,9 @@
-
+/**
+CIS 22C Group Project - Spring 2015
+Project: Mortality Rates
+Group #1
+Developers: Jason Liang, Jaison Tiu, Vihan Chaudhry, Victor La
+*/
 #include <iostream>
 #include <iomanip>
 #include <fstream>
@@ -9,22 +14,12 @@
 #include <time.h>
 using namespace std;
 
-// Functions by JAISON
+// Function Prototypes
 void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable);
 void display(Country & anItem);
 void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList,HashTable<Country> *hashTable);
 void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable);
-// End functions by JAISON
-
-// Functions by VIHAN
-char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList);    //VIHAN AND VICTOR DO THIS
-// End functions by VIHAN
-
-// Functions by VICTOR
-
-// End functions by VICTOR
-
-// Functions by JASON
+char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList); 
 void introduceProgram();
 void displayMainMenu();
 void displayHashTableMenu();
@@ -35,29 +30,23 @@ void searchHashTable(HashTable<Country> *hashTable);
 void displayHashTableList(HashTable<Country> *hashTable);
 void printHashTable(HashTable<Country> *hashTable);
 void printHashTableStatistics(HashTable<Country> * hashTable);
-// End Functions by JASON
 
 int main()
 {
-	//string code = "ID";
 	BinarySearchTree<Country *>* uniqueList = new BinarySearchTree<Country *>("ID"); // Create BST
-    
     BinarySearchTree<Country *>* secondaryList = new BinarySearchTree<Country *>("Country"); // Create BST
+    HashTable<Country>* hashTable = new HashTable<Country>(); // Create Hash Table
     
-    HashTable<Country>* hashTable = new HashTable<Country>();           // Create Hash Table
-    
-	parser(uniqueList, secondaryList, hashTable);             // Read file and populate data structures.
-    
+	parser(uniqueList, secondaryList, hashTable); // Read file and populate data structures.
     introduceProgram();
     
-	mainCommandManager(uniqueList, secondaryList, hashTable);        // Read commands and execute.
+	mainCommandManager(uniqueList, secondaryList, hashTable); // Read commands and execute.
 
 	delete uniqueList;
     delete secondaryList;
     delete hashTable;
 
-	system("pause");                //stops the program from terminating
-
+	system("pause"); //stops the program from terminating
 	return 0;
 }
 
@@ -105,13 +94,11 @@ void display(Country * anItem)
 	cout << "Displaying item - " << anItem->getID() << endl;// << " " << anItem.getName() << " " << anItem.getGpa() << endl;
 }
 
-
 void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable)
 {
 	//Variable declaration and intialization
 	bool run = true;
 	char choice = '/0';
-    
     
     while (run)
     {
@@ -123,7 +110,6 @@ void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTre
 			cout << "Enter a choice: ";
 			cin >> choice;
 		}
-        
         switch (choice)
         {
                 case 'H':
@@ -140,10 +126,8 @@ void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTre
                         choice = secondaryBSTCommandManager(secondaryList);
                         //displayMainMenu();
                     break;
-				
 				case'R':
 				case'r':
-
 					break;
                 case 'Q':
                 case 'q':
@@ -160,7 +144,8 @@ void introduceProgram()
 {
 	cout << "Hello! Welcome to Mortality Rates!\n"
          << "Did you know that there are 196 countries in world?\n"
-         << "This program was developed by Jason Liang, Jaison Tiu, Vihan Chaudhry and Victor La.\n"
+         << "This program was developed by Jason Liang, Jaison Tiu, Vihan \n"
+		 << "Chaudhry and Victor La.\n"
          << "It utilizes two Binary Search Trees and a Hash Table\n"
          << "to organize the mortality data of the countries of the world!\n\n";
 }
@@ -255,7 +240,6 @@ void displayBSTMenu(bool unique)
         cout << "\n======BST (Unique Key) Menu======\n";
     else
         cout << "\n======BST (Secondary Key) Menu======\n";
-
 	cout << "\t\t ______________________________________" << endl
 		 << "\t\t|              MAIN MENU               |" << endl
 		 << "\t\t| I : In-order Traversal               |" << endl
@@ -283,7 +267,6 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 	Country *targetCountry = new Country(code);
 	Country *foundCountry = new Country(code);
     string country, year;
-    
     clock_t start;
     
     displayBSTMenu(true);
@@ -323,66 +306,57 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 			break;
 		case 's':
         case 'S':
-                    do{
-                        cin.clear();
-                        cin.ignore(256, '\n');
-                        cout << "Enter the name of the country you want to find: ";
-                        getline(cin, country);
-                        cout << "Enter the year of the country you want to find: ";
-                        cin >> year;
-                        if (!cin)
-                            cout << endl << "Error - Invalid Input" << endl << endl;
-                    } while (!cin);
+			do{
+				cin.clear();
+                cin.ignore(256, '\n');
+                cout << "Enter the name of the country you want to find: ";
+                getline(cin, country);
+                cout << "Enter the year of the country you want to find: ";
+                cin >> year;
+                if (!cin)
+                    cout << endl << "Error - Invalid Input" << endl << endl;
+            } while (!cin);
                     
-                    targetCountry->setID(country + year);
-                    start = clock();
-					if(uniqueList->getEntry(targetCountry, foundCountry, display)){
-                        cout << endl << "Country Found" << endl << endl;
-                        //cout << *foundCountry << endl;
-                        cout << "Time Elapsed: " << (double)(clock() - start) / CLOCKS_PER_SEC << endl << endl;
-                    }
-					//;
-                    else
-                        cout << endl << "Country not Found" << endl << endl;
-                    break;
-			
+            targetCountry->setID(country + year);
+            start = clock();
+			if(uniqueList->getEntry(targetCountry, foundCountry, display)){
+                cout << endl << "Country Found" << endl << endl;
+                cout << "Time Elapsed: " << (double)(clock() - start) / CLOCKS_PER_SEC << endl << endl;
+            }
+            else
+                cout << endl << "Country not Found" << endl << endl;
+            break;
 		case 'R':
 		case 'r':
+			do{
+				cin.clear();
+				cin.ignore(256, '\n');
+				cout << "Enter Lower bound Country Name: ";
+				getline(cin, country);
+				cout << "Enter the year of the lower bound country: ";
+				cin >> year;
+				if (!cin)
+					cout << endl << "Error - Invalid Input" << endl << endl;
+			} while (!cin);
 
-				do{
-					cin.clear();
-					cin.ignore(256, '\n');
-					cout << "Enter Lower bound Country Name: ";
-					getline(cin, country);
-					cout << "Enter the year of the lower bound country: ";
-					cin >> year;
+			smallCountry->setID(country + year);
+			do{
+				cin.clear();
+				cin.ignore(256, '\n');
+				cout << "Enter Upper bound Country Name: ";
+				getline(cin, country);
+				cout << "Enter the year of the uppper bound country: ";
+				cin >> year;
 
-					if (!cin)
-						cout << endl << "Error - Invalid Input" << endl << endl;
-				} while (!cin);
+				if (!cin)
+					cout << endl << "Error - Invalid Input" << endl << endl;
+			} while (!cin);
 
-				smallCountry->setID(country + year);
-
-				do{
-					cin.clear();
-					cin.ignore(256, '\n');
-					cout << "Enter Upper bound Country Name: ";
-					getline(cin, country);
-					cout << "Enter the year of the uppper bound country: ";
-					cin >> year;
-
-					if (!cin)
-						cout << endl << "Error - Invalid Input" << endl << endl;
-				} while (!cin);
-
-				largeCountry->setID(country + year);
-				cout << endl;
-
+			largeCountry->setID(country + year);
+			cout << endl;
 			uniqueList->range(display, smallCountry, largeCountry);
-
 			cout << endl;
 			break;
-
 		case 'h':
 		case 'H':
 			displayBSTMenu(true);
@@ -392,7 +366,7 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 			run = false;
 			break;
 
-			//Input validation if anything other than the choices is chosen then the user is prompted again
+		//Input validation if anything other than the choices is chosen then the user is prompted again
 		default:
 			cout << endl << "Invalid input" << endl << endl;
 			break;
@@ -414,7 +388,6 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 	Country *targetCountry = new Country(code);
 	Country *foundCountry = new Country(code); 
 	string country, year;
-
 	clock_t start;
 
 	displayBSTMenu(false);
@@ -459,21 +432,16 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 				cin.ignore(256, '\n');
 				cout << "Enter the name of the country you want to find: ";
 				getline(cin, country);
-				//cout << "Enter the year of the country you want to find: ";
-				//cin >> year;
 				if (!cin)
 					cout << endl << "Error - Invalid Input" << endl << endl;
 			} while (!cin);
 
-			//targetCountry->setID(country + year);
 			targetCountry->setName(country);
 			start = clock();
 			if (secondaryList->getEntry(targetCountry, foundCountry, display)){
 				cout << endl << "Country Found" << endl << endl;
-				//cout << *foundCountry << endl;
 				cout << "Time Elapsed: " << (double)(clock() - start) / CLOCKS_PER_SEC << endl << endl;
 			}
-			//;
 			else
 				cout << endl << "Country not Found" << endl << endl;
 			break;
@@ -492,7 +460,6 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 			} while (!cin);
 
 			smallCountry->setName(country);
-
 			do{
 				cin.clear();
 				cin.ignore(256, '\n');
@@ -500,17 +467,14 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 				getline(cin, country);
 				cout << "Enter the year of the uppper bound country: ";
 				cin >> year;
-
 				if (!cin)
 					cout << endl << "Error - Invalid Input" << endl << endl;
 			} while (!cin);
 
 			largeCountry->setName(country);
 			cout << endl;
-
 			secondaryList->range(display, smallCountry, largeCountry);
 			break;
-
 		case 'h':
 		case 'H':
 			displayBSTMenu(false);
@@ -519,7 +483,7 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 		case 'B':
 			run = false;
 			break;
-			//Input validation if anything other than the choices is chosen then the user is prompted again
+		//Input validation if anything other than the choices is chosen then the user is prompted again
 		default:
 			cout << endl << "Invalid input" << endl << endl;
 			break;
@@ -536,7 +500,8 @@ void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 	Country *removeCountryID = new Country("ID");
 	Country *removeCountryName = new Country("Country");
 
-	do{
+	do
+	{
 		cin.clear();
 		cin.ignore(256, '\n');
 		cout << "Enter the name of the country you want to delete: ";

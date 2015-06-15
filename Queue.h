@@ -1,8 +1,6 @@
-/**~*~*
-   Queue template
-*~**/
-#ifndef DYNAMICQUEUE_H
-#define DYNAMICQUEUE_H
+// Specification and implementation file for the Queue ADT class
+#ifndef QUEUE_H
+#define QUEUE_H
 #include <iostream>
 using namespace std;
 

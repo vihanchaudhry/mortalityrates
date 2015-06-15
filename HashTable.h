@@ -1,19 +1,10 @@
-//
-//  HashTable.h
-//  Jason_Liang_HW5_22C_HashTableWithVectors
-//
-//  Created by Jason Liang on 6/6/15.
-//  Copyright (c) 2015 JasonLiang. All rights reserved.
-//
-
-#ifndef __Jason_Liang_HW5_22C_HashTableWithVectors__HashTable__
-#define __Jason_Liang_HW5_22C_HashTableWithVectors__HashTable__
-
+// Specification and implementation file for the HashTable ADT class
+#ifndef HASHTABLE_H
+#define HASHTABLE_H
 #include <stdio.h>
 #include <iostream>
-#include "Country.h"
 #include <vector>
-
+#include "Country.h"
 using namespace std;
 
 const int HASH_TABLE_SIZE = 776;
