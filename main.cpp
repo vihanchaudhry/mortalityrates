@@ -12,7 +12,7 @@ Developers: Jason Liang, Jaison Tiu, Vihan Chaudhry, Victor La
 #include "Country.h"
 #include "HashTable.h"
 #include "ItemPointer.h"
-#include <time.h>
+#include <ctime>
 using namespace std;
 
 // Functions by JAISON
@@ -163,6 +163,10 @@ void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTre
                 case 'q':
                     run = false;
                     break;
+				//Input validation if anything other than the choices is chosen then the user is prompted again
+				default:
+					cout << endl << "Invalid input" << endl << endl;
+					break;
         }
     }
 }
@@ -259,6 +263,10 @@ char hashTableCommandManager(HashTable<Country> *hashTable)
             case 'b':
                 run = false;
                 break;
+			//Input validation if anything other than the choices is chosen then the user is prompted again
+			default:
+				cout << endl << "Invalid input" << endl << endl;
+				break;
         }
     }
 	return '/0';
@@ -404,7 +412,6 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 		case 'B':
 			run = false;
 			break;
-
 		//Input validation if anything other than the choices is chosen then the user is prompted again
 		default:
 			cout << endl << "Invalid input" << endl << endl;
