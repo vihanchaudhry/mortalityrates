@@ -597,13 +597,13 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable){
 	//bool success = false;
 	string name;
-	unsigned int year, maleMortality, femaleMortality, combinedMortality;
+	int year = 0, maleMortality = 0, femaleMortality = 0, combinedMortality = 0;
 	cin.clear();
 	cin.ignore(256, '\n');
 	cout << "Enter country Name: ";
 	getline(cin, name);
 	do{
-		if (!cin){
+		if (!cin || year < 0){
 			cin.clear();
 			cin.ignore(256, '\n');
 			cout << endl << "Error - Invalid Input" << endl << endl;
@@ -611,8 +611,9 @@ void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 
 		cout << "Enter country year: ";
 		cin >> year;
+		
 
-	} while (!cin);
+	} while (!cin || year < 0);
 
 	do{
 		cin.clear();
@@ -620,12 +621,12 @@ void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 
 		cout << "Enter male Mortality: ";
 		cin >> maleMortality;
-		if (!cin){
+		if (!cin || maleMortality < 0){
 			cout << endl << "Error - Invalid Input" << endl << endl;
 			//cin.clear();
 			//cin.ignore(256, '\n');
 		}
-	} while (!cin);
+	} while (!cin || maleMortality < 0);
 
 	do{
 		cin.clear();
@@ -633,12 +634,12 @@ void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 
 		cout << "Enter female Mortality: ";
 		cin >> femaleMortality;
-		if (!cin){
+		if (!cin || femaleMortality < 0){
 			cout << endl << "Error - Invalid Input" << endl << endl;
 			//cin.clear();
 			//cin.ignore(256, '\n');
 		}
-	} while (!cin);
+	} while (!cin || femaleMortality < 0);
 
 	cout << endl;
 
