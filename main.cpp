@@ -51,6 +51,7 @@ int main()
 	// Write to output.txt
 	writeToFile(hashTable);
 	cout << "Exiting program"  << endl;
+
 	// Delete data structures to avoid memory leaks
 	delete uniqueList;
     delete secondaryList;
@@ -182,6 +183,7 @@ void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTre
                     break;
 				//Input validation if anything other than the choices is chosen then the user is prompted again
 				default:
+					choice = 'x';
 					cout << endl << "Invalid input" << endl << endl;
 					break;
         }
@@ -610,7 +612,6 @@ void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 		cout << "Enter country year: ";
 		cin >> year;
 
-
 	} while (!cin);
 
 	do{
@@ -698,7 +699,6 @@ void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 		cout << endl << "Country not Found" << endl << endl;
 }
 
-
 //********************************************
 //	Searches the Hash Table for an item      *
 //********************************************
@@ -751,8 +751,6 @@ void displayHashTableList(HashTable<Country> *hashTable)
         }
     }
 }
-
-
 
 //********************************************
 //	Displays the Hash Table as an indented   *
