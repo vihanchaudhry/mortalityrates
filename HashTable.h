@@ -178,6 +178,12 @@ bool HashTable<T>::deleteItem(string ID)
 	return false;
 }
 
+template <class T>
+T *HashTable<T>::search(string ID)
+{
+
+}
+
 /*~~~~~~~~~~~~
  Search the hash table for item identified by the argument.
  Return the pointer to the object.

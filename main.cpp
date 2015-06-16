@@ -671,7 +671,7 @@ void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 	string id;		// Unique ID
 	time_t start;	// Keep track of performance time
 	Country *removeCountryID = new Country("ID");			// Country to be removed from BST 1
-	Country *removeCountryName = new Country("Country");	// Country to be removed from BST 2
+	Country *removeCountryName = new Country("ID");	// Country to be removed from BST 2
 
 	do
 	{
@@ -688,6 +688,7 @@ void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 	id = country + year;
 	// Set remove identifier
 	removeCountryID->setID(id);
+	removeCountryName->setID(id);
 	removeCountryName->setName(country);
 	start = clock();
 	if (uniqueList->remove(removeCountryID)){
