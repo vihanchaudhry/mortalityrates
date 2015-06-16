@@ -597,7 +597,7 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable){
 	//bool success = false;
 	string name;
-	int year, maleMortality, femaleMortality, combinedMortality;
+	unsigned int year, maleMortality, femaleMortality, combinedMortality;
 	cin.clear();
 	cin.ignore(256, '\n');
 	cout << "Enter country Name: ";

@@ -253,5 +253,4 @@ BinaryNode<ItemType>* BinarySearchTree<ItemType>::findNode(BinaryNode<ItemType>*
 
 }  
 
-
 #endif

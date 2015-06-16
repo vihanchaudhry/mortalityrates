@@ -148,12 +148,6 @@ Male Mortality per Thousand: 236
 Female Mortality per Thousand: 126
 Male and Female Mortality per Thousand: 179
 
-Country Name: Mozambique
-Country Year: 2000
-Male Mortality per Thousand: 483
-Female Mortality per Thousand: 438
-Male and Female Mortality per Thousand: 459
-
 Country Name: Democratic Republic of the Congo
 Country Year: 2013
 Male Mortality per Thousand: 379
