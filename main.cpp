@@ -130,7 +130,7 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 //********************************************
 void display(Country * anItem)
 {
-	cout << *anItem << endl;
+	cout << anItem->getName() << " " << anItem->getYear() << endl;
 }
 
 //********************************************
@@ -377,7 +377,7 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 		case 't':
 		case 'T':
 			cout << "Print by Level" << endl << endl;
-			uniqueList->print();
+			uniqueList->print(display);
 			break;
 		case 'k':
 		case 'K':
@@ -516,7 +516,7 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 		case 't':
 		case 'T':
 			cout << "Print by Level" << endl << endl;
-			secondaryList->print();
+			secondaryList->print(display);
 			break;
 		case 's':
 		case 'S':
