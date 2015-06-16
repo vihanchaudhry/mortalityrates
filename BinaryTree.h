@@ -1,8 +1,7 @@
 // Specification and implementation file for the BinaryTree ADT class
 #ifndef BINARYTREE_H
 #define BINARYTREE_H
-#include <stdlib.h>
-#include <time.h>
+#include <ctime>
 #include <iomanip>
 #include <string>
 #include <iostream>

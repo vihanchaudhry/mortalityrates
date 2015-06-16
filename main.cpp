@@ -48,6 +48,7 @@ int main()
 	// Launch menu
 	mainCommandManager(uniqueList, secondaryList, hashTable);        // Read commands and execute.
 
+	// Write to output.txt
 	writeToFile(hashTable);
 	cout << "Exiting program"  << endl;
 	// Delete data structures to avoid memory leaks
@@ -59,6 +60,10 @@ int main()
 	return 0;
 }
 
+//********************************************
+//	The function writes a Hash Table to a    *
+//  file called output.txt                   *
+//********************************************
 void writeToFile(HashTable<Country> *hashTable){
 	ofstream output("output.txt");
 	cout << "Writing data to output.txt"<<endl;
@@ -73,6 +78,10 @@ void writeToFile(HashTable<Country> *hashTable){
 	output.close();
 }
 
+//********************************************
+//	The function reads data from a file      *
+//  into two BSTs and a Hash Table           *
+//********************************************
 void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable)
 {
 	ifstream infile("data.csv");
@@ -118,11 +127,18 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 	cout << "Time elapsed : " << (double)(clock() - start)/CLOCKS_PER_SEC << " seconds" << endl << endl;
 }
 
+//********************************************
+//	Displays acountry object			     *
+//********************************************
 void display(Country * anItem)
 {
 	cout << *anItem << endl;
 }
 
+//********************************************
+//	Handles the main menu operations         *
+//  Decides which data structure to go to.   *
+//********************************************
 void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable)
 
 {
@@ -175,9 +191,9 @@ void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTre
     }
 }
 
-/*~~~~~~~~~~~
- Introduction of the program to the user.
-*/
+//********************************************
+//	Introduces the program to the user       *
+//********************************************
 void introduceProgram()
 {
 	cout << "Hello! Welcome to Mortality Rates!\n"
@@ -188,9 +204,9 @@ void introduceProgram()
 		<< "to show adult mortality rates.\n\n";
 }
 
-/*~~~~~~~~~~~~
- Display the main menu.
- */
+//********************************************
+//	Displays the main menu                   *
+//********************************************
 void displayMainMenu()
 {
 	cout << "\t\t _________________________________________" << endl
@@ -202,9 +218,9 @@ void displayMainMenu()
 		 << "\t\t|_________________________________________|" << endl << endl;
 }
 
-/*~~~~~~~~~~~~
- Display the Hash Table's menu.
-*/
+//********************************************
+//	Displays the menu of the Hash Table      *
+//********************************************
 void displayHashTableMenu()
 {
 	cout << "\t\t ______________________________________" << endl
@@ -220,9 +236,10 @@ void displayHashTableMenu()
 	 	 << "\t\t|_____________________________________ |" << endl << endl;
 }
 
-/*~~~~~~~~~~~~
- Manage the hash table menu.
-*/
+//********************************************
+//	Menu driver that handles and calls       *
+//  Hash Table functions.	                 *
+//********************************************
 char hashTableCommandManager(HashTable<Country> *hashTable)
 {
     bool run = true;
@@ -281,10 +298,9 @@ char hashTableCommandManager(HashTable<Country> *hashTable)
 	return '/0';
 }
 
-
-/*~~~~~~~~~~~~
- Display the BST's menu.
-*/
+//********************************************
+//	Displays the BST Menu                    *
+//********************************************
 void displayBSTMenu(bool unique)
 {
     if (unique)
@@ -307,9 +323,11 @@ void displayBSTMenu(bool unique)
 		 << "\t\t|_____________________________________ |" << endl << endl;
 }
 
-/*~~~~~~~~~~~~
- Manage the BST by unique key menu.
-*/
+
+//********************************************
+//	Menu driver that handles and calls       *
+//  primary BST functions.	                 *
+//********************************************
 char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 {
     bool run = true;
@@ -440,9 +458,11 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 	return '/0';
 }
 
-/*~~~~~~~~~~~~
- Manage the BST by secondary key menu.
-*/
+
+//********************************************
+//	Menu driver that handles and calls       *
+//  secondary BST functions.	             *
+//********************************************
 char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 {
 	bool run = true;
@@ -574,6 +594,10 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 	return '/0';
 }
 
+//********************************************
+//	Inserts an item entered by the user      *
+//  into all three data structures           *
+//********************************************
 void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable){
 	//bool success = false;
 	string name;
@@ -639,7 +663,10 @@ void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 
 }
 
-
+//********************************************
+//	Deletes an item entered by the user from *
+//  all three data structures                *
+//********************************************
 void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable)
 {
 	cout << "\nDELETE\n";
@@ -676,9 +703,10 @@ void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 		cout << endl << "Country not Found" << endl << endl;
 }
 
-/*~~~~~~~~~~~
- Search Manager manages the search option.
-*/
+
+//********************************************
+//	Searches the Hash Table for an item      *
+//********************************************
 void searchHashTable(HashTable<Country> *hashTable)
 {
     string country;
@@ -713,9 +741,10 @@ void searchHashTable(HashTable<Country> *hashTable)
     cout << "Time elapsed : " << (double)(clock() - start)/CLOCKS_PER_SEC << " seconds" << endl << endl;
 }
 
-/*~~~~~~~~~~~~~
- Display the hash table. (just the first elements if set).
- */
+
+//********************************************
+//	Displays the Hash Table as a list.       *
+//********************************************
 void displayHashTableList(HashTable<Country> *hashTable)
 {
     cout << "\nHere are the items in the hash table:\n";
@@ -729,9 +758,11 @@ void displayHashTableList(HashTable<Country> *hashTable)
 }
 
 
-/*~~~~~~~~~~~~~
- Display the entire Hash table and it's collisions or if elements are not set.
- */
+
+//********************************************
+//	Displays the Hash Table as an indented   *
+//  list indented by index and bucket.       *
+//********************************************
 void printHashTable(HashTable<Country> *hashTable)
 {
     cout << "\nPrinting the Hash Table:\n\n";
@@ -756,10 +787,10 @@ void printHashTable(HashTable<Country> *hashTable)
     }
 }
 
-/*~~~~~~~~~~~~~~
- Print statistics: number of collisions, load factor, number of full buckets, number of empty buckets,
- average number of nodes stored at index 1 or 2.
- */
+//********************************************
+// Displays statistics about the Hash Table, *
+// i.e. Load factor, bucket & overflow info. *
+//********************************************
 void printHashTableStatistics(HashTable<Country> *hashTable)
 {
     cout << "\nStatistics:\n"

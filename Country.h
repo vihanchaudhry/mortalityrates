@@ -43,7 +43,7 @@ public:
 	void setCombinedMortality(int combinedNumber){ combinedMortality = combinedNumber; };
 	int getCombinedMortality()const { return combinedMortality; };
 
-	//Overloaded operators
+	// Overloaded operators
 	friend bool operator<= (Country country, Country otherCountry);
 	friend bool operator>=(Country country, Country otherCountry);
 	friend bool operator< (Country country, Country otherCountry);

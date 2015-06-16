@@ -1,7 +1,6 @@
 // Specification and implementation file for the HashTable ADT class
 #ifndef HASHTABLE_H
 #define HASHTABLE_H
-#include <stdio.h>
 #include <iostream>
 #include <vector>
 #include "Country.h"
@@ -109,12 +108,14 @@ template <class T>
 int HashTable<T>::getHash(string key)
 {
     int sum = 0;
-    
+    // Sum up the cubes of the ASCII values 
+	// of each character of the string given
     for (int i = 0; i < key.length(); i++)
     {
-        sum += (key[i]*key[i] *key[i]);
+        sum += (key[i] * key[i] * key[i]);
     }
-    
+	// Perform modulo division on the
+	// generated key and return it
     return (sum % HASH_TABLE_SIZE);
 }
 
