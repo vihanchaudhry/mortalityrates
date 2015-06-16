@@ -46,7 +46,7 @@ public:
     void postOrder(void visit(ItemType )) const{_postorder(visit, rootPtr);}  
 
 	//Special functions for the project
-	void print(){ _print(rootPtr); };
+	void print(void visit(ItemType)){ _print(visit, rootPtr); };
 	void range(void visit(ItemType ), ItemType smallest, ItemType largest) const{ _range(visit, rootPtr, smallest, largest); }
 
     //Functions implemented by the derived class
@@ -65,7 +65,7 @@ private:
 
 	//Internal Range and Print Functions
 	void _range(void visit(ItemType ), BinaryNode<ItemType>* nodePtr, ItemType smallest, ItemType largest) const;
-	void _print(BinaryNode<ItemType> *, int n = 1);
+	void _print(void visit(ItemType), BinaryNode<ItemType> *, int n = 1);
 	
     //Internal Traversal Functions
 	void _breadthFirst(void visit(ItemType ), BinaryNode<ItemType> *nodePtr) const;
@@ -294,7 +294,7 @@ void BinaryTree<ItemType>::_range(void visit(ItemType ), BinaryNode<ItemType>* n
 //	it utilises the setw function to format the data							*
 //*******************************************************************************
 template<class ItemType>
-void BinaryTree<ItemType>::_print(BinaryNode<ItemType> *nodePtr, int n ){
+void BinaryTree<ItemType>::_print(void visit(ItemType), BinaryNode<ItemType> *nodePtr, int n){
 
 	//If node pointer is null then the function returns to the caller
 	if (!nodePtr)
@@ -303,16 +303,20 @@ void BinaryTree<ItemType>::_print(BinaryNode<ItemType> *nodePtr, int n ){
 	//If the nodePointer is a leaf then it prints the value with the approriate width
 	if (nodePtr->isLeaf())
 	{
-		cout << setw((n-1)*5) << n << ". " << *(nodePtr->getItem()) << endl;
+		cout << setw((n - 1) * 2) << n << ". "; 
+		visit(nodePtr->getItem());
+		cout << endl;
 		return;
 	}
 
 	//Otherwise the function goes through a recursive call passing in the incremented level variable
 	else
 	{
-		_print(nodePtr->getRightPtr(), n + 1);
-		cout << setw((n-1)*5) << n << ". " << *(nodePtr->getItem())<< endl;
-		_print(nodePtr->getLeftPtr(), n + 1);
+		_print(visit, nodePtr->getRightPtr(), n + 1);
+		cout << setw((n - 1) * 2) << n << ". ";
+		visit(nodePtr->getItem());
+		cout << endl;
+		_print(visit, nodePtr->getLeftPtr(), n + 1);
 
 	}
 
