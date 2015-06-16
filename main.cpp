@@ -56,7 +56,7 @@ int main()
     delete secondaryList;
     delete hashTable;
 
-	system("pause"); //stops the program from terminating
+	system("pause");	// Stops the program from terminating
 	return 0;
 }
 
@@ -108,16 +108,13 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 		getline(infile, both);
 		
 		countryPtr = new Country(country, atoi(year.c_str()), atoi(maleData.c_str()), atoi(femaleData.c_str()), atoi(both.c_str()));
-        //Inserting into BST
+        // Inserting into BST
 		uniqueList->insert(countryPtr);
-        
+        // Inserting into second BST
 		secondaryList->insert(countryPtr);
-        //Inserting into second BST
-		//itemPtr = new ItemPointer(countryPtr);
-		//secondaryList->insert(itemPtr);
-        //Inserting into hash table
-        
+        // Inserting into hash table
         hashTable->insert(countryPtr);
+		// Increase entry count
 		i++;
 	}
 
@@ -128,7 +125,7 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 }
 
 //********************************************
-//	Displays acountry object			     *
+//	Displays a country object			     *
 //********************************************
 void display(Country * anItem)
 {
@@ -323,7 +320,6 @@ void displayBSTMenu(bool unique)
 		 << "\t\t|_____________________________________ |" << endl << endl;
 }
 
-
 //********************************************
 //	Menu driver that handles and calls       *
 //  primary BST functions.	                 *
@@ -458,7 +454,6 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 	return '/0';
 }
 
-
 //********************************************
 //	Menu driver that handles and calls       *
 //  secondary BST functions.	             *
@@ -474,7 +469,6 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 	Country *targetCountry = new Country(code);
 	Country *foundCountry = new Country(code); 
 	string country, year;
-
 	
 	clock_t start;
 
@@ -670,14 +664,13 @@ void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable)
 {
 	cout << "\nDELETE\n";
-	string country;
-	string year;
-	string id;
-	time_t start;
-	Country *removeCountryID = new Country("ID");
-	Country *removeCountryName = new Country("Country");
+	string country;	// Name of country
+	string year;	// Year of country
+	string id;		// Unique ID
+	time_t start;	// Keep track of performance time
+	Country *removeCountryID = new Country("ID");			// Country to be removed from BST 1
+	Country *removeCountryName = new Country("Country");	// Country to be removed from BST 2
 
-	//ItemPointer *removeCountry = new ItemPointer(removeCountryName);
 	do
 	{
 		cin.clear();
@@ -689,9 +682,11 @@ void removeStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 		if (!cin)
 			cout << endl << "Error - Invalid Input" << endl << endl;
 	} while (!cin);
+
 	id = country + year;
+	// Set remove identifier
 	removeCountryID->setID(id);
-	removeCountryName->setID(id);
+	removeCountryName->setName(country);
 	start = clock();
 	if (uniqueList->remove(removeCountryID)){
 		secondaryList->remove(removeCountryName);
@@ -728,7 +723,7 @@ void searchHashTable(HashTable<Country> *hashTable)
     
     if (countryPtr == NULL)
     {
-        cout << ID << " was not found.\n";
+        cout << endl << "Country not found." << endl;
     }
     else
     {
