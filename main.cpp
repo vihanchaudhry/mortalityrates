@@ -174,7 +174,8 @@ void introduceProgram()
          << "Did you know that there are 196 countries in world?\n"
          << "This program was developed by Jason Liang, Jaison Tiu, Vihan \n"
 		 << "Chaudhry and Victor La.\n"
-         << "It utilizes two Binary Search Trees and a Hash Table\n"
+         << "It utilizes two Binary Search Trees and a Hash Table\n to show "
+		 << "adult mortality rates. "
          << "to organize the mortality data of the countries of the world!\n\n";
 }
 
@@ -239,6 +240,7 @@ char hashTableCommandManager(HashTable<Country> *hashTable)
             case 'D':
             case 'd':
                 displayHashTableList(hashTable);
+				cout << endl;
                 break;
             case 'P':
             case 'p':
