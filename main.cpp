@@ -12,7 +12,6 @@ Developers: Jason Liang, Jaison Tiu, Vihan Chaudhry, Victor La
 #include "BinarySearchTree.h"
 #include "Country.h"
 #include "HashTable.h"
-//#include "ItemPointer.h"
 using namespace std;
 
 // Function Prototypes
@@ -121,7 +120,7 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 
 void display(Country * anItem)
 {
-	cout << *anItem;
+	cout << *anItem << endl;
 }
 
 void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable)
@@ -182,12 +181,11 @@ void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTre
 void introduceProgram()
 {
 	cout << "Hello! Welcome to Mortality Rates!\n"
-         << "Did you know that there are 196 countries in world?\n"
-         << "This program was developed by Jason Liang, Jaison Tiu, Vihan \n"
-		 << "Chaudhry and Victor La.\n"
-         << "It utilizes two Binary Search Trees and a Hash Table\n to show "
-		 << "adult mortality rates. "
-         << "to organize the mortality data of the countries of the world!\n\n";
+		<< "Did you know that there are 196 countries in world?\n"
+		<< "This program was developed by Jason Liang, Jaison Tiu, Vihan \n"
+		<< "Chaudhry and Victor La.\n"
+		<< "It utilizes two Binary Search Trees and a Hash Table\n"
+		<< "to show adult mortality rates.\n\n";
 }
 
 /*~~~~~~~~~~~~
@@ -241,11 +239,12 @@ char hashTableCommandManager(HashTable<Country> *hashTable)
         {
 			case 'n':
 			case 'N':
+				cout << "\nINSERT\n";
 				return 'c';
 				break;
             case 'S':
             case 's':
-				cout << "\nSEARCH" << endl;
+				cout << "\nSEARCH\n";
                 searchHashTable(hashTable);
                 break;
             case 'D':
@@ -335,6 +334,7 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 		{
 		case 'n':
 		case 'N':
+			cout << "\nINSERT\n";
 			return 'b';
 			break;
 		case 'i':
@@ -469,6 +469,7 @@ char secondaryBSTCommandManager(BinarySearchTree<Country *> *secondaryList)
 		{
 		case 'n':
 		case 'N':
+			cout << "\nINSERT\n";
 			return 'a';
 		case 'i':
 		case 'I':
