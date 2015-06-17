@@ -6,13 +6,13 @@
 #include "Country.h"
 using namespace std;
 
-const int HASH_TABLE_SIZE = 776;
 const int BUCKET_SIZE = 4;
 
 template <class T>
 class HashTable
 {
 private:
+    int hash_Table_Size;
     vector<T *> *table;
     vector<T *> *overflow;
     int collisionCount;
@@ -26,17 +26,21 @@ public:
     int getElementsFilled() {return elementsFilled;}
     int getFullBuckets() {return fullBuckets;}
     int getOverflowCount() {return overflow->size();}
+    int getHashTableSize() {return hash_Table_Size;}
     
     vector<T *> *getTable() {return table;}
     vector<T *> *getOverflow() {return overflow;}
     
-    double getLoadFactor() {return (double)elementsFilled / HASH_TABLE_SIZE;}
+    double getLoadFactor() {return (double)elementsFilled / hash_Table_Size;}
     double getAverageNodesInBucket();
     
     int getHash(string key);
     bool insert(T *itemPtr);
     T *search(string name);
 	bool deleteItem(string key);
+    
+    // Rehash
+    void reHash();
 };
 
 // Function Definitions
@@ -48,7 +52,8 @@ public:
 template <class T>
 HashTable<T>::HashTable()
 {
-    table = new vector<T *>[HASH_TABLE_SIZE];
+    hash_Table_Size = 400;          // Arbitrary 400.
+    table = new vector<T *>[hash_Table_Size];
 	overflow = new vector<T *>;
     collisionCount = 0;
     elementsFilled = 0.0;
@@ -61,7 +66,7 @@ HashTable<T>::HashTable()
 template <class T>
 HashTable<T>::~HashTable()
 {
-    for (int i = 0; i < HASH_TABLE_SIZE; i++)
+    for (int i = 0; i < hash_Table_Size; i++)
     {
         for (int j = 0; j < table[i].size(); j++)
         {
@@ -78,7 +83,7 @@ HashTable<T>::~HashTable()
     
     overflow->clear();
     
-    //delete table;
+    delete table;
     //delete overflow;
 }
 
@@ -90,7 +95,7 @@ double HashTable<T>::getAverageNodesInBucket()
 {
     int sum = 0;
     
-    for (int i = 0; i < HASH_TABLE_SIZE; i++)
+    for (int i = 0; i < hash_Table_Size; i++)
     {
         for (int j = 1; j < table[i].size(); j++)
         {
@@ -116,7 +121,7 @@ int HashTable<T>::getHash(string key)
     }
 	// Perform modulo division on the
 	// generated key and return it
-    return (sum % HASH_TABLE_SIZE);
+    return (sum % hash_Table_Size);
 }
 
 /*~~~~~~~~~~~
@@ -162,6 +167,7 @@ bool HashTable<T>::deleteItem(string ID)
         {
 			delete table[address][i];
 			table[address].erase(table[address].begin() + i);
+
 			return true;
 		}
 	}
@@ -176,12 +182,6 @@ bool HashTable<T>::deleteItem(string ID)
 		}
 	}
 	return false;
-}
-
-template <class T>
-T *HashTable<T>::search(string ID)
-{
-
 }
 
 /*~~~~~~~~~~~~
@@ -213,5 +213,46 @@ T *HashTable<T>::search(string ID)
     
     return NULL;        // not found.
 }
+
+/*~~~~~~~~
+ This function recreates a hash table so that the overflow is empty.
+*/
+template <class T>
+void HashTable<T>::reHash()
+{
+    // Store every pointer in overflow vector, and clear hash table.
+    
+    for (int i = 0; i < hash_Table_Size; i++)
+    {
+
+        for (int j = 0; j < table[i].size(); j++)
+        {
+            overflow->push_back(table[i][j]);
+        }
+        
+        table[i].clear();
+    }
+    
+    hash_Table_Size += 47;                      // Increase size so to get less overflow.
+    
+    table = new vector<T *>[hash_Table_Size];       // create a new Hash Table.
+    collisionCount = 0;
+    elementsFilled = 0.0;
+    fullBuckets = 0;
+    
+    for (int i = 0; i < overflow->size(); )     // Refill the Hash table.
+    {
+        if (insert((*overflow)[i]) == false)
+        {
+            (*overflow).erase((*overflow).begin());
+            reHash();                                   // If inserted into overflow, reHash.
+        }
+        else
+        {
+            (*overflow).erase((*overflow).begin());
+        }
+    }
+}
+
 
 #endif /* defined(__Jason_Liang_HW5_22C_HashTableWithVectors__HashTable__) */

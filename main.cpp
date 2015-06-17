@@ -68,7 +68,7 @@ int main()
 void writeToFile(HashTable<Country> *hashTable){
 	ofstream output("output.txt");
 	cout << "Writing data to output.txt"<<endl;
-	for (int i = 0; i < HASH_TABLE_SIZE; i++)
+	for (int i = 0; i < hashTable->getHashTableSize(); i++)
 	{
 		if (hashTable->getTable()[i].size() > 0)
 		{
@@ -118,6 +118,11 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 		// Increase entry count
 		i++;
 	}
+    
+    if (hashTable->getOverflowCount() != 0)         // Rehash if we have overflow.
+    {
+        hashTable->reHash();
+    }
 
 	infile.close();
 	cout << "Building Finished " << i << " Unique Entries entered." << endl;
@@ -745,7 +750,7 @@ void searchHashTable(HashTable<Country> *hashTable)
 void displayHashTableList(HashTable<Country> *hashTable)
 {
     cout << "\nHere are the items in the hash table:\n";
-    for (int i = 0; i < HASH_TABLE_SIZE; i++)
+    for (int i = 0; i < hashTable->getHashTableSize(); i++)
     {
         if (hashTable->getTable()[i].size() > 0)
         {
@@ -762,7 +767,7 @@ void printHashTable(HashTable<Country> *hashTable)
 {
     cout << "\nPrinting the Hash Table:\n\n";
     
-    for (int i = 0; i < HASH_TABLE_SIZE; i++)
+    for (int i = 0; i < hashTable->getHashTableSize(); i++)
     {
         cout << "\nIndex " << i << ": ";
         
@@ -789,6 +794,7 @@ void printHashTable(HashTable<Country> *hashTable)
 void printHashTableStatistics(HashTable<Country> *hashTable)
 {
     cout << "\nStatistics:\n"
+    << "\tHash Table Size " << hashTable->getHashTableSize() << endl
     << "\tLoad factor: " << fixed << setprecision(2) << hashTable->getLoadFactor()*100 << "%" << endl
     << "\tNumber of full buckets: " << hashTable->getFullBuckets() << endl
     << "\tAverage number of nodes in buckets: " << hashTable->getAverageNodesInBucket() << endl
