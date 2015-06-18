@@ -121,7 +121,7 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
     
     if (hashTable->getOverflowCount() != 0)         // Rehash if we have overflow.
     {
-        hashTable->reHash();
+        hashTable->rehash();
     }
 
 	infile.close();

@@ -1,302 +1,50 @@
-Country Name: Kyrgyzstan
-Country Year: 2012
-Male Mortality per Thousand: 275
-Female Mortality per Thousand: 131
-Male and Female Mortality per Thousand: 203
-
 Country Name: Saint Kitts and Nevis
-Country Year: 2013
-Male Mortality per Thousand: 165
-Female Mortality per Thousand: 79
-Male and Female Mortality per Thousand: 122
-
-Country Name: Slovakia
 Country Year: 1990
-Male Mortality per Thousand: 269
-Female Mortality per Thousand: 104
-Male and Female Mortality per Thousand: 187
-
-Country Name: Seychelles
-Country Year: 2013
-Male Mortality per Thousand: 214
-Female Mortality per Thousand: 99
-Male and Female Mortality per Thousand: 161
-
-Country Name: Djibouti
-Country Year: 2000
-Male Mortality per Thousand: 366
-Female Mortality per Thousand: 298
-Male and Female Mortality per Thousand: 333
-
-Country Name: Afghanistan
-Country Year: 2012
-Male Mortality per Thousand: 294
-Female Mortality per Thousand: 242
-Male and Female Mortality per Thousand: 268
-
-Country Name: Monaco
-Country Year: 2012
-Male Mortality per Thousand: 107
-Female Mortality per Thousand: 49
-Male and Female Mortality per Thousand: 78
-
-Country Name: Russian Federation
-Country Year: 2012
-Male Mortality per Thousand: 339
-Female Mortality per Thousand: 127
+Male Mortality per Thousand: 272
+Female Mortality per Thousand: 193
 Male and Female Mortality per Thousand: 233
 
-Country Name: Namibia
+Country Name: Andorra
 Country Year: 2012
-Male Mortality per Thousand: 293
-Female Mortality per Thousand: 204
-Male and Female Mortality per Thousand: 246
+Male Mortality per Thousand: 92
+Female Mortality per Thousand: 43
+Male and Female Mortality per Thousand: 68
 
-Country Name: Honduras
-Country Year: 1990
-Male Mortality per Thousand: 239
-Female Mortality per Thousand: 179
-Male and Female Mortality per Thousand: 210
+Country Name: Nicaragua
+Country Year: 2000
+Male Mortality per Thousand: 191
+Female Mortality per Thousand: 121
+Male and Female Mortality per Thousand: 156
 
-Country Name: Zimbabwe
-Country Year: 2012
-Male Mortality per Thousand: 390
+Country Name: South Africa
+Country Year: 2000
+Male Mortality per Thousand: 433
 Female Mortality per Thousand: 313
-Male and Female Mortality per Thousand: 351
+Male and Female Mortality per Thousand: 371
 
-Country Name: Central African Republic
+Country Name: Colombia
 Country Year: 2000
-Male Mortality per Thousand: 531
-Female Mortality per Thousand: 516
-Male and Female Mortality per Thousand: 523
+Male Mortality per Thousand: 225
+Female Mortality per Thousand: 100
+Male and Female Mortality per Thousand: 163
 
-Country Name: Indonesia
-Country Year: 2013
-Male Mortality per Thousand: 176
-Female Mortality per Thousand: 121
-Male and Female Mortality per Thousand: 149
-
-Country Name: Bosnia and Herzegovina
-Country Year: 2000
-Male Mortality per Thousand: 163
-Female Mortality per Thousand: 79
-Male and Female Mortality per Thousand: 119
-
-Country Name: Vanuatu
-Country Year: 2013
-Male Mortality per Thousand: 161
-Female Mortality per Thousand: 113
-Male and Female Mortality per Thousand: 137
-
-Country Name: El Salvador
-Country Year: 2000
-Male Mortality per Thousand: 287
-Female Mortality per Thousand: 142
-Male and Female Mortality per Thousand: 211
-
-Country Name: Zambia
+Country Name: Saudi Arabia
 Country Year: 1990
-Male Mortality per Thousand: 634
-Female Mortality per Thousand: 452
-Male and Female Mortality per Thousand: 550
+Male Mortality per Thousand: 178
+Female Mortality per Thousand: 131
+Male and Female Mortality per Thousand: 159
 
-Country Name: Samoa
-Country Year: 1990
-Male Mortality per Thousand: 300
-Female Mortality per Thousand: 194
-Male and Female Mortality per Thousand: 248
-
-Country Name: Tajikistan
-Country Year: 2013
-Male Mortality per Thousand: 176
-Female Mortality per Thousand: 153
-Male and Female Mortality per Thousand: 165
-
-Country Name: Iraq
-Country Year: 2013
-Male Mortality per Thousand: 203
-Female Mortality per Thousand: 104
-Male and Female Mortality per Thousand: 153
-
-Country Name: Mauritius
-Country Year: 1990
-Male Mortality per Thousand: 264
-Female Mortality per Thousand: 121
-Male and Female Mortality per Thousand: 193
-
-Country Name: Honduras
+Country Name: Slovenia
 Country Year: 2012
-Male Mortality per Thousand: 176
-Female Mortality per Thousand: 122
-Male and Female Mortality per Thousand: 149
+Male Mortality per Thousand: 114
+Female Mortality per Thousand: 50
+Male and Female Mortality per Thousand: 83
 
-Country Name: Sierra Leone
-Country Year: 2000
-Male Mortality per Thousand: 551
-Female Mortality per Thousand: 521
-Male and Female Mortality per Thousand: 536
-
-Country Name: Iceland
+Country Name: Kyrgyzstan
 Country Year: 1990
-Male Mortality per Thousand: 112
-Female Mortality per Thousand: 69
-Male and Female Mortality per Thousand: 91
-
-Country Name: Trinidad and Tobago
-Country Year: 2013
-Male Mortality per Thousand: 229
-Female Mortality per Thousand: 129
-Male and Female Mortality per Thousand: 180
-
-Country Name: Mauritania
-Country Year: 2000
-Male Mortality per Thousand: 257
-Female Mortality per Thousand: 207
-Male and Female Mortality per Thousand: 230
-
-Country Name: Guinea-Bissau
-Country Year: 1990
-Male Mortality per Thousand: 365
-Female Mortality per Thousand: 286
-Male and Female Mortality per Thousand: 326
-
-Country Name: Zambia
-Country Year: 2012
-Male Mortality per Thousand: 398
-Female Mortality per Thousand: 353
-Male and Female Mortality per Thousand: 376
-
-Country Name: Mozambique
-Country Year: 2013
-Male Mortality per Thousand: 438
-Female Mortality per Thousand: 432
-Male and Female Mortality per Thousand: 434
-
-Country Name: Mali
-Country Year: 2013
-Male Mortality per Thousand: 277
-Female Mortality per Thousand: 275
-Male and Female Mortality per Thousand: 275
-
-Country Name: Kenya
-Country Year: 1990
-Male Mortality per Thousand: 287
-Female Mortality per Thousand: 228
-Male and Female Mortality per Thousand: 258
-
-Country Name: Mauritius
-Country Year: 2012
-Male Mortality per Thousand: 204
-Female Mortality per Thousand: 96
-Male and Female Mortality per Thousand: 152
-
-Country Name: Tuvalu
-Country Year: 2013
-Male Mortality per Thousand: 236
-Female Mortality per Thousand: 182
-Male and Female Mortality per Thousand: 210
-
-Country Name: Equatorial Guinea
-Country Year: 2000
-Male Mortality per Thousand: 414
-Female Mortality per Thousand: 374
-Male and Female Mortality per Thousand: 396
-
-Country Name: Belarus
-Country Year: 1990
-Male Mortality per Thousand: 283
-Female Mortality per Thousand: 107
-Male and Female Mortality per Thousand: 195
-
-Country Name: Fiji
-Country Year: 2000
-Male Mortality per Thousand: 265
-Female Mortality per Thousand: 177
-Male and Female Mortality per Thousand: 222
-
-Country Name: Haiti
-Country Year: 2000
-Male Mortality per Thousand: 353
-Female Mortality per Thousand: 318
-Male and Female Mortality per Thousand: 335
-
-Country Name: Congo
-Country Year: 2013
-Male Mortality per Thousand: 323
-Female Mortality per Thousand: 280
-Male and Female Mortality per Thousand: 302
-
-Country Name: Guinea-Bissau
-Country Year: 2012
-Male Mortality per Thousand: 354
-Female Mortality per Thousand: 307
-Male and Female Mortality per Thousand: 330
-
-Country Name: Egypt
-Country Year: 1990
-Male Mortality per Thousand: 232
-Female Mortality per Thousand: 145
-Male and Female Mortality per Thousand: 189
-
-Country Name: Rwanda
-Country Year: 2000
-Male Mortality per Thousand: 480
-Female Mortality per Thousand: 466
-Male and Female Mortality per Thousand: 472
-
-Country Name: Papua New Guinea
-Country Year: 2013
-Male Mortality per Thousand: 319
-Female Mortality per Thousand: 243
-Male and Female Mortality per Thousand: 282
-
-Country Name: Kenya
-Country Year: 2012
-Male Mortality per Thousand: 307
-Female Mortality per Thousand: 261
-Male and Female Mortality per Thousand: 284
-
-Country Name: Republic of Moldova
-Country Year: 1990
-Male Mortality per Thousand: 285
-Female Mortality per Thousand: 155
-Male and Female Mortality per Thousand: 218
-
-Country Name: Swaziland
-Country Year: 2000
-Male Mortality per Thousand: 540
-Female Mortality per Thousand: 515
-Male and Female Mortality per Thousand: 52
-
-Country Name: Myanmar
-Country Year: 2012
-Male Mortality per Thousand: 242
-Female Mortality per Thousand: 184
-Male and Female Mortality per Thousand: 212
-
-Country Name: Belarus
-Country Year: 2012
-Male Mortality per Thousand: 287
-Female Mortality per Thousand: 98
-Male and Female Mortality per Thousand: 192
-
-Country Name: Poland
-Country Year: 2012
-Male Mortality per Thousand: 180
-Female Mortality per Thousand: 69
-Male and Female Mortality per Thousand: 125
-
-Country Name: Guyana
-Country Year: 1990
-Male Mortality per Thousand: 372
-Female Mortality per Thousand: 231
-Male and Female Mortality per Thousand: 304
-
-Country Name: South Sudan
-Country Year: 1990
-Male Mortality per Thousand: 448
-Female Mortality per Thousand: 391
-Male and Female Mortality per Thousand: 420
+Male Mortality per Thousand: 291
+Female Mortality per Thousand: 156
+Male and Female Mortality per Thousand: 224
 
 Country Name: Russian Federation
 Country Year: 2013
@@ -304,275 +52,101 @@ Male Mortality per Thousand: 339
 Female Mortality per Thousand: 126
 Male and Female Mortality per Thousand: 232
 
-Country Name: Namibia
-Country Year: 2013
-Male Mortality per Thousand: 255
-Female Mortality per Thousand: 177
-Male and Female Mortality per Thousand: 214
-
-Country Name: Egypt
-Country Year: 2012
-Male Mortality per Thousand: 196
-Female Mortality per Thousand: 120
-Male and Female Mortality per Thousand: 159
-
-Country Name: Zimbabwe
-Country Year: 2013
-Male Mortality per Thousand: 385
-Female Mortality per Thousand: 288
-Male and Female Mortality per Thousand: 336
-
-Country Name: Cameroon
-Country Year: 2013
-Male Mortality per Thousand: 370
-Female Mortality per Thousand: 341
-Male and Female Mortality per Thousand: 356
-
-Country Name: Sri Lanka
+Country Name: Niger
 Country Year: 2000
-Male Mortality per Thousand: 301
-Female Mortality per Thousand: 111
-Male and Female Mortality per Thousand: 210
-
-Country Name: Republic of Moldova
-Country Year: 2012
-Male Mortality per Thousand: 269
-Female Mortality per Thousand: 110
-Male and Female Mortality per Thousand: 189
-
-Country Name: Burundi
-Country Year: 2000
-Male Mortality per Thousand: 504
-Female Mortality per Thousand: 425
-Male and Female Mortality per Thousand: 465
-
-Country Name: Slovakia
-Country Year: 2013
-Male Mortality per Thousand: 168
-Female Mortality per Thousand: 67
-Male and Female Mortality per Thousand: 118
-
-Country Name: Guyana
-Country Year: 2012
-Male Mortality per Thousand: 379
-Female Mortality per Thousand: 259
-Male and Female Mortality per Thousand: 323
-
-Country Name: South Sudan
-Country Year: 2012
-Male Mortality per Thousand: 373
-Female Mortality per Thousand: 349
-Male and Female Mortality per Thousand: 361
-
-Country Name: Nigeria
-Country Year: 1990
-Male Mortality per Thousand: 408
-Female Mortality per Thousand: 364
-Male and Female Mortality per Thousand: 386
-
-Country Name: Honduras
-Country Year: 2013
-Male Mortality per Thousand: 173
-Female Mortality per Thousand: 120
-Male and Female Mortality per Thousand: 147
-
-Country Name: Senegal
-Country Year: 2000
-Male Mortality per Thousand: 282
-Female Mortality per Thousand: 224
-Male and Female Mortality per Thousand: 252
-
-Country Name: Grenada
-Country Year: 2000
-Male Mortality per Thousand: 213
-Female Mortality per Thousand: 123
-Male and Female Mortality per Thousand: 167
-
-Country Name: Belgium
-Country Year: 2000
-Male Mortality per Thousand: 130
-Female Mortality per Thousand: 68
-Male and Female Mortality per Thousand: 100
-
-Country Name: Kiribati
-Country Year: 1990
-Male Mortality per Thousand: 299
-Female Mortality per Thousand: 222
-Male and Female Mortality per Thousand: 264
-
-Country Name: Colombia
-Country Year: 1990
-Male Mortality per Thousand: 230
-Female Mortality per Thousand: 115
-Male and Female Mortality per Thousand: 173
-
-Country Name: Zambia
-Country Year: 2013
-Male Mortality per Thousand: 356
-Female Mortality per Thousand: 303
-Male and Female Mortality per Thousand: 330
-
-Country Name: Samoa
-Country Year: 2013
-Male Mortality per Thousand: 166
-Female Mortality per Thousand: 97
-Male and Female Mortality per Thousand: 133
-
-Country Name: Saint Kitts and Nevis
-Country Year: 2000
-Male Mortality per Thousand: 214
-Female Mortality per Thousand: 134
-Male and Female Mortality per Thousand: 174
-
-Country Name: Nigeria
-Country Year: 2012
-Male Mortality per Thousand: 371
-Female Mortality per Thousand: 346
-Male and Female Mortality per Thousand: 358
-
-Country Name: Seychelles
-Country Year: 2000
-Male Mortality per Thousand: 248
-Female Mortality per Thousand: 99
-Male and Female Mortality per Thousand: 178
-
-Country Name: Bolivia (Plurinational State of)
-Country Year: 2000
-Male Mortality per Thousand: 273
-Female Mortality per Thousand: 208
-Male and Female Mortality per Thousand: 240
-
-Country Name: Austria
-Country Year: 2012
-Male Mortality per Thousand: 91
-Female Mortality per Thousand: 47
-Male and Female Mortality per Thousand: 69
-
-Country Name: Iceland
-Country Year: 2013
-Male Mortality per Thousand: 61
-Female Mortality per Thousand: 37
-Male and Female Mortality per Thousand: 49
-
-Country Name: Côte d'Ivoire
-Country Year: 1990
-Male Mortality per Thousand: 412
-Female Mortality per Thousand: 351
-Male and Female Mortality per Thousand: 386
-
-Country Name: Guinea-Bissau
-Country Year: 2013
-Male Mortality per Thousand: 393
-Female Mortality per Thousand: 325
-Male and Female Mortality per Thousand: 359
-
-Country Name: Palau
-Country Year: 1990
-Male Mortality per Thousand: 268
-Female Mortality per Thousand: 217
-Male and Female Mortality per Thousand: 244
-
-Country Name: Timor-Leste
-Country Year: 2013
-Male Mortality per Thousand: 208
-Female Mortality per Thousand: 164
-Male and Female Mortality per Thousand: 186
-
-Country Name: Sudan
-Country Year: 1990
-Male Mortality per Thousand: 342
-Female Mortality per Thousand: 276
-Male and Female Mortality per Thousand: 310
-
-Country Name: China
-Country Year: 2000
-Male Mortality per Thousand: 150
-Female Mortality per Thousand: 106
-Male and Female Mortality per Thousand: 129
-
-Country Name: Latvia
-Country Year: 1990
-Male Mortality per Thousand: 311
-Female Mortality per Thousand: 118
-Male and Female Mortality per Thousand: 215
-
-Country Name: Myanmar
-Country Year: 2013
-Male Mortality per Thousand: 240
-Female Mortality per Thousand: 183
-Male and Female Mortality per Thousand: 210
-
-Country Name: Belarus
-Country Year: 2013
-Male Mortality per Thousand: 299
-Female Mortality per Thousand: 100
-Male and Female Mortality per Thousand: 199
-
-Country Name: Iraq
-Country Year: 2000
-Male Mortality per Thousand: 164
-Female Mortality per Thousand: 102
-Male and Female Mortality per Thousand: 133
-
-Country Name: Guatemala
-Country Year: 1990
-Male Mortality per Thousand: 320
-Female Mortality per Thousand: 205
-Male and Female Mortality per Thousand: 265
-
-Country Name: Andorra
-Country Year: 2013
-Male Mortality per Thousand: 90
-Female Mortality per Thousand: 43
-Male and Female Mortality per Thousand: 67
-
-Country Name: Côte d'Ivoire
-Country Year: 2012
-Male Mortality per Thousand: 409
-Female Mortality per Thousand: 396
-Male and Female Mortality per Thousand: 404
-
-Country Name: Madagascar
-Country Year: 2012
-Male Mortality per Thousand: 263
-Female Mortality per Thousand: 213
-Male and Female Mortality per Thousand: 238
-
-Country Name: Palau
-Country Year: 2012
-Male Mortality per Thousand: 159
-Female Mortality per Thousand: 109
-Male and Female Mortality per Thousand: 135
-
-Country Name: Egypt
-Country Year: 2013
-Male Mortality per Thousand: 193
-Female Mortality per Thousand: 117
-Male and Female Mortality per Thousand: 156
+Male Mortality per Thousand: 288
+Female Mortality per Thousand: 280
+Male and Female Mortality per Thousand: 284
 
 Country Name: Benin
-Country Year: 2013
-Male Mortality per Thousand: 284
-Female Mortality per Thousand: 238
-Male and Female Mortality per Thousand: 261
-
-Country Name: New Zealand
 Country Year: 2000
-Male Mortality per Thousand: 105
-Female Mortality per Thousand: 67
-Male and Female Mortality per Thousand: 86
+Male Mortality per Thousand: 335
+Female Mortality per Thousand: 279
+Male and Female Mortality per Thousand: 305
 
-Country Name: Latvia
+Country Name: Papua New Guinea
 Country Year: 2012
-Male Mortality per Thousand: 226
-Female Mortality per Thousand: 86
-Male and Female Mortality per Thousand: 154
+Male Mortality per Thousand: 321
+Female Mortality per Thousand: 245
+Male and Female Mortality per Thousand: 283
 
-Country Name: Republic of Moldova
+Country Name: Fiji
+Country Year: 2000
+Male Mortality per Thousand: 265
+Female Mortality per Thousand: 177
+Male and Female Mortality per Thousand: 222
+
+Country Name: Iceland
+Country Year: 2012
+Male Mortality per Thousand: 67
+Female Mortality per Thousand: 34
+Male and Female Mortality per Thousand: 51
+
+Country Name: Nauru
+Country Year: 2012
+Male Mortality per Thousand: 90
+Female Mortality per Thousand: 45
+Male and Female Mortality per Thousand: 69
+
+Country Name: Thailand
+Country Year: 1990
+Male Mortality per Thousand: 233
+Female Mortality per Thousand: 132
+Male and Female Mortality per Thousand: 183
+
+Country Name: Paraguay
+Country Year: 2000
+Male Mortality per Thousand: 158
+Female Mortality per Thousand: 103
+Male and Female Mortality per Thousand: 132
+
+Country Name: Dominica
+Country Year: 2012
+Male Mortality per Thousand: 225
+Female Mortality per Thousand: 118
+Male and Female Mortality per Thousand: 172
+
+Country Name: Mexico
+Country Year: 2000
+Male Mortality per Thousand: 177
+Female Mortality per Thousand: 100
+Male and Female Mortality per Thousand: 137
+
+Country Name: Netherlands
+Country Year: 2000
+Male Mortality per Thousand: 100
+Female Mortality per Thousand: 67
+Male and Female Mortality per Thousand: 84
+
+Country Name: Georgia
+Country Year: 1990
+Male Mortality per Thousand: 217
+Female Mortality per Thousand: 86
+Male and Female Mortality per Thousand: 150
+
+Country Name: Argentina
+Country Year: 2012
+Male Mortality per Thousand: 152
+Female Mortality per Thousand: 84
+Male and Female Mortality per Thousand: 118
+
+Country Name: Azerbaijan
+Country Year: 2012
+Male Mortality per Thousand: 169
+Female Mortality per Thousand: 82
+Male and Female Mortality per Thousand: 125
+
+Country Name: Libya
+Country Year: 2000
+Male Mortality per Thousand: 153
+Female Mortality per Thousand: 111
+Male and Female Mortality per Thousand: 134
+
+Country Name: Guatemala
 Country Year: 2013
-Male Mortality per Thousand: 277
-Female Mortality per Thousand: 106
-Male and Female Mortality per Thousand: 191
+Male Mortality per Thousand: 236
+Female Mortality per Thousand: 126
+Male and Female Mortality per Thousand: 179
 
 Country Name: Mozambique
 Country Year: 2000
@@ -580,22 +154,418 @@ Male Mortality per Thousand: 483
 Female Mortality per Thousand: 438
 Male and Female Mortality per Thousand: 459
 
-Country Name: Eritrea
-Country Year: 1990
-Male Mortality per Thousand: 534
-Female Mortality per Thousand: 447
-Male and Female Mortality per Thousand: 490
+Country Name: Antigua and Barbuda
+Country Year: 2000
+Male Mortality per Thousand: 203
+Female Mortality per Thousand: 148
+Male and Female Mortality per Thousand: 176
+
+Country Name: Honduras
+Country Year: 2000
+Male Mortality per Thousand: 202
+Female Mortality per Thousand: 149
+Male and Female Mortality per Thousand: 176
+
+Country Name: Congo
+Country Year: 2012
+Male Mortality per Thousand: 325
+Female Mortality per Thousand: 284
+Male and Female Mortality per Thousand: 305
+
+Country Name: Sudan
+Country Year: 2012
+Male Mortality per Thousand: 276
+Female Mortality per Thousand: 214
+Male and Female Mortality per Thousand: 245
+
+Country Name: Singapore
+Country Year: 2013
+Male Mortality per Thousand: 69
+Female Mortality per Thousand: 38
+Male and Female Mortality per Thousand: 54
+
+Country Name: Australia
+Country Year: 2012
+Male Mortality per Thousand: 75
+Female Mortality per Thousand: 44
+Male and Female Mortality per Thousand: 60
 
 Country Name: Togo
-Country Year: 1990
-Male Mortality per Thousand: 304
-Female Mortality per Thousand: 259
-Male and Female Mortality per Thousand: 281
+Country Year: 2012
+Male Mortality per Thousand: 318
+Female Mortality per Thousand: 293
+Male and Female Mortality per Thousand: 305
 
-Country Name: Switzerland
+Country Name: Trinidad and Tobago
 Country Year: 2000
-Male Mortality per Thousand: 99
-Female Mortality per Thousand: 54
+Male Mortality per Thousand: 249
+Female Mortality per Thousand: 144
+Male and Female Mortality per Thousand: 198
+
+Country Name: Tuvalu
+Country Year: 2000
+Male Mortality per Thousand: 296
+Female Mortality per Thousand: 231
+Male and Female Mortality per Thousand: 265
+
+Country Name: France
+Country Year: 1990
+Male Mortality per Thousand: 162
+Female Mortality per Thousand: 67
+Male and Female Mortality per Thousand: 115
+
+Country Name: Barbados
+Country Year: 2012
+Male Mortality per Thousand: 118
+Female Mortality per Thousand: 66
+Male and Female Mortality per Thousand: 93
+
+Country Name: Armenia
+Country Year: 2012
+Male Mortality per Thousand: 228
+Female Mortality per Thousand: 96
+Male and Female Mortality per Thousand: 163
+
+Country Name: Bhutan
+Country Year: 2012
+Male Mortality per Thousand: 221
+Female Mortality per Thousand: 217
+Male and Female Mortality per Thousand: 220
+
+Country Name: Malaysia
+Country Year: 1990
+Male Mortality per Thousand: 209
+Female Mortality per Thousand: 129
+Male and Female Mortality per Thousand: 170
+
+Country Name: San Marino
+Country Year: 2000
+Male Mortality per Thousand: 74
+Female Mortality per Thousand: 39
+Male and Female Mortality per Thousand: 57
+
+Country Name: Vanuatu
+Country Year: 2000
+Male Mortality per Thousand: 209
+Female Mortality per Thousand: 162
+Male and Female Mortality per Thousand: 186
+
+Country Name: Tajikistan
+Country Year: 1990
+Male Mortality per Thousand: 217
+Female Mortality per Thousand: 180
+Male and Female Mortality per Thousand: 199
+
+Country Name: Suriname
+Country Year: 1990
+Male Mortality per Thousand: 188
+Female Mortality per Thousand: 123
+Male and Female Mortality per Thousand: 156
+
+Country Name: Chad
+Country Year: 2013
+Male Mortality per Thousand: 410
+Female Mortality per Thousand: 377
+Male and Female Mortality per Thousand: 393
+
+Country Name: Timor-Leste
+Country Year: 2013
+Male Mortality per Thousand: 208
+Female Mortality per Thousand: 164
+Male and Female Mortality per Thousand: 186
+
+Country Name: Yemen
+Country Year: 2013
+Male Mortality per Thousand: 255
+Female Mortality per Thousand: 211
+Male and Female Mortality per Thousand: 232
+
+Country Name: Greece
+Country Year: 2013
+Male Mortality per Thousand: 98
+Female Mortality per Thousand: 41
+Male and Female Mortality per Thousand: 70
+
+Country Name: New Zealand
+Country Year: 1990
+Male Mortality per Thousand: 143
+Female Mortality per Thousand: 93
+Male and Female Mortality per Thousand: 118
+
+Country Name: Uganda
+Country Year: 1990
+Male Mortality per Thousand: 503
+Female Mortality per Thousand: 418
+Male and Female Mortality per Thousand: 461
+
+Country Name: Ethiopia
+Country Year: 2013
+Male Mortality per Thousand: 239
+Female Mortality per Thousand: 198
+Male and Female Mortality per Thousand: 218
+
+Country Name: Philippines
+Country Year: 2012
+Male Mortality per Thousand: 258
+Female Mortality per Thousand: 138
+Male and Female Mortality per Thousand: 199
+
+Country Name: Brazil
+Country Year: 2013
+Male Mortality per Thousand: 197
+Female Mortality per Thousand: 97
+Male and Female Mortality per Thousand: 147
+
+Country Name: Norway
+Country Year: 2012
+Male Mortality per Thousand: 73
+Female Mortality per Thousand: 44
+Male and Female Mortality per Thousand: 59
+
+Country Name: Somalia
+Country Year: 2000
+Male Mortality per Thousand: 391
+Female Mortality per Thousand: 330
+Male and Female Mortality per Thousand: 361
+
+Country Name: Bosnia and Herzegovina
+Country Year: 2013
+Male Mortality per Thousand: 138
+Female Mortality per Thousand: 64
+Male and Female Mortality per Thousand: 101
+
+Country Name: Sierra Leone
+Country Year: 2012
+Male Mortality per Thousand: 444
+Female Mortality per Thousand: 426
+Male and Female Mortality per Thousand: 435
+
+Country Name: Iran (Islamic Republic of)
+Country Year: 2000
+Male Mortality per Thousand: 178
+Female Mortality per Thousand: 131
+Male and Female Mortality per Thousand: 155
+
+Country Name: Niue
+Country Year: 2013
+Male Mortality per Thousand: 164
+Female Mortality per Thousand: 84
+Male and Female Mortality per Thousand: 126
+
+Country Name: Swaziland
+Country Year: 1990
+Male Mortality per Thousand: 253
+Female Mortality per Thousand: 288
+Male and Female Mortality per Thousand: 274
+
+Country Name: Syrian Arab Republic
+Country Year: 1990
+Male Mortality per Thousand: 158
+Female Mortality per Thousand: 140
+Male and Female Mortality per Thousand: 149
+
+Country Name: Tonga
+Country Year: 1990
+Male Mortality per Thousand: 314
+Female Mortality per Thousand: 128
+Male and Female Mortality per Thousand: 222
+
+Country Name: Uruguay
+Country Year: 1990
+Male Mortality per Thousand: 196
+Female Mortality per Thousand: 98
+Male and Female Mortality per Thousand: 147
+
+Country Name: Eritrea
+Country Year: 2012
+Male Mortality per Thousand: 313
+Female Mortality per Thousand: 245
+Male and Female Mortality per Thousand: 278
+
+Country Name: Turkmenistan
+Country Year: 2012
+Male Mortality per Thousand: 378
+Female Mortality per Thousand: 201
+Male and Female Mortality per Thousand: 292
+
+Country Name: Latvia
+Country Year: 2000
+Male Mortality per Thousand: 321
+Female Mortality per Thousand: 117
+Male and Female Mortality per Thousand: 218
+
+Country Name: Cameroon
+Country Year: 2000
+Male Mortality per Thousand: 398
+Female Mortality per Thousand: 375
+Male and Female Mortality per Thousand: 386
+
+Country Name: Chile
+Country Year: 2013
+Male Mortality per Thousand: 107
+Female Mortality per Thousand: 55
+Male and Female Mortality per Thousand: 81
+
+Country Name: Guinea
+Country Year: 2013
+Male Mortality per Thousand: 301
+Female Mortality per Thousand: 267
+Male and Female Mortality per Thousand: 284
+
+Country Name: Gabon
+Country Year: 2012
+Male Mortality per Thousand: 285
+Female Mortality per Thousand: 273
+Male and Female Mortality per Thousand: 279
+
+Country Name: Czech Republic
+Country Year: 2000
+Male Mortality per Thousand: 172
+Female Mortality per Thousand: 76
+Male and Female Mortality per Thousand: 125
+
+Country Name: Gambia
+Country Year: 2013
+Male Mortality per Thousand: 295
+Female Mortality per Thousand: 240
+Male and Female Mortality per Thousand: 267
+
+Country Name: Andorra
+Country Year: 1990
+Male Mortality per Thousand: 144
+Female Mortality per Thousand: 60
+Male and Female Mortality per Thousand: 102
+
+Country Name: Sweden
+Country Year: 1990
+Male Mortality per Thousand: 114
+Female Mortality per Thousand: 66
+Male and Female Mortality per Thousand: 90
+
+Country Name: Monaco
+Country Year: 2012
+Male Mortality per Thousand: 107
+Female Mortality per Thousand: 49
+Male and Female Mortality per Thousand: 78
+
+Country Name: Cuba
+Country Year: 2000
+Male Mortality per Thousand: 145
+Female Mortality per Thousand: 97
+Male and Female Mortality per Thousand: 121
+
+Country Name: Costa Rica
+Country Year: 2000
+Male Mortality per Thousand: 124
+Female Mortality per Thousand: 75
+Male and Female Mortality per Thousand: 100
+
+Country Name: Slovenia
+Country Year: 1990
+Male Mortality per Thousand: 207
+Female Mortality per Thousand: 82
+Male and Female Mortality per Thousand: 145
+
+Country Name: Republic of Moldova
+Country Year: 2013
+Male Mortality per Thousand: 277
+Female Mortality per Thousand: 106
+Male and Female Mortality per Thousand: 191
+
+Country Name: Morocco
+Country Year: 2000
+Male Mortality per Thousand: 192
+Female Mortality per Thousand: 145
+Male and Female Mortality per Thousand: 167
+
+Country Name: Russian Federation
+Country Year: 2012
+Male Mortality per Thousand: 339
+Female Mortality per Thousand: 127
+Male and Female Mortality per Thousand: 233
+
+Country Name: Sri Lanka
+Country Year: 2012
+Male Mortality per Thousand: 186
+Female Mortality per Thousand: 75
+Male and Female Mortality per Thousand: 130
+
+Country Name: Iceland
+Country Year: 1990
+Male Mortality per Thousand: 112
+Female Mortality per Thousand: 69
+Male and Female Mortality per Thousand: 91
+
+Country Name: Nauru
+Country Year: 1990
+Male Mortality per Thousand: 154
+Female Mortality per Thousand: 78
+Male and Female Mortality per Thousand: 119
+
+Country Name: Poland
+Country Year: 2000
+Male Mortality per Thousand: 216
+Female Mortality per Thousand: 86
+Male and Female Mortality per Thousand: 152
+
+Country Name: Serbia
+Country Year: 2000
+Male Mortality per Thousand: 209
+Female Mortality per Thousand: 106
+Male and Female Mortality per Thousand: 159
+
+Country Name: Dominica
+Country Year: 1990
+Male Mortality per Thousand: 194
+Female Mortality per Thousand: 145
+Male and Female Mortality per Thousand: 170
+
+Country Name: Mongolia
+Country Year: 1990
+Male Mortality per Thousand: 269
+Female Mortality per Thousand: 183
+Male and Female Mortality per Thousand: 226
+
+Country Name: Cyprus
+Country Year: 2013
+Male Mortality per Thousand: 75
+Female Mortality per Thousand: 36
+Male and Female Mortality per Thousand: 56
+
+Country Name: Argentina
+Country Year: 1990
+Male Mortality per Thousand: 198
+Female Mortality per Thousand: 103
+Male and Female Mortality per Thousand: 150
+
+Country Name: Romania
+Country Year: 2013
+Male Mortality per Thousand: 205
+Female Mortality per Thousand: 81
+Male and Female Mortality per Thousand: 144
+
+Country Name: Azerbaijan
+Country Year: 1990
+Male Mortality per Thousand: 289
+Female Mortality per Thousand: 162
+Male and Female Mortality per Thousand: 225
+
+Country Name: Hungary
+Country Year: 2000
+Male Mortality per Thousand: 271
+Female Mortality per Thousand: 114
+Male and Female Mortality per Thousand: 193
+
+Country Name: Belize
+Country Year: 2013
+Male Mortality per Thousand: 145
+Female Mortality per Thousand: 78
+Male and Female Mortality per Thousand: 112
+
+Country Name: Kuwait
+Country Year: 2000
+Male Mortality per Thousand: 86
+Female Mortality per Thousand: 63
 Male and Female Mortality per Thousand: 77
 
 Country Name: Guatemala
@@ -603,42 +573,6 @@ Country Year: 2012
 Male Mortality per Thousand: 240
 Female Mortality per Thousand: 129
 Male and Female Mortality per Thousand: 182
-
-Country Name: Guyana
-Country Year: 2013
-Male Mortality per Thousand: 377
-Female Mortality per Thousand: 256
-Male and Female Mortality per Thousand: 320
-
-Country Name: South Sudan
-Country Year: 2013
-Male Mortality per Thousand: 353
-Female Mortality per Thousand: 323
-Male and Female Mortality per Thousand: 338
-
-Country Name: Chad
-Country Year: 1990
-Male Mortality per Thousand: 501
-Female Mortality per Thousand: 401
-Male and Female Mortality per Thousand: 452
-
-Country Name: Congo
-Country Year: 2000
-Male Mortality per Thousand: 430
-Female Mortality per Thousand: 422
-Male and Female Mortality per Thousand: 426
-
-Country Name: Republic of Korea
-Country Year: 2013
-Male Mortality per Thousand: 93
-Female Mortality per Thousand: 38
-Male and Female Mortality per Thousand: 66
-
-Country Name: Gambia
-Country Year: 1990
-Male Mortality per Thousand: 348
-Female Mortality per Thousand: 300
-Male and Female Mortality per Thousand: 326
 
 Country Name: Comoros
 Country Year: 1990
@@ -652,755 +586,35 @@ Male Mortality per Thousand: 382
 Female Mortality per Thousand: 323
 Male and Female Mortality per Thousand: 352
 
-Country Name: Eritrea
-Country Year: 2012
-Male Mortality per Thousand: 313
-Female Mortality per Thousand: 245
-Male and Female Mortality per Thousand: 278
-
-Country Name: Papua New Guinea
-Country Year: 2000
-Male Mortality per Thousand: 379
-Female Mortality per Thousand: 296
-Male and Female Mortality per Thousand: 339
-
-Country Name: Kyrgyzstan
-Country Year: 2000
-Male Mortality per Thousand: 317
-Female Mortality per Thousand: 164
-Male and Female Mortality per Thousand: 242
-
-Country Name: Slovenia
-Country Year: 2000
-Male Mortality per Thousand: 168
-Female Mortality per Thousand: 72
-Male and Female Mortality per Thousand: 122
-
-Country Name: Ukraine
+Country Name: Qatar
 Country Year: 1990
-Male Mortality per Thousand: 287
-Female Mortality per Thousand: 112
-Male and Female Mortality per Thousand: 199
-
-Country Name: Nigeria
-Country Year: 2013
-Male Mortality per Thousand: 357
-Female Mortality per Thousand: 325
-Male and Female Mortality per Thousand: 341
-
-Country Name: Chad
-Country Year: 2012
-Male Mortality per Thousand: 413
-Female Mortality per Thousand: 385
-Male and Female Mortality per Thousand: 398
-
-Country Name: Afghanistan
-Country Year: 2000
-Male Mortality per Thousand: 349
-Female Mortality per Thousand: 301
-Male and Female Mortality per Thousand: 325
-
-Country Name: Monaco
-Country Year: 2000
-Male Mortality per Thousand: 136
-Female Mortality per Thousand: 61
-Male and Female Mortality per Thousand: 99
-
-Country Name: Russian Federation
-Country Year: 2000
-Male Mortality per Thousand: 449
-Female Mortality per Thousand: 161
-Male and Female Mortality per Thousand: 312
-
-Country Name: Namibia
-Country Year: 2000
-Male Mortality per Thousand: 411
-Female Mortality per Thousand: 418
-Male and Female Mortality per Thousand: 414
-
-Country Name: Zimbabwe
-Country Year: 2000
-Male Mortality per Thousand: 738
-Female Mortality per Thousand: 764
-Male and Female Mortality per Thousand: 751
-
-Country Name: Cameroon
-Country Year: 2000
-Male Mortality per Thousand: 398
-Female Mortality per Thousand: 375
-Male and Female Mortality per Thousand: 386
-
-Country Name: Serbia
-Country Year: 1990
-Male Mortality per Thousand: 184
-Female Mortality per Thousand: 94
-Male and Female Mortality per Thousand: 140
-
-Country Name: Guinea
-Country Year: 1990
-Male Mortality per Thousand: 355
-Female Mortality per Thousand: 307
-Male and Female Mortality per Thousand: 331
-
-Country Name: United Republic of Tanzania
-Country Year: 1990
-Male Mortality per Thousand: 388
-Female Mortality per Thousand: 328
-Male and Female Mortality per Thousand: 358
-
-Country Name: Ukraine
-Country Year: 2012
-Male Mortality per Thousand: 297
-Female Mortality per Thousand: 116
-Male and Female Mortality per Thousand: 205
-
-Country Name: Dominica
-Country Year: 2012
-Male Mortality per Thousand: 225
-Female Mortality per Thousand: 118
-Male and Female Mortality per Thousand: 172
-
-Country Name: India
-Country Year: 2012
-Male Mortality per Thousand: 242
-Female Mortality per Thousand: 160
-Male and Female Mortality per Thousand: 203
-
-Country Name: Somalia
-Country Year: 1990
-Male Mortality per Thousand: 473
-Female Mortality per Thousand: 364
-Male and Female Mortality per Thousand: 420
-
-Country Name: Canada
-Country Year: 2000
-Male Mortality per Thousand: 100
-Female Mortality per Thousand: 61
-Male and Female Mortality per Thousand: 81
-
-Country Name: Mongolia
-Country Year: 1990
-Male Mortality per Thousand: 269
-Female Mortality per Thousand: 183
-Male and Female Mortality per Thousand: 226
-
-Country Name: South Africa
-Country Year: 1990
-Male Mortality per Thousand: 344
-Female Mortality per Thousand: 219
-Male and Female Mortality per Thousand: 282
-
-Country Name: Côte d'Ivoire
-Country Year: 2013
-Male Mortality per Thousand: 410
-Female Mortality per Thousand: 398
-Male and Female Mortality per Thousand: 405
-
-Country Name: Tonga
-Country Year: 1990
-Male Mortality per Thousand: 314
-Female Mortality per Thousand: 128
-Male and Female Mortality per Thousand: 222
-
-Country Name: Liberia
-Country Year: 1990
-Male Mortality per Thousand: 544
-Female Mortality per Thousand: 376
-Male and Female Mortality per Thousand: 465
-
-Country Name: Guinea
-Country Year: 2012
-Male Mortality per Thousand: 306
-Female Mortality per Thousand: 277
-Male and Female Mortality per Thousand: 291
-
-Country Name: United Republic of Tanzania
-Country Year: 2012
-Male Mortality per Thousand: 342
-Female Mortality per Thousand: 277
-Male and Female Mortality per Thousand: 310
-
-Country Name: Malaysia
-Country Year: 2012
-Male Mortality per Thousand: 172
-Female Mortality per Thousand: 89
-Male and Female Mortality per Thousand: 130
-
-Country Name: Latvia
-Country Year: 2013
-Male Mortality per Thousand: 224
-Female Mortality per Thousand: 85
-Male and Female Mortality per Thousand: 153
-
-Country Name: Zambia
-Country Year: 2000
-Male Mortality per Thousand: 704
-Female Mortality per Thousand: 633
-Male and Female Mortality per Thousand: 670
-
-Country Name: Samoa
-Country Year: 2000
-Male Mortality per Thousand: 225
-Female Mortality per Thousand: 136
-Male and Female Mortality per Thousand: 182
-
-Country Name: Somalia
-Country Year: 2012
-Male Mortality per Thousand: 382
-Female Mortality per Thousand: 299
-Male and Female Mortality per Thousand: 341
-
-Country Name: Lithuania
-Country Year: 1990
-Male Mortality per Thousand: 288
-Female Mortality per Thousand: 107
-Male and Female Mortality per Thousand: 196
-
-Country Name: Mongolia
-Country Year: 2012
-Male Mortality per Thousand: 314
-Female Mortality per Thousand: 150
-Male and Female Mortality per Thousand: 233
-
-Country Name: South Africa
-Country Year: 2012
-Male Mortality per Thousand: 463
-Female Mortality per Thousand: 350
-Male and Female Mortality per Thousand: 403
-
-Country Name: Philippines
-Country Year: 2013
-Male Mortality per Thousand: 255
-Female Mortality per Thousand: 136
-Male and Female Mortality per Thousand: 196
-
-Country Name: Niger
-Country Year: 1990
-Male Mortality per Thousand: 317
-Female Mortality per Thousand: 295
-Male and Female Mortality per Thousand: 305
-
-Country Name: Liberia
-Country Year: 2012
-Male Mortality per Thousand: 282
-Female Mortality per Thousand: 246
-Male and Female Mortality per Thousand: 263
-
-Country Name: Ethiopia
-Country Year: 1990
-Male Mortality per Thousand: 478
-Female Mortality per Thousand: 366
-Male and Female Mortality per Thousand: 424
-
-Country Name: Guinea-Bissau
-Country Year: 2000
-Male Mortality per Thousand: 333
-Female Mortality per Thousand: 301
-Male and Female Mortality per Thousand: 317
-
-Country Name: Burkina Faso
-Country Year: 2012
-Male Mortality per Thousand: 301
-Female Mortality per Thousand: 259
-Male and Female Mortality per Thousand: 278
-
-Country Name: Democratic Republic of the Congo
-Country Year: 2013
-Male Mortality per Thousand: 379
-Female Mortality per Thousand: 320
-Male and Female Mortality per Thousand: 349
-
-Country Name: Eritrea
-Country Year: 2013
-Male Mortality per Thousand: 301
-Female Mortality per Thousand: 229
-Male and Female Mortality per Thousand: 264
-
-Country Name: Togo
-Country Year: 2013
-Male Mortality per Thousand: 323
-Female Mortality per Thousand: 279
-Male and Female Mortality per Thousand: 300
-
-Country Name: Kenya
-Country Year: 2000
-Male Mortality per Thousand: 458
-Female Mortality per Thousand: 419
-Male and Female Mortality per Thousand: 438
-
-Country Name: Myanmar
-Country Year: 2000
-Male Mortality per Thousand: 276
-Female Mortality per Thousand: 215
-Male and Female Mortality per Thousand: 245
-
-Country Name: Belarus
-Country Year: 2000
-Male Mortality per Thousand: 355
-Female Mortality per Thousand: 125
-Male and Female Mortality per Thousand: 242
-
-Country Name: Montenegro
-Country Year: 1990
-Male Mortality per Thousand: 165
-Female Mortality per Thousand: 73
-Male and Female Mortality per Thousand: 119
-
-Country Name: Chad
-Country Year: 2013
-Male Mortality per Thousand: 410
-Female Mortality per Thousand: 377
-Male and Female Mortality per Thousand: 393
-
-Country Name: Hungary
-Country Year: 1990
-Male Mortality per Thousand: 305
-Female Mortality per Thousand: 133
-Male and Female Mortality per Thousand: 219
-
-Country Name: Angola
-Country Year: 1990
-Male Mortality per Thousand: 505
-Female Mortality per Thousand: 409
-Male and Female Mortality per Thousand: 458
-
-Country Name: Comoros
-Country Year: 2013
-Male Mortality per Thousand: 281
-Female Mortality per Thousand: 234
-Male and Female Mortality per Thousand: 257
-
-Country Name: Egypt
-Country Year: 2000
-Male Mortality per Thousand: 218
-Female Mortality per Thousand: 136
-Male and Female Mortality per Thousand: 177
-
-Country Name: Benin
-Country Year: 2000
-Male Mortality per Thousand: 335
-Female Mortality per Thousand: 279
-Male and Female Mortality per Thousand: 305
-
-Country Name: Suriname
-Country Year: 1990
-Male Mortality per Thousand: 188
-Female Mortality per Thousand: 123
-Male and Female Mortality per Thousand: 156
-
-Country Name: Lebanon
-Country Year: 1990
-Male Mortality per Thousand: 280
-Female Mortality per Thousand: 150
-Male and Female Mortality per Thousand: 214
-
-Country Name: Republic of Moldova
-Country Year: 2000
-Male Mortality per Thousand: 311
-Female Mortality per Thousand: 155
-Male and Female Mortality per Thousand: 232
-
-Country Name: Malawi
-Country Year: 1990
-Male Mortality per Thousand: 467
-Female Mortality per Thousand: 407
-Male and Female Mortality per Thousand: 436
-
-Country Name: Ukraine
-Country Year: 2013
-Male Mortality per Thousand: 295
-Female Mortality per Thousand: 114
-Male and Female Mortality per Thousand: 203
-
-Country Name: Uzbekistan
-Country Year: 1990
-Male Mortality per Thousand: 251
-Female Mortality per Thousand: 144
-Male and Female Mortality per Thousand: 198
-
-Country Name: Dominica
-Country Year: 2013
-Male Mortality per Thousand: 219
-Female Mortality per Thousand: 116
-Male and Female Mortality per Thousand: 168
-
-Country Name: Guyana
-Country Year: 2000
-Male Mortality per Thousand: 341
-Female Mortality per Thousand: 229
-Male and Female Mortality per Thousand: 287
-
-Country Name: South Sudan
-Country Year: 2000
-Male Mortality per Thousand: 408
-Female Mortality per Thousand: 368
-Male and Female Mortality per Thousand: 388
-
-Country Name: Angola
-Country Year: 2012
-Male Mortality per Thousand: 376
-Female Mortality per Thousand: 336
-Male and Female Mortality per Thousand: 356
-
-Country Name: Venezuela (Bolivarian Republic of)
-Country Year: 2013
-Male Mortality per Thousand: 198
-Female Mortality per Thousand: 88
-Male and Female Mortality per Thousand: 145
-
-Country Name: Pakistan
-Country Year: 1990
-Male Mortality per Thousand: 220
-Female Mortality per Thousand: 197
-Male and Female Mortality per Thousand: 209
-
-Country Name: Cambodia
-Country Year: 1990
-Male Mortality per Thousand: 400
-Female Mortality per Thousand: 317
-Male and Female Mortality per Thousand: 358
-
-Country Name: Serbia
-Country Year: 2013
-Male Mortality per Thousand: 172
-Female Mortality per Thousand: 84
-Male and Female Mortality per Thousand: 128
-
-Country Name: Lesotho
-Country Year: 2012
-Male Mortality per Thousand: 560
-Female Mortality per Thousand: 503
-Male and Female Mortality per Thousand: 528
-
-Country Name: Malawi
-Country Year: 2012
-Male Mortality per Thousand: 376
-Female Mortality per Thousand: 330
-Male and Female Mortality per Thousand: 352
-
-Country Name: Malaysia
-Country Year: 2013
-Male Mortality per Thousand: 169
-Female Mortality per Thousand: 86
-Male and Female Mortality per Thousand: 127
-
-Country Name: Argentina
-Country Year: 1990
-Male Mortality per Thousand: 198
-Female Mortality per Thousand: 103
-Male and Female Mortality per Thousand: 150
-
-Country Name: Uzbekistan
-Country Year: 2012
-Male Mortality per Thousand: 211
-Female Mortality per Thousand: 131
-Male and Female Mortality per Thousand: 171
-
-Country Name: Nicaragua
-Country Year: 2012
-Male Mortality per Thousand: 204
-Female Mortality per Thousand: 118
-Male and Female Mortality per Thousand: 160
-
-Country Name: Saint Vincent and the Grenadines
-Country Year: 1990
-Male Mortality per Thousand: 217
-Female Mortality per Thousand: 140
-Male and Female Mortality per Thousand: 179
-
-Country Name: Somalia
-Country Year: 2013
-Male Mortality per Thousand: 339
-Female Mortality per Thousand: 289
-Male and Female Mortality per Thousand: 314
-
-Country Name: Nigeria
-Country Year: 2000
-Male Mortality per Thousand: 414
-Female Mortality per Thousand: 385
-Male and Female Mortality per Thousand: 400
-
-Country Name: Mongolia
-Country Year: 2013
-Male Mortality per Thousand: 309
-Female Mortality per Thousand: 148
-Male and Female Mortality per Thousand: 229
-
-Country Name: Uganda
-Country Year: 1990
-Male Mortality per Thousand: 503
-Female Mortality per Thousand: 418
-Male and Female Mortality per Thousand: 461
-
-Country Name: Romania
-Country Year: 1990
-Male Mortality per Thousand: 239
-Female Mortality per Thousand: 114
-Male and Female Mortality per Thousand: 178
-
-Country Name: Yemen
-Country Year: 1990
-Male Mortality per Thousand: 301
-Female Mortality per Thousand: 247
-Male and Female Mortality per Thousand: 272
-
-Country Name: Liberia
-Country Year: 2013
-Male Mortality per Thousand: 279
-Female Mortality per Thousand: 240
-Male and Female Mortality per Thousand: 259
-
-Country Name: Cook Islands
-Country Year: 2012
-Male Mortality per Thousand: 166
-Female Mortality per Thousand: 74
-Male and Female Mortality per Thousand: 122
-
-Country Name: Botswana
-Country Year: 1990
-Male Mortality per Thousand: 243
-Female Mortality per Thousand: 242
-Male and Female Mortality per Thousand: 243
-
-Country Name: Kiribati
-Country Year: 2000
-Male Mortality per Thousand: 255
-Female Mortality per Thousand: 180
-Male and Female Mortality per Thousand: 219
-
-Country Name: Colombia
-Country Year: 2000
-Male Mortality per Thousand: 225
-Female Mortality per Thousand: 100
-Male and Female Mortality per Thousand: 163
-
-Country Name: Burkina Faso
-Country Year: 2013
-Male Mortality per Thousand: 298
-Female Mortality per Thousand: 256
-Male and Female Mortality per Thousand: 275
-
-Country Name: Gabon
-Country Year: 1990
-Male Mortality per Thousand: 267
-Female Mortality per Thousand: 221
-Male and Female Mortality per Thousand: 243
-
-Country Name: Saint Vincent and the Grenadines
-Country Year: 2012
-Male Mortality per Thousand: 169
-Female Mortality per Thousand: 111
-Male and Female Mortality per Thousand: 141
-
-Country Name: Estonia
-Country Year: 1990
-Male Mortality per Thousand: 301
-Female Mortality per Thousand: 107
-Male and Female Mortality per Thousand: 204
-
-Country Name: Lithuania
-Country Year: 2013
-Male Mortality per Thousand: 254
-Female Mortality per Thousand: 88
-Male and Female Mortality per Thousand: 170
-
-Country Name: Armenia
-Country Year: 2012
-Male Mortality per Thousand: 228
-Female Mortality per Thousand: 96
-Male and Female Mortality per Thousand: 163
-
-Country Name: Uganda
-Country Year: 2012
-Male Mortality per Thousand: 389
-Female Mortality per Thousand: 360
-Male and Female Mortality per Thousand: 375
-
-Country Name: Romania
-Country Year: 2012
-Male Mortality per Thousand: 207
+Male Mortality per Thousand: 94
 Female Mortality per Thousand: 82
-Male and Female Mortality per Thousand: 145
+Male and Female Mortality per Thousand: 90
 
-Country Name: Yemen
-Country Year: 2012
-Male Mortality per Thousand: 264
-Female Mortality per Thousand: 214
-Male and Female Mortality per Thousand: 238
-
-Country Name: Ethiopia
-Country Year: 2013
-Male Mortality per Thousand: 239
-Female Mortality per Thousand: 198
-Male and Female Mortality per Thousand: 218
-
-Country Name: Botswana
-Country Year: 2012
-Male Mortality per Thousand: 370
-Female Mortality per Thousand: 327
-Male and Female Mortality per Thousand: 347
-
-Country Name: Côte d'Ivoire
-Country Year: 2000
-Male Mortality per Thousand: 492
-Female Mortality per Thousand: 480
-Male and Female Mortality per Thousand: 487
-
-Country Name: Madagascar
-Country Year: 2000
-Male Mortality per Thousand: 302
-Female Mortality per Thousand: 268
-Male and Female Mortality per Thousand: 284
-
-Country Name: Kazakhstan
+Country Name: Australia
 Country Year: 1990
-Male Mortality per Thousand: 318
-Female Mortality per Thousand: 150
-Male and Female Mortality per Thousand: 235
-
-Country Name: Gabon
-Country Year: 2012
-Male Mortality per Thousand: 285
-Female Mortality per Thousand: 273
-Male and Female Mortality per Thousand: 279
-
-Country Name: Sudan
-Country Year: 2000
-Male Mortality per Thousand: 318
-Female Mortality per Thousand: 249
-Male and Female Mortality per Thousand: 284
-
-Country Name: Estonia
-Country Year: 2012
-Male Mortality per Thousand: 199
-Female Mortality per Thousand: 68
-Male and Female Mortality per Thousand: 133
-
-Country Name: Latvia
-Country Year: 2000
-Male Mortality per Thousand: 321
-Female Mortality per Thousand: 117
-Male and Female Mortality per Thousand: 218
-
-Country Name: Georgia
-Country Year: 2012
-Male Mortality per Thousand: 176
+Male Mortality per Thousand: 124
 Female Mortality per Thousand: 66
-Male and Female Mortality per Thousand: 119
-
-Country Name: Libya
-Country Year: 1990
-Male Mortality per Thousand: 194
-Female Mortality per Thousand: 142
-Male and Female Mortality per Thousand: 171
-
-Country Name: Cabo Verde
-Country Year: 1990
-Male Mortality per Thousand: 240
-Female Mortality per Thousand: 167
-Male and Female Mortality per Thousand: 197
-
-Country Name: Djibouti
-Country Year: 1990
-Male Mortality per Thousand: 324
-Female Mortality per Thousand: 269
-Male and Female Mortality per Thousand: 296
-
-Country Name: Hungary
-Country Year: 2013
-Male Mortality per Thousand: 201
-Female Mortality per Thousand: 91
-Male and Female Mortality per Thousand: 146
-
-Country Name: Philippines
-Country Year: 2000
-Male Mortality per Thousand: 243
-Female Mortality per Thousand: 134
-Male and Female Mortality per Thousand: 189
-
-Country Name: Angola
-Country Year: 2013
-Male Mortality per Thousand: 372
-Female Mortality per Thousand: 322
-Male and Female Mortality per Thousand: 347
-
-Country Name: Kazakhstan
-Country Year: 2012
-Male Mortality per Thousand: 324
-Female Mortality per Thousand: 147
-Male and Female Mortality per Thousand: 235
-
-Country Name: Costa Rica
-Country Year: 2013
-Male Mortality per Thousand: 111
-Female Mortality per Thousand: 64
-Male and Female Mortality per Thousand: 88
-
-Country Name: Central African Republic
-Country Year: 1990
-Male Mortality per Thousand: 447
-Female Mortality per Thousand: 376
-Male and Female Mortality per Thousand: 411
-
-Country Name: Lebanon
-Country Year: 2013
-Male Mortality per Thousand: 70
-Female Mortality per Thousand: 46
-Male and Female Mortality per Thousand: 59
-
-Country Name: Lesotho
-Country Year: 2013
-Male Mortality per Thousand: 577
-Female Mortality per Thousand: 492
-Male and Female Mortality per Thousand: 530
-
-Country Name: Democratic Republic of the Congo
-Country Year: 2000
-Male Mortality per Thousand: 417
-Female Mortality per Thousand: 359
-Male and Female Mortality per Thousand: 388
-
-Country Name: Eritrea
-Country Year: 2000
-Male Mortality per Thousand: 735
-Female Mortality per Thousand: 426
-Male and Female Mortality per Thousand: 605
+Male and Female Mortality per Thousand: 96
 
 Country Name: Togo
-Country Year: 2000
-Male Mortality per Thousand: 347
-Female Mortality per Thousand: 333
-Male and Female Mortality per Thousand: 340
+Country Year: 1990
+Male Mortality per Thousand: 304
+Female Mortality per Thousand: 259
+Male and Female Mortality per Thousand: 281
 
-Country Name: Uzbekistan
-Country Year: 2013
-Male Mortality per Thousand: 210
-Female Mortality per Thousand: 130
-Male and Female Mortality per Thousand: 170
-
-Country Name: Djibouti
+Country Name: Singapore
 Country Year: 2012
-Male Mortality per Thousand: 293
-Female Mortality per Thousand: 250
-Male and Female Mortality per Thousand: 272
+Male Mortality per Thousand: 68
+Female Mortality per Thousand: 42
+Male and Female Mortality per Thousand: 55
 
-Country Name: Brunei Darussalam
-Country Year: 1990
-Male Mortality per Thousand: 151
-Female Mortality per Thousand: 112
-Male and Female Mortality per Thousand: 133
-
-Country Name: Panama
-Country Year: 1990
-Male Mortality per Thousand: 146
-Female Mortality per Thousand: 101
-Male and Female Mortality per Thousand: 124
-
-Country Name: Chad
+Country Name: Luxembourg
 Country Year: 2000
-Male Mortality per Thousand: 483
-Female Mortality per Thousand: 442
-Male and Female Mortality per Thousand: 462
+Male Mortality per Thousand: 121
+Female Mortality per Thousand: 67
+Male and Female Mortality per Thousand: 95
 
 Country Name: Pakistan
 Country Year: 2013
@@ -1408,353 +622,65 @@ Male Mortality per Thousand: 189
 Female Mortality per Thousand: 155
 Male and Female Mortality per Thousand: 173
 
-Country Name: Sierra Leone
+Country Name: Saint Kitts and Nevis
+Country Year: 2000
+Male Mortality per Thousand: 214
+Female Mortality per Thousand: 134
+Male and Female Mortality per Thousand: 174
+
+Country Name: Barbados
 Country Year: 1990
-Male Mortality per Thousand: 525
-Female Mortality per Thousand: 512
-Male and Female Mortality per Thousand: 519
-
-Country Name: Turkmenistan
-Country Year: 2000
-Male Mortality per Thousand: 344
-Female Mortality per Thousand: 204
-Male and Female Mortality per Thousand: 275
-
-Country Name: Comoros
-Country Year: 2000
-Male Mortality per Thousand: 317
-Female Mortality per Thousand: 263
-Male and Female Mortality per Thousand: 290
-
-Country Name: Mexico
-Country Year: 2013
-Male Mortality per Thousand: 174
-Female Mortality per Thousand: 93
-Male and Female Mortality per Thousand: 132
-
-Country Name: El Salvador
-Country Year: 2012
-Male Mortality per Thousand: 294
-Female Mortality per Thousand: 138
-Male and Female Mortality per Thousand: 211
-
-Country Name: Argentina
-Country Year: 2013
-Male Mortality per Thousand: 151
-Female Mortality per Thousand: 83
-Male and Female Mortality per Thousand: 117
-
-Country Name: Saint Vincent and the Grenadines
-Country Year: 2013
-Male Mortality per Thousand: 169
-Female Mortality per Thousand: 110
-Male and Female Mortality per Thousand: 141
-
-Country Name: Ukraine
-Country Year: 2000
-Male Mortality per Thousand: 377
-Female Mortality per Thousand: 136
-Male and Female Mortality per Thousand: 258
-
-Country Name: Portugal
-Country Year: 2013
-Male Mortality per Thousand: 111
-Female Mortality per Thousand: 48
-Male and Female Mortality per Thousand: 80
+Male Mortality per Thousand: 188
+Female Mortality per Thousand: 109
+Male and Female Mortality per Thousand: 146
 
 Country Name: Armenia
-Country Year: 2013
-Male Mortality per Thousand: 227
-Female Mortality per Thousand: 95
-Male and Female Mortality per Thousand: 162
-
-Country Name: Uganda
-Country Year: 2013
-Male Mortality per Thousand: 380
-Female Mortality per Thousand: 307
-Male and Female Mortality per Thousand: 344
-
-Country Name: Equatorial Guinea
 Country Year: 1990
-Male Mortality per Thousand: 411
-Female Mortality per Thousand: 353
-Male and Female Mortality per Thousand: 384
-
-Country Name: Sierra Leone
-Country Year: 2012
-Male Mortality per Thousand: 444
-Female Mortality per Thousand: 426
-Male and Female Mortality per Thousand: 435
-
-Country Name: Fiji
-Country Year: 1990
-Male Mortality per Thousand: 266
-Female Mortality per Thousand: 194
-Male and Female Mortality per Thousand: 231
-
-Country Name: Haiti
-Country Year: 1990
-Male Mortality per Thousand: 352
-Female Mortality per Thousand: 299
-Male and Female Mortality per Thousand: 325
-
-Country Name: Botswana
-Country Year: 2013
-Male Mortality per Thousand: 321
-Female Mortality per Thousand: 254
-Male and Female Mortality per Thousand: 287
-
-Country Name: Mauritania
-Country Year: 2012
-Male Mortality per Thousand: 235
-Female Mortality per Thousand: 188
-Male and Female Mortality per Thousand: 212
-
-Country Name: Ghana
-Country Year: 2000
-Male Mortality per Thousand: 309
-Female Mortality per Thousand: 285
-Male and Female Mortality per Thousand: 297
-
-Country Name: Serbia
-Country Year: 2000
-Male Mortality per Thousand: 209
-Female Mortality per Thousand: 106
-Male and Female Mortality per Thousand: 159
-
-Country Name: Guinea
-Country Year: 2000
-Male Mortality per Thousand: 359
-Female Mortality per Thousand: 329
-Male and Female Mortality per Thousand: 344
-
-Country Name: Rwanda
-Country Year: 1990
-Male Mortality per Thousand: 487
-Female Mortality per Thousand: 406
-Male and Female Mortality per Thousand: 447
-
-Country Name: Malaysia
-Country Year: 2000
-Male Mortality per Thousand: 198
-Female Mortality per Thousand: 112
-Male and Female Mortality per Thousand: 157
-
-Country Name: Swaziland
-Country Year: 1990
-Male Mortality per Thousand: 253
-Female Mortality per Thousand: 288
-Male and Female Mortality per Thousand: 274
-
-Country Name: Equatorial Guinea
-Country Year: 2012
-Male Mortality per Thousand: 379
-Female Mortality per Thousand: 336
-Male and Female Mortality per Thousand: 360
-
-Country Name: Somalia
-Country Year: 2000
-Male Mortality per Thousand: 391
-Female Mortality per Thousand: 330
-Male and Female Mortality per Thousand: 361
-
-Country Name: Fiji
-Country Year: 2012
-Male Mortality per Thousand: 242
-Female Mortality per Thousand: 146
-Male and Female Mortality per Thousand: 196
-
-Country Name: Mongolia
-Country Year: 2000
-Male Mortality per Thousand: 325
-Female Mortality per Thousand: 218
-Male and Female Mortality per Thousand: 273
-
-Country Name: South Africa
-Country Year: 2000
-Male Mortality per Thousand: 433
-Female Mortality per Thousand: 313
-Male and Female Mortality per Thousand: 371
-
-Country Name: Lao People's Democratic Republic
-Country Year: 2013
-Male Mortality per Thousand: 197
-Female Mortality per Thousand: 158
-Male and Female Mortality per Thousand: 177
-
-Country Name: Tonga
-Country Year: 2000
-Male Mortality per Thousand: 208
-Female Mortality per Thousand: 188
-Male and Female Mortality per Thousand: 198
-
-Country Name: Liberia
-Country Year: 2000
-Male Mortality per Thousand: 375
-Female Mortality per Thousand: 336
-Male and Female Mortality per Thousand: 355
-
-Country Name: Jordan
-Country Year: 2012
-Male Mortality per Thousand: 132
-Female Mortality per Thousand: 97
-Male and Female Mortality per Thousand: 115
-
-Country Name: Rwanda
-Country Year: 2012
-Male Mortality per Thousand: 253
-Female Mortality per Thousand: 212
-Male and Female Mortality per Thousand: 231
-
-Country Name: Sri Lanka
-Country Year: 1990
-Male Mortality per Thousand: 294
-Female Mortality per Thousand: 125
-Male and Female Mortality per Thousand: 214
-
-Country Name: Burkina Faso
-Country Year: 2000
-Male Mortality per Thousand: 400
-Female Mortality per Thousand: 365
-Male and Female Mortality per Thousand: 380
-
-Country Name: Swaziland
-Country Year: 2012
-Male Mortality per Thousand: 494
-Female Mortality per Thousand: 411
-Male and Female Mortality per Thousand: 451
-
-Country Name: Libya
-Country Year: 2013
-Male Mortality per Thousand: 117
-Female Mortality per Thousand: 80
-Male and Female Mortality per Thousand: 99
-
-Country Name: Lithuania
-Country Year: 2000
-Male Mortality per Thousand: 293
-Female Mortality per Thousand: 103
-Male and Female Mortality per Thousand: 198
-
-Country Name: Djibouti
-Country Year: 2013
-Male Mortality per Thousand: 286
-Female Mortality per Thousand: 245
-Male and Female Mortality per Thousand: 265
-
-Country Name: Azerbaijan
-Country Year: 1990
-Male Mortality per Thousand: 289
-Female Mortality per Thousand: 162
-Male and Female Mortality per Thousand: 225
-
-Country Name: Niger
-Country Year: 2000
-Male Mortality per Thousand: 288
-Female Mortality per Thousand: 280
-Male and Female Mortality per Thousand: 284
-
-Country Name: United Kingdom of Great Britain and Northern Ireland
-Country Year: 2012
-Male Mortality per Thousand: 90
-Female Mortality per Thousand: 56
-Male and Female Mortality per Thousand: 73
-
-Country Name: Ethiopia
-Country Year: 2000
-Male Mortality per Thousand: 411
-Female Mortality per Thousand: 361
-Male and Female Mortality per Thousand: 386
-
-Country Name: Senegal
-Country Year: 1990
-Male Mortality per Thousand: 282
-Female Mortality per Thousand: 220
-Male and Female Mortality per Thousand: 251
-
-Country Name: Central African Republic
-Country Year: 2013
-Male Mortality per Thousand: 433
-Female Mortality per Thousand: 412
-Male and Female Mortality per Thousand: 422
-
-Country Name: Sri Lanka
-Country Year: 2012
-Male Mortality per Thousand: 186
-Female Mortality per Thousand: 75
-Male and Female Mortality per Thousand: 130
-
-Country Name: Bosnia and Herzegovina
-Country Year: 2013
-Male Mortality per Thousand: 138
-Female Mortality per Thousand: 64
-Male and Female Mortality per Thousand: 101
-
-Country Name: Burundi
-Country Year: 2012
-Male Mortality per Thousand: 370
-Female Mortality per Thousand: 313
-Male and Female Mortality per Thousand: 342
-
-Country Name: El Salvador
-Country Year: 2013
-Male Mortality per Thousand: 290
-Female Mortality per Thousand: 136
+Male Mortality per Thousand: 280
+Female Mortality per Thousand: 135
 Male and Female Mortality per Thousand: 208
 
-Country Name: Antigua and Barbuda
-Country Year: 2000
-Male Mortality per Thousand: 203
-Female Mortality per Thousand: 148
-Male and Female Mortality per Thousand: 176
-
-Country Name: Saint Kitts and Nevis
-Country Year: 1990
-Male Mortality per Thousand: 272
-Female Mortality per Thousand: 193
-Male and Female Mortality per Thousand: 233
-
-Country Name: Azerbaijan
-Country Year: 2012
-Male Mortality per Thousand: 169
-Female Mortality per Thousand: 82
-Male and Female Mortality per Thousand: 125
-
-Country Name: Brazil
-Country Year: 2012
-Male Mortality per Thousand: 210
-Female Mortality per Thousand: 107
-Male and Female Mortality per Thousand: 159
-
-Country Name: Seychelles
-Country Year: 1990
-Male Mortality per Thousand: 318
-Female Mortality per Thousand: 127
-Male and Female Mortality per Thousand: 227
-
-Country Name: Bolivia (Plurinational State of)
-Country Year: 1990
-Male Mortality per Thousand: 299
-Female Mortality per Thousand: 245
-Male and Female Mortality per Thousand: 272
-
-Country Name: Sierra Leone
+Country Name: Ecuador
 Country Year: 2013
-Male Mortality per Thousand: 444
-Female Mortality per Thousand: 423
-Male and Female Mortality per Thousand: 433
+Male Mortality per Thousand: 157
+Female Mortality per Thousand: 85
+Male and Female Mortality per Thousand: 121
 
-Country Name: Angola
+Country Name: Israel
 Country Year: 2000
-Male Mortality per Thousand: 440
-Female Mortality per Thousand: 390
-Male and Female Mortality per Thousand: 415
+Male Mortality per Thousand: 103
+Female Mortality per Thousand: 55
+Male and Female Mortality per Thousand: 79
 
-Country Name: Democratic People's Republic of Korea
+Country Name: Côte d'Ivoire
 Country Year: 2000
-Male Mortality per Thousand: 255
-Female Mortality per Thousand: 145
-Male and Female Mortality per Thousand: 200
+Male Mortality per Thousand: 492
+Female Mortality per Thousand: 480
+Male and Female Mortality per Thousand: 487
+
+Country Name: Saudi Arabia
+Country Year: 2000
+Male Mortality per Thousand: 127
+Female Mortality per Thousand: 92
+Male and Female Mortality per Thousand: 112
+
+Country Name: Montenegro
+Country Year: 1990
+Male Mortality per Thousand: 165
+Female Mortality per Thousand: 73
+Male and Female Mortality per Thousand: 119
+
+Country Name: Kyrgyzstan
+Country Year: 2000
+Male Mortality per Thousand: 317
+Female Mortality per Thousand: 164
+Male and Female Mortality per Thousand: 242
+
+Country Name: Burkina Faso
+Country Year: 2013
+Male Mortality per Thousand: 298
+Female Mortality per Thousand: 256
+Male and Female Mortality per Thousand: 275
 
 Country Name: Mauritania
 Country Year: 2013
@@ -1762,215 +688,29 @@ Male Mortality per Thousand: 234
 Female Mortality per Thousand: 187
 Male and Female Mortality per Thousand: 211
 
-Country Name: Suriname
+Country Name: Jamaica
 Country Year: 2000
-Male Mortality per Thousand: 202
-Female Mortality per Thousand: 143
-Male and Female Mortality per Thousand: 173
+Male Mortality per Thousand: 242
+Female Mortality per Thousand: 140
+Male and Female Mortality per Thousand: 192
 
-Country Name: Indonesia
-Country Year: 1990
-Male Mortality per Thousand: 266
-Female Mortality per Thousand: 204
-Male and Female Mortality per Thousand: 235
-
-Country Name: Lesotho
-Country Year: 2000
-Male Mortality per Thousand: 592
-Female Mortality per Thousand: 561
-Male and Female Mortality per Thousand: 574
-
-Country Name: Malawi
-Country Year: 2000
-Male Mortality per Thousand: 584
-Female Mortality per Thousand: 605
-Male and Female Mortality per Thousand: 595
-
-Country Name: China
-Country Year: 1990
-Male Mortality per Thousand: 173
-Female Mortality per Thousand: 127
-Male and Female Mortality per Thousand: 151
-
-Country Name: Uzbekistan
-Country Year: 2000
-Male Mortality per Thousand: 252
-Female Mortality per Thousand: 151
-Male and Female Mortality per Thousand: 202
-
-Country Name: Nicaragua
-Country Year: 2000
-Male Mortality per Thousand: 191
-Female Mortality per Thousand: 121
-Male and Female Mortality per Thousand: 156
-
-Country Name: Equatorial Guinea
-Country Year: 2013
-Male Mortality per Thousand: 368
-Female Mortality per Thousand: 319
-Male and Female Mortality per Thousand: 346
-
-Country Name: Tajikistan
-Country Year: 1990
-Male Mortality per Thousand: 217
-Female Mortality per Thousand: 180
-Male and Female Mortality per Thousand: 199
-
-Country Name: Fiji
-Country Year: 2013
-Male Mortality per Thousand: 239
-Female Mortality per Thousand: 143
-Male and Female Mortality per Thousand: 193
-
-Country Name: Haiti
-Country Year: 2013
-Male Mortality per Thousand: 263
-Female Mortality per Thousand: 221
-Male and Female Mortality per Thousand: 242
-
-Country Name: Pakistan
-Country Year: 2000
-Male Mortality per Thousand: 204
-Female Mortality per Thousand: 176
-Male and Female Mortality per Thousand: 190
-
-Country Name: Cambodia
-Country Year: 2000
-Male Mortality per Thousand: 307
-Female Mortality per Thousand: 240
-Male and Female Mortality per Thousand: 271
-
-Country Name: Indonesia
+Country Name: Chad
 Country Year: 2012
-Male Mortality per Thousand: 178
-Female Mortality per Thousand: 124
-Male and Female Mortality per Thousand: 152
+Male Mortality per Thousand: 413
+Female Mortality per Thousand: 385
+Male and Female Mortality per Thousand: 398
 
-Country Name: Cook Islands
-Country Year: 2000
-Male Mortality per Thousand: 177
-Female Mortality per Thousand: 113
-Male and Female Mortality per Thousand: 147
-
-Country Name: Trinidad and Tobago
-Country Year: 1990
-Male Mortality per Thousand: 248
-Female Mortality per Thousand: 166
-Male and Female Mortality per Thousand: 207
-
-Country Name: New Zealand
-Country Year: 1990
-Male Mortality per Thousand: 143
-Female Mortality per Thousand: 93
-Male and Female Mortality per Thousand: 118
-
-Country Name: Argentina
-Country Year: 2000
-Male Mortality per Thousand: 179
-Female Mortality per Thousand: 92
-Male and Female Mortality per Thousand: 136
-
-Country Name: Solomon Islands
-Country Year: 1990
-Male Mortality per Thousand: 318
-Female Mortality per Thousand: 290
-Male and Female Mortality per Thousand: 305
-
-Country Name: Swaziland
-Country Year: 2013
-Male Mortality per Thousand: 515
-Female Mortality per Thousand: 496
-Male and Female Mortality per Thousand: 503
-
-Country Name: Mali
-Country Year: 1990
-Male Mortality per Thousand: 348
-Female Mortality per Thousand: 340
-Male and Female Mortality per Thousand: 343
-
-Country Name: Tajikistan
+Country Name: Timor-Leste
 Country Year: 2012
-Male Mortality per Thousand: 178
-Female Mortality per Thousand: 154
-Male and Female Mortality per Thousand: 166
-
-Country Name: Iraq
-Country Year: 2012
-Male Mortality per Thousand: 223
-Female Mortality per Thousand: 107
-Male and Female Mortality per Thousand: 165
-
-Country Name: Armenia
-Country Year: 2000
-Male Mortality per Thousand: 210
-Female Mortality per Thousand: 96
-Male and Female Mortality per Thousand: 149
-
-Country Name: Uganda
-Country Year: 2000
-Male Mortality per Thousand: 595
-Female Mortality per Thousand: 559
-Male and Female Mortality per Thousand: 577
-
-Country Name: Romania
-Country Year: 2000
-Male Mortality per Thousand: 237
-Female Mortality per Thousand: 106
-Male and Female Mortality per Thousand: 173
+Male Mortality per Thousand: 214
+Female Mortality per Thousand: 170
+Male and Female Mortality per Thousand: 192
 
 Country Name: Yemen
-Country Year: 2000
-Male Mortality per Thousand: 278
-Female Mortality per Thousand: 230
-Male and Female Mortality per Thousand: 255
-
-Country Name: United Kingdom of Great Britain and Northern Ireland
-Country Year: 2013
-Male Mortality per Thousand: 88
-Female Mortality per Thousand: 55
-Male and Female Mortality per Thousand: 72
-
-Country Name: Botswana
-Country Year: 2000
-Male Mortality per Thousand: 646
-Female Mortality per Thousand: 674
-Male and Female Mortality per Thousand: 660
-
-Country Name: New Zealand
 Country Year: 2012
-Male Mortality per Thousand: 81
-Female Mortality per Thousand: 53
-Male and Female Mortality per Thousand: 67
-
-Country Name: Sri Lanka
-Country Year: 2013
-Male Mortality per Thousand: 184
-Female Mortality per Thousand: 75
-Male and Female Mortality per Thousand: 129
-
-Country Name: Solomon Islands
-Country Year: 2012
-Male Mortality per Thousand: 205
-Female Mortality per Thousand: 165
-Male and Female Mortality per Thousand: 186
-
-Country Name: Mozambique
-Country Year: 2012
-Male Mortality per Thousand: 466
-Female Mortality per Thousand: 453
-Male and Female Mortality per Thousand: 459
-
-Country Name: Mali
-Country Year: 2012
-Male Mortality per Thousand: 282
-Female Mortality per Thousand: 277
-Male and Female Mortality per Thousand: 278
-
-Country Name: Papua New Guinea
-Country Year: 1990
-Male Mortality per Thousand: 437
-Female Mortality per Thousand: 333
-Male and Female Mortality per Thousand: 389
+Male Mortality per Thousand: 264
+Female Mortality per Thousand: 214
+Male and Female Mortality per Thousand: 238
 
 Country Name: Switzerland
 Country Year: 2012
@@ -1978,47 +718,629 @@ Male Mortality per Thousand: 67
 Female Mortality per Thousand: 40
 Male and Female Mortality per Thousand: 54
 
-Country Name: Kyrgyzstan
+Country Name: Jordan
 Country Year: 1990
-Male Mortality per Thousand: 291
-Female Mortality per Thousand: 156
-Male and Female Mortality per Thousand: 224
+Male Mortality per Thousand: 175
+Female Mortality per Thousand: 135
+Male and Female Mortality per Thousand: 156
 
-Country Name: Tuvalu
-Country Year: 2012
-Male Mortality per Thousand: 240
-Female Mortality per Thousand: 185
-Male and Female Mortality per Thousand: 213
-
-Country Name: Azerbaijan
+Country Name: Namibia
 Country Year: 2013
-Male Mortality per Thousand: 167
-Female Mortality per Thousand: 83
-Male and Female Mortality per Thousand: 124
+Male Mortality per Thousand: 255
+Female Mortality per Thousand: 177
+Male and Female Mortality per Thousand: 214
+
+Country Name: Philippines
+Country Year: 1990
+Male Mortality per Thousand: 272
+Female Mortality per Thousand: 154
+Male and Female Mortality per Thousand: 215
+
+Country Name: India
+Country Year: 2013
+Male Mortality per Thousand: 239
+Female Mortality per Thousand: 158
+Male and Female Mortality per Thousand: 201
+
+Country Name: Ethiopia
+Country Year: 2012
+Male Mortality per Thousand: 250
+Female Mortality per Thousand: 212
+Male and Female Mortality per Thousand: 231
 
 Country Name: Brazil
-Country Year: 2013
-Male Mortality per Thousand: 197
-Female Mortality per Thousand: 97
-Male and Female Mortality per Thousand: 147
+Country Year: 2012
+Male Mortality per Thousand: 210
+Female Mortality per Thousand: 107
+Male and Female Mortality per Thousand: 159
+
+Country Name: Georgia
+Country Year: 2000
+Male Mortality per Thousand: 201
+Female Mortality per Thousand: 78
+Male and Female Mortality per Thousand: 138
+
+Country Name: Sierra Leone
+Country Year: 1990
+Male Mortality per Thousand: 525
+Female Mortality per Thousand: 512
+Male and Female Mortality per Thousand: 519
 
 Country Name: Afghanistan
+Country Year: 2012
+Male Mortality per Thousand: 294
+Female Mortality per Thousand: 242
+Male and Female Mortality per Thousand: 268
+
+Country Name: Bosnia and Herzegovina
+Country Year: 2012
+Male Mortality per Thousand: 140
+Female Mortality per Thousand: 65
+Male and Female Mortality per Thousand: 102
+
+Country Name: Canada
 Country Year: 1990
-Male Mortality per Thousand: 412
-Female Mortality per Thousand: 368
-Male and Female Mortality per Thousand: 389
+Male Mortality per Thousand: 132
+Female Mortality per Thousand: 71
+Male and Female Mortality per Thousand: 102
 
-Country Name: Lao People's Democratic Republic
-Country Year: 2000
-Male Mortality per Thousand: 273
-Female Mortality per Thousand: 230
-Male and Female Mortality per Thousand: 250
+Country Name: Niue
+Country Year: 2012
+Male Mortality per Thousand: 166
+Female Mortality per Thousand: 85
+Male and Female Mortality per Thousand: 127
 
-Country Name: Russian Federation
+Country Name: Kazakhstan
 Country Year: 1990
 Male Mortality per Thousand: 318
-Female Mortality per Thousand: 117
+Female Mortality per Thousand: 150
+Male and Female Mortality per Thousand: 235
+
+Country Name: United Kingdom of Great Britain and Northern Ireland
+Country Year: 2013
+Male Mortality per Thousand: 88
+Female Mortality per Thousand: 55
+Male and Female Mortality per Thousand: 72
+
+Country Name: Kenya
+Country Year: 2000
+Male Mortality per Thousand: 458
+Female Mortality per Thousand: 419
+Male and Female Mortality per Thousand: 438
+
+Country Name: France
+Country Year: 2000
+Male Mortality per Thousand: 138
+Female Mortality per Thousand: 61
+Male and Female Mortality per Thousand: 100
+
+Country Name: Gabon
+Country Year: 1990
+Male Mortality per Thousand: 267
+Female Mortality per Thousand: 221
+Male and Female Mortality per Thousand: 243
+
+Country Name: Guinea
+Country Year: 2012
+Male Mortality per Thousand: 306
+Female Mortality per Thousand: 277
+Male and Female Mortality per Thousand: 291
+
+Country Name: Malaysia
+Country Year: 2000
+Male Mortality per Thousand: 198
+Female Mortality per Thousand: 112
+Male and Female Mortality per Thousand: 157
+
+Country Name: Uzbekistan
+Country Year: 2013
+Male Mortality per Thousand: 210
+Female Mortality per Thousand: 130
+Male and Female Mortality per Thousand: 170
+
+Country Name: Gambia
+Country Year: 2012
+Male Mortality per Thousand: 296
+Female Mortality per Thousand: 244
+Male and Female Mortality per Thousand: 270
+
+Country Name: Monaco
+Country Year: 1990
+Male Mortality per Thousand: 155
+Female Mortality per Thousand: 67
+Male and Female Mortality per Thousand: 112
+
+Country Name: Maldives
+Country Year: 2013
+Male Mortality per Thousand: 86
+Female Mortality per Thousand: 55
+Male and Female Mortality per Thousand: 71
+
+Country Name: Suriname
+Country Year: 2000
+Male Mortality per Thousand: 202
+Female Mortality per Thousand: 143
+Male and Female Mortality per Thousand: 173
+
+Country Name: Republic of Moldova
+Country Year: 2012
+Male Mortality per Thousand: 269
+Female Mortality per Thousand: 110
+Male and Female Mortality per Thousand: 189
+
+Country Name: New Zealand
+Country Year: 2000
+Male Mortality per Thousand: 105
+Female Mortality per Thousand: 67
+Male and Female Mortality per Thousand: 86
+
+Country Name: Sri Lanka
+Country Year: 1990
+Male Mortality per Thousand: 294
+Female Mortality per Thousand: 125
+Male and Female Mortality per Thousand: 214
+
+Country Name: United Arab Emirates
+Country Year: 2013
+Male Mortality per Thousand: 84
+Female Mortality per Thousand: 59
+Male and Female Mortality per Thousand: 76
+
+Country Name: Uganda
+Country Year: 2000
+Male Mortality per Thousand: 595
+Female Mortality per Thousand: 559
+Male and Female Mortality per Thousand: 577
+
+Country Name: Haiti
+Country Year: 2013
+Male Mortality per Thousand: 263
+Female Mortality per Thousand: 221
+Male and Female Mortality per Thousand: 242
+
+Country Name: Sao Tome and Principe
+Country Year: 2013
+Male Mortality per Thousand: 221
+Female Mortality per Thousand: 168
+Male and Female Mortality per Thousand: 193
+
+Country Name: Kiribati
+Country Year: 2000
+Male Mortality per Thousand: 255
+Female Mortality per Thousand: 180
+Male and Female Mortality per Thousand: 219
+
+Country Name: Cabo Verde
+Country Year: 2013
+Male Mortality per Thousand: 144
+Female Mortality per Thousand: 68
+Male and Female Mortality per Thousand: 104
+
+Country Name: Cyprus
+Country Year: 2012
+Male Mortality per Thousand: 77
+Female Mortality per Thousand: 36
+Male and Female Mortality per Thousand: 57
+
+Country Name: Syrian Arab Republic
+Country Year: 2000
+Male Mortality per Thousand: 132
+Female Mortality per Thousand: 102
+Male and Female Mortality per Thousand: 117
+
+Country Name: Bahamas
+Country Year: 2013
+Male Mortality per Thousand: 141
+Female Mortality per Thousand: 88
+Male and Female Mortality per Thousand: 114
+
+Country Name: Romania
+Country Year: 2012
+Male Mortality per Thousand: 207
+Female Mortality per Thousand: 82
+Male and Female Mortality per Thousand: 145
+
+Country Name: Liberia
+Country Year: 2013
+Male Mortality per Thousand: 279
+Female Mortality per Thousand: 240
+Male and Female Mortality per Thousand: 259
+
+Country Name: Croatia
+Country Year: 2000
+Male Mortality per Thousand: 184
+Female Mortality per Thousand: 76
+Male and Female Mortality per Thousand: 130
+
+Country Name: Democratic Republic of the Congo
+Country Year: 1990
+Male Mortality per Thousand: 401
+Female Mortality per Thousand: 345
+Male and Female Mortality per Thousand: 372
+
+Country Name: Italy
+Country Year: 2013
+Male Mortality per Thousand: 69
+Female Mortality per Thousand: 38
+Male and Female Mortality per Thousand: 54
+
+Country Name: Nepal
+Country Year: 2013
+Male Mortality per Thousand: 192
+Female Mortality per Thousand: 159
+Male and Female Mortality per Thousand: 176
+
+Country Name: Singapore
+Country Year: 1990
+Male Mortality per Thousand: 152
+Female Mortality per Thousand: 93
+Male and Female Mortality per Thousand: 123
+
+Country Name: Iraq
+Country Year: 2012
+Male Mortality per Thousand: 223
+Female Mortality per Thousand: 107
+Male and Female Mortality per Thousand: 165
+
+Country Name: Saint Vincent and the Grenadines
+Country Year: 2013
+Male Mortality per Thousand: 169
+Female Mortality per Thousand: 110
+Male and Female Mortality per Thousand: 141
+
+Country Name: Andorra
+Country Year: 2000
+Male Mortality per Thousand: 126
+Female Mortality per Thousand: 50
+Male and Female Mortality per Thousand: 88
+
+Country Name: Pakistan
+Country Year: 2012
+Male Mortality per Thousand: 190
+Female Mortality per Thousand: 157
+Male and Female Mortality per Thousand: 174
+
+Country Name: Sweden
+Country Year: 2000
+Male Mortality per Thousand: 87
+Female Mortality per Thousand: 56
+Male and Female Mortality per Thousand: 72
+
+Country Name: Ecuador
+Country Year: 2012
+Male Mortality per Thousand: 159
+Female Mortality per Thousand: 87
+Male and Female Mortality per Thousand: 124
+
+Country Name: Slovenia
+Country Year: 2000
+Male Mortality per Thousand: 168
+Female Mortality per Thousand: 72
+Male and Female Mortality per Thousand: 122
+
+Country Name: Dominican Republic
+Country Year: 2013
+Male Mortality per Thousand: 160
+Female Mortality per Thousand: 146
+Male and Female Mortality per Thousand: 153
+
+Country Name: Burkina Faso
+Country Year: 2012
+Male Mortality per Thousand: 301
+Female Mortality per Thousand: 259
+Male and Female Mortality per Thousand: 278
+
+Country Name: Chad
+Country Year: 1990
+Male Mortality per Thousand: 501
+Female Mortality per Thousand: 401
+Male and Female Mortality per Thousand: 452
+
+Country Name: Mauritania
+Country Year: 2012
+Male Mortality per Thousand: 235
+Female Mortality per Thousand: 188
+Male and Female Mortality per Thousand: 212
+
+Country Name: Iceland
+Country Year: 2000
+Male Mortality per Thousand: 92
+Female Mortality per Thousand: 57
+Male and Female Mortality per Thousand: 75
+
+Country Name: Nauru
+Country Year: 2000
+Male Mortality per Thousand: 114
+Female Mortality per Thousand: 56
+Male and Female Mortality per Thousand: 86
+
+Country Name: Switzerland
+Country Year: 1990
+Male Mortality per Thousand: 126
+Female Mortality per Thousand: 62
+Male and Female Mortality per Thousand: 95
+
+Country Name: Estonia
+Country Year: 2013
+Male Mortality per Thousand: 195
+Female Mortality per Thousand: 64
+Male and Female Mortality per Thousand: 129
+
+Country Name: Lao People's Democratic Republic
+Country Year: 2013
+Male Mortality per Thousand: 197
+Female Mortality per Thousand: 158
+Male and Female Mortality per Thousand: 177
+
+Country Name: Lebanon
+Country Year: 2013
+Male Mortality per Thousand: 70
+Female Mortality per Thousand: 46
+Male and Female Mortality per Thousand: 59
+
+Country Name: Dominica
+Country Year: 2000
+Male Mortality per Thousand: 189
+Female Mortality per Thousand: 116
+Male and Female Mortality per Thousand: 153
+
+Country Name: India
+Country Year: 2012
+Male Mortality per Thousand: 242
+Female Mortality per Thousand: 160
+Male and Female Mortality per Thousand: 203
+
+Country Name: Brazil
+Country Year: 1990
+Male Mortality per Thousand: 272
+Female Mortality per Thousand: 150
+Male and Female Mortality per Thousand: 212
+
+Country Name: Argentina
+Country Year: 2000
+Male Mortality per Thousand: 179
+Female Mortality per Thousand: 92
+Male and Female Mortality per Thousand: 136
+
+Country Name: Ukraine
+Country Year: 2012
+Male Mortality per Thousand: 297
+Female Mortality per Thousand: 116
+Male and Female Mortality per Thousand: 205
+
+Country Name: Denmark
+Country Year: 1990
+Male Mortality per Thousand: 152
+Female Mortality per Thousand: 99
+Male and Female Mortality per Thousand: 126
+
+Country Name: Bosnia and Herzegovina
+Country Year: 1990
+Male Mortality per Thousand: 181
+Female Mortality per Thousand: 86
+Male and Female Mortality per Thousand: 134
+
+Country Name: Rwanda
+Country Year: 2013
+Male Mortality per Thousand: 246
+Female Mortality per Thousand: 196
+Male and Female Mortality per Thousand: 220
+
+Country Name: Niue
+Country Year: 1990
+Male Mortality per Thousand: 222
+Female Mortality per Thousand: 124
+Male and Female Mortality per Thousand: 176
+
+Country Name: Congo
+Country Year: 2000
+Male Mortality per Thousand: 430
+Female Mortality per Thousand: 422
+Male and Female Mortality per Thousand: 426
+
+Country Name: Sudan
+Country Year: 2000
+Male Mortality per Thousand: 318
+Female Mortality per Thousand: 249
+Male and Female Mortality per Thousand: 284
+
+Country Name: Turkey
+Country Year: 2013
+Male Mortality per Thousand: 147
+Female Mortality per Thousand: 73
+Male and Female Mortality per Thousand: 109
+
+Country Name: Qatar
+Country Year: 2000
+Male Mortality per Thousand: 86
+Female Mortality per Thousand: 79
+Male and Female Mortality per Thousand: 83
+
+Country Name: Australia
+Country Year: 2000
+Male Mortality per Thousand: 97
+Female Mortality per Thousand: 55
+Male and Female Mortality per Thousand: 77
+
+Country Name: Ghana
+Country Year: 2013
+Male Mortality per Thousand: 261
+Female Mortality per Thousand: 222
+Male and Female Mortality per Thousand: 241
+
+Country Name: United Kingdom of Great Britain and Northern Ireland
+Country Year: 2012
+Male Mortality per Thousand: 90
+Female Mortality per Thousand: 56
+Male and Female Mortality per Thousand: 73
+
+Country Name: Zimbabwe
+Country Year: 2013
+Male Mortality per Thousand: 385
+Female Mortality per Thousand: 288
+Male and Female Mortality per Thousand: 336
+
+Country Name: United Republic of Tanzania
+Country Year: 2013
+Male Mortality per Thousand: 314
+Female Mortality per Thousand: 244
+Male and Female Mortality per Thousand: 279
+
+Country Name: Central African Republic
+Country Year: 2013
+Male Mortality per Thousand: 433
+Female Mortality per Thousand: 412
+Male and Female Mortality per Thousand: 422
+
+Country Name: Grenada
+Country Year: 2013
+Male Mortality per Thousand: 194
+Female Mortality per Thousand: 120
+Male and Female Mortality per Thousand: 157
+
+Country Name: Belgium
+Country Year: 2013
+Male Mortality per Thousand: 98
+Female Mortality per Thousand: 57
+Male and Female Mortality per Thousand: 78
+
+Country Name: Chile
+Country Year: 1990
+Male Mortality per Thousand: 196
+Female Mortality per Thousand: 98
+Male and Female Mortality per Thousand: 147
+
+Country Name: Armenia
+Country Year: 2000
+Male Mortality per Thousand: 210
+Female Mortality per Thousand: 96
+Male and Female Mortality per Thousand: 149
+
+Country Name: Bhutan
+Country Year: 2000
+Male Mortality per Thousand: 304
+Female Mortality per Thousand: 322
+Male and Female Mortality per Thousand: 313
+
+Country Name: Venezuela (Bolivarian Republic of)
+Country Year: 2012
+Male Mortality per Thousand: 200
+Female Mortality per Thousand: 89
+Male and Female Mortality per Thousand: 146
+
+Country Name: China
+Country Year: 2013
+Male Mortality per Thousand: 103
+Female Mortality per Thousand: 76
+Male and Female Mortality per Thousand: 90
+
+Country Name: Gambia
+Country Year: 1990
+Male Mortality per Thousand: 348
+Female Mortality per Thousand: 300
+Male and Female Mortality per Thousand: 326
+
+Country Name: The former Yugoslav republic of Macedonia
+Country Year: 2012
+Male Mortality per Thousand: 135
+Female Mortality per Thousand: 73
+Male and Female Mortality per Thousand: 105
+
+Country Name: Montenegro
+Country Year: 2000
+Male Mortality per Thousand: 179
+Female Mortality per Thousand: 98
+Male and Female Mortality per Thousand: 138
+
+Country Name: Democratic People's Republic of Korea
+Country Year: 2013
+Male Mortality per Thousand: 183
+Female Mortality per Thousand: 111
+Male and Female Mortality per Thousand: 147
+
+Country Name: Maldives
+Country Year: 2012
+Male Mortality per Thousand: 91
+Female Mortality per Thousand: 59
+Male and Female Mortality per Thousand: 75
+
+Country Name: Angola
+Country Year: 2012
+Male Mortality per Thousand: 376
+Female Mortality per Thousand: 336
+Male and Female Mortality per Thousand: 356
+
+Country Name: Republic of Moldova
+Country Year: 1990
+Male Mortality per Thousand: 285
+Female Mortality per Thousand: 155
 Male and Female Mortality per Thousand: 218
+
+Country Name: Lesotho
+Country Year: 2012
+Male Mortality per Thousand: 560
+Female Mortality per Thousand: 503
+Male and Female Mortality per Thousand: 528
+
+Country Name: Jordan
+Country Year: 2000
+Male Mortality per Thousand: 151
+Female Mortality per Thousand: 116
+Male and Female Mortality per Thousand: 134
+
+Country Name: United Arab Emirates
+Country Year: 2012
+Male Mortality per Thousand: 85
+Female Mortality per Thousand: 60
+Male and Female Mortality per Thousand: 77
+
+Country Name: Malawi
+Country Year: 2013
+Male Mortality per Thousand: 362
+Female Mortality per Thousand: 290
+Male and Female Mortality per Thousand: 326
+
+Country Name: Haiti
+Country Year: 2012
+Male Mortality per Thousand: 268
+Female Mortality per Thousand: 227
+Male and Female Mortality per Thousand: 247
+
+Country Name: Sao Tome and Principe
+Country Year: 2012
+Male Mortality per Thousand: 222
+Female Mortality per Thousand: 169
+Male and Female Mortality per Thousand: 194
+
+Country Name: United States of America
+Country Year: 2013
+Male Mortality per Thousand: 128
+Female Mortality per Thousand: 76
+Male and Female Mortality per Thousand: 102
+
+Country Name: Nigeria
+Country Year: 2013
+Male Mortality per Thousand: 357
+Female Mortality per Thousand: 325
+Male and Female Mortality per Thousand: 341
+
+Country Name: Canada
+Country Year: 2000
+Male Mortality per Thousand: 100
+Female Mortality per Thousand: 61
+Male and Female Mortality per Thousand: 81
+
+Country Name: Cyprus
+Country Year: 1990
+Male Mortality per Thousand: 110
+Female Mortality per Thousand: 61
+Male and Female Mortality per Thousand: 86
+
+Country Name: Romania
+Country Year: 1990
+Male Mortality per Thousand: 239
+Female Mortality per Thousand: 114
+Male and Female Mortality per Thousand: 178
 
 Country Name: Kazakhstan
 Country Year: 2000
@@ -2026,15 +1348,1677 @@ Male Mortality per Thousand: 422
 Female Mortality per Thousand: 194
 Male and Female Mortality per Thousand: 309
 
-Country Name: Zimbabwe
+Country Name: Belize
 Country Year: 1990
-Male Mortality per Thousand: 308
-Female Mortality per Thousand: 255
-Male and Female Mortality per Thousand: 282
+Male Mortality per Thousand: 162
+Female Mortality per Thousand: 104
+Male and Female Mortality per Thousand: 133
 
-Country Name: Cameroon
+Country Name: Turkmenistan
+Country Year: 2000
+Male Mortality per Thousand: 344
+Female Mortality per Thousand: 204
+Male and Female Mortality per Thousand: 275
+
+Country Name: Liberia
+Country Year: 2012
+Male Mortality per Thousand: 282
+Female Mortality per Thousand: 246
+Male and Female Mortality per Thousand: 263
+
+Country Name: Palau
+Country Year: 2013
+Male Mortality per Thousand: 156
+Female Mortality per Thousand: 106
+Male and Female Mortality per Thousand: 132
+
+Country Name: Italy
+Country Year: 2012
+Male Mortality per Thousand: 70
+Female Mortality per Thousand: 39
+Male and Female Mortality per Thousand: 55
+
+Country Name: Iraq
+Country Year: 1990
+Male Mortality per Thousand: 170
+Female Mortality per Thousand: 117
+Male and Female Mortality per Thousand: 143
+
+Country Name: Gabon
+Country Year: 2000
+Male Mortality per Thousand: 326
+Female Mortality per Thousand: 313
+Male and Female Mortality per Thousand: 319
+
+Country Name: Saint Vincent and the Grenadines
+Country Year: 2012
+Male Mortality per Thousand: 169
+Female Mortality per Thousand: 111
+Male and Female Mortality per Thousand: 141
+
+Country Name: Pakistan
+Country Year: 1990
+Male Mortality per Thousand: 220
+Female Mortality per Thousand: 197
+Male and Female Mortality per Thousand: 209
+
+Country Name: Finland
+Country Year: 2013
+Male Mortality per Thousand: 114
+Female Mortality per Thousand: 51
+Male and Female Mortality per Thousand: 83
+
+Country Name: Monaco
+Country Year: 2000
+Male Mortality per Thousand: 136
+Female Mortality per Thousand: 61
+Male and Female Mortality per Thousand: 99
+
+Country Name: Ecuador
+Country Year: 1990
+Male Mortality per Thousand: 219
+Female Mortality per Thousand: 141
+Male and Female Mortality per Thousand: 181
+
+Country Name: Zambia
+Country Year: 2012
+Male Mortality per Thousand: 398
+Female Mortality per Thousand: 353
+Male and Female Mortality per Thousand: 376
+
+Country Name: Equatorial Guinea
+Country Year: 2013
+Male Mortality per Thousand: 368
+Female Mortality per Thousand: 319
+Male and Female Mortality per Thousand: 346
+
+Country Name: Russian Federation
+Country Year: 2000
+Male Mortality per Thousand: 449
+Female Mortality per Thousand: 161
+Male and Female Mortality per Thousand: 312
+
+Country Name: Sri Lanka
+Country Year: 2000
+Male Mortality per Thousand: 301
+Female Mortality per Thousand: 111
+Male and Female Mortality per Thousand: 210
+
+Country Name: Mauritania
+Country Year: 1990
+Male Mortality per Thousand: 270
+Female Mortality per Thousand: 223
+Male and Female Mortality per Thousand: 245
+
+Country Name: Burundi
+Country Year: 2012
+Male Mortality per Thousand: 370
+Female Mortality per Thousand: 313
+Male and Female Mortality per Thousand: 342
+
+Country Name: Samoa
+Country Year: 2013
+Male Mortality per Thousand: 166
+Female Mortality per Thousand: 97
+Male and Female Mortality per Thousand: 133
+
+Country Name: Senegal
+Country Year: 1990
+Male Mortality per Thousand: 282
+Female Mortality per Thousand: 220
+Male and Female Mortality per Thousand: 251
+
+Country Name: Estonia
+Country Year: 2012
+Male Mortality per Thousand: 199
+Female Mortality per Thousand: 68
+Male and Female Mortality per Thousand: 133
+
+Country Name: Lao People's Democratic Republic
+Country Year: 2012
+Male Mortality per Thousand: 202
+Female Mortality per Thousand: 163
+Male and Female Mortality per Thousand: 182
+
+Country Name: Namibia
+Country Year: 1990
+Male Mortality per Thousand: 268
+Female Mortality per Thousand: 230
+Male and Female Mortality per Thousand: 248
+
+Country Name: Lebanon
+Country Year: 2012
+Male Mortality per Thousand: 72
+Female Mortality per Thousand: 47
+Male and Female Mortality per Thousand: 61
+
+Country Name: Egypt
+Country Year: 2013
+Male Mortality per Thousand: 193
+Female Mortality per Thousand: 117
+Male and Female Mortality per Thousand: 156
+
+Country Name: Ukraine
+Country Year: 1990
+Male Mortality per Thousand: 287
+Female Mortality per Thousand: 112
+Male and Female Mortality per Thousand: 199
+
+Country Name: Malta
+Country Year: 2013
+Male Mortality per Thousand: 75
+Female Mortality per Thousand: 41
+Male and Female Mortality per Thousand: 58
+
+Country Name: Brunei Darussalam
+Country Year: 2012
+Male Mortality per Thousand: 104
+Female Mortality per Thousand: 71
+Male and Female Mortality per Thousand: 88
+
+Country Name: Guatemala
+Country Year: 2000
+Male Mortality per Thousand: 279
+Female Mortality per Thousand: 156
+Male and Female Mortality per Thousand: 217
+
+Country Name: Rwanda
+Country Year: 2012
+Male Mortality per Thousand: 253
+Female Mortality per Thousand: 212
+Male and Female Mortality per Thousand: 231
+
+Country Name: Democratic Republic of the Congo
+Country Year: 2000
+Male Mortality per Thousand: 417
+Female Mortality per Thousand: 359
+Male and Female Mortality per Thousand: 388
+
+Country Name: Colombia
+Country Year: 2013
+Male Mortality per Thousand: 148
+Female Mortality per Thousand: 73
+Male and Female Mortality per Thousand: 110
+
+Country Name: Turkey
+Country Year: 2012
+Male Mortality per Thousand: 150
+Female Mortality per Thousand: 75
+Male and Female Mortality per Thousand: 112
+
+Country Name: United Kingdom of Great Britain and Northern Ireland
+Country Year: 1990
+Male Mortality per Thousand: 129
+Female Mortality per Thousand: 78
+Male and Female Mortality per Thousand: 104
+
+Country Name: Madagascar
+Country Year: 1990
+Male Mortality per Thousand: 370
+Female Mortality per Thousand: 320
+Male and Female Mortality per Thousand: 345
+
+Country Name: Benin
+Country Year: 2013
+Male Mortality per Thousand: 284
+Female Mortality per Thousand: 238
+Male and Female Mortality per Thousand: 261
+
+Country Name: Zimbabwe
+Country Year: 2012
+Male Mortality per Thousand: 390
+Female Mortality per Thousand: 313
+Male and Female Mortality per Thousand: 351
+
+Country Name: United Republic of Tanzania
+Country Year: 2012
+Male Mortality per Thousand: 342
+Female Mortality per Thousand: 277
+Male and Female Mortality per Thousand: 310
+
+Country Name: Central African Republic
+Country Year: 2012
+Male Mortality per Thousand: 445
+Female Mortality per Thousand: 430
+Male and Female Mortality per Thousand: 437
+
+Country Name: Grenada
+Country Year: 2012
+Male Mortality per Thousand: 195
+Female Mortality per Thousand: 121
+Male and Female Mortality per Thousand: 159
+
+Country Name: Belgium
+Country Year: 2012
+Male Mortality per Thousand: 99
+Female Mortality per Thousand: 57
+Male and Female Mortality per Thousand: 78
+
+Country Name: El Salvador
+Country Year: 2000
+Male Mortality per Thousand: 287
+Female Mortality per Thousand: 142
+Male and Female Mortality per Thousand: 211
+
+Country Name: Bangladesh
+Country Year: 2012
+Male Mortality per Thousand: 159
+Female Mortality per Thousand: 129
+Male and Female Mortality per Thousand: 145
+
+Country Name: Paraguay
+Country Year: 2013
+Male Mortality per Thousand: 178
+Female Mortality per Thousand: 96
+Male and Female Mortality per Thousand: 138
+
+Country Name: Uzbekistan
+Country Year: 1990
+Male Mortality per Thousand: 251
+Female Mortality per Thousand: 144
+Male and Female Mortality per Thousand: 198
+
+Country Name: China
+Country Year: 2012
+Male Mortality per Thousand: 106
+Female Mortality per Thousand: 79
+Male and Female Mortality per Thousand: 93
+
+Country Name: Djibouti
+Country Year: 2012
+Male Mortality per Thousand: 293
+Female Mortality per Thousand: 250
+Male and Female Mortality per Thousand: 272
+
+Country Name: Mexico
+Country Year: 2013
+Male Mortality per Thousand: 174
+Female Mortality per Thousand: 93
+Male and Female Mortality per Thousand: 132
+
+Country Name: Democratic People's Republic of Korea
+Country Year: 2012
+Male Mortality per Thousand: 188
+Female Mortality per Thousand: 115
+Male and Female Mortality per Thousand: 151
+
+Country Name: Angola
+Country Year: 1990
+Male Mortality per Thousand: 505
+Female Mortality per Thousand: 409
+Male and Female Mortality per Thousand: 458
+
+Country Name: Chad
+Country Year: 2000
+Male Mortality per Thousand: 483
+Female Mortality per Thousand: 442
+Male and Female Mortality per Thousand: 462
+
+Country Name: Cambodia
+Country Year: 2013
+Male Mortality per Thousand: 210
+Female Mortality per Thousand: 157
+Male and Female Mortality per Thousand: 182
+
+Country Name: Libya
+Country Year: 2013
+Male Mortality per Thousand: 117
+Female Mortality per Thousand: 80
+Male and Female Mortality per Thousand: 99
+
+Country Name: Yemen
+Country Year: 2000
+Male Mortality per Thousand: 278
+Female Mortality per Thousand: 230
+Male and Female Mortality per Thousand: 255
+
+Country Name: Lesotho
+Country Year: 1990
+Male Mortality per Thousand: 297
+Female Mortality per Thousand: 247
+Male and Female Mortality per Thousand: 270
+
+Country Name: Mozambique
+Country Year: 2013
+Male Mortality per Thousand: 438
+Female Mortality per Thousand: 432
+Male and Female Mortality per Thousand: 434
+
+Country Name: Antigua and Barbuda
+Country Year: 2013
+Male Mortality per Thousand: 201
+Female Mortality per Thousand: 145
+Male and Female Mortality per Thousand: 173
+
+Country Name: United Arab Emirates
+Country Year: 1990
+Male Mortality per Thousand: 150
+Female Mortality per Thousand: 121
+Male and Female Mortality per Thousand: 142
+
+Country Name: Seychelles
+Country Year: 2013
+Male Mortality per Thousand: 214
+Female Mortality per Thousand: 99
+Male and Female Mortality per Thousand: 161
+
+Country Name: Haiti
+Country Year: 1990
+Male Mortality per Thousand: 352
+Female Mortality per Thousand: 299
+Male and Female Mortality per Thousand: 325
+
+Country Name: Ethiopia
+Country Year: 2000
+Male Mortality per Thousand: 411
+Female Mortality per Thousand: 361
+Male and Female Mortality per Thousand: 386
+
+Country Name: Malawi
+Country Year: 2012
+Male Mortality per Thousand: 376
+Female Mortality per Thousand: 330
+Male and Female Mortality per Thousand: 352
+
+Country Name: Spain
+Country Year: 2013
+Male Mortality per Thousand: 86
+Female Mortality per Thousand: 40
+Male and Female Mortality per Thousand: 63
+
+Country Name: Brazil
+Country Year: 2000
+Male Mortality per Thousand: 239
+Female Mortality per Thousand: 126
+Male and Female Mortality per Thousand: 183
+
+Country Name: Trinidad and Tobago
+Country Year: 2013
+Male Mortality per Thousand: 229
+Female Mortality per Thousand: 129
+Male and Female Mortality per Thousand: 180
+
+Country Name: United States of America
+Country Year: 2012
+Male Mortality per Thousand: 130
+Female Mortality per Thousand: 77
+Male and Female Mortality per Thousand: 103
+
+Country Name: Nigeria
+Country Year: 2012
+Male Mortality per Thousand: 371
+Female Mortality per Thousand: 346
+Male and Female Mortality per Thousand: 358
+
+Country Name: Mauritius
+Country Year: 2013
+Male Mortality per Thousand: 202
+Female Mortality per Thousand: 95
+Male and Female Mortality per Thousand: 150
+
+Country Name: Indonesia
+Country Year: 2012
+Male Mortality per Thousand: 178
+Female Mortality per Thousand: 124
+Male and Female Mortality per Thousand: 152
+
+Country Name: Botswana
+Country Year: 2012
+Male Mortality per Thousand: 370
+Female Mortality per Thousand: 327
+Male and Female Mortality per Thousand: 347
+
+Country Name: Bahamas
+Country Year: 1990
+Male Mortality per Thousand: 193
+Female Mortality per Thousand: 120
+Male and Female Mortality per Thousand: 155
+
+Country Name: Vanuatu
+Country Year: 2013
+Male Mortality per Thousand: 161
+Female Mortality per Thousand: 113
+Male and Female Mortality per Thousand: 137
+
+Country Name: Liberia
+Country Year: 1990
+Male Mortality per Thousand: 544
+Female Mortality per Thousand: 376
+Male and Female Mortality per Thousand: 465
+
+Country Name: Italy
+Country Year: 1990
+Male Mortality per Thousand: 129
+Female Mortality per Thousand: 60
+Male and Female Mortality per Thousand: 95
+
+Country Name: Palau
+Country Year: 2012
+Male Mortality per Thousand: 159
+Female Mortality per Thousand: 109
+Male and Female Mortality per Thousand: 135
+
+Country Name: Nepal
 Country Year: 1990
 Male Mortality per Thousand: 340
-Female Mortality per Thousand: 287
-Male and Female Mortality per Thousand: 313
+Female Mortality per Thousand: 308
+Male and Female Mortality per Thousand: 324
+
+Country Name: Guinea
+Country Year: 2000
+Male Mortality per Thousand: 359
+Female Mortality per Thousand: 329
+Male and Female Mortality per Thousand: 344
+
+Country Name: Saint Vincent and the Grenadines
+Country Year: 1990
+Male Mortality per Thousand: 217
+Female Mortality per Thousand: 140
+Male and Female Mortality per Thousand: 179
+
+Country Name: Gambia
+Country Year: 2000
+Male Mortality per Thousand: 323
+Female Mortality per Thousand: 280
+Male and Female Mortality per Thousand: 303
+
+Country Name: Micronesia (Federated States of)
+Country Year: 2013
+Male Mortality per Thousand: 181
+Female Mortality per Thousand: 154
+Male and Female Mortality per Thousand: 167
+
+Country Name: Zambia
+Country Year: 1990
+Male Mortality per Thousand: 634
+Female Mortality per Thousand: 452
+Male and Female Mortality per Thousand: 550
+
+Country Name: Somalia
+Country Year: 2013
+Male Mortality per Thousand: 339
+Female Mortality per Thousand: 289
+Male and Female Mortality per Thousand: 314
+
+Country Name: Bolivia (Plurinational State of)
+Country Year: 2013
+Male Mortality per Thousand: 247
+Female Mortality per Thousand: 172
+Male and Female Mortality per Thousand: 210
+
+Country Name: Equatorial Guinea
+Country Year: 2012
+Male Mortality per Thousand: 379
+Female Mortality per Thousand: 336
+Male and Female Mortality per Thousand: 360
+
+Country Name: Iran (Islamic Republic of)
+Country Year: 2013
+Male Mortality per Thousand: 153
+Female Mortality per Thousand: 83
+Male and Female Mortality per Thousand: 119
+
+Country Name: South Sudan
+Country Year: 1990
+Male Mortality per Thousand: 448
+Female Mortality per Thousand: 391
+Male and Female Mortality per Thousand: 420
+
+Country Name: Burundi
+Country Year: 1990
+Male Mortality per Thousand: 417
+Female Mortality per Thousand: 356
+Male and Female Mortality per Thousand: 385
+
+Country Name: Algeria
+Country Year: 1990
+Male Mortality per Thousand: 199
+Female Mortality per Thousand: 152
+Male and Female Mortality per Thousand: 175
+
+Country Name: Estonia
+Country Year: 1990
+Male Mortality per Thousand: 301
+Female Mortality per Thousand: 107
+Male and Female Mortality per Thousand: 204
+
+Country Name: Albania
+Country Year: 2012
+Male Mortality per Thousand: 121
+Female Mortality per Thousand: 87
+Male and Female Mortality per Thousand: 104
+
+Country Name: Latvia
+Country Year: 2013
+Male Mortality per Thousand: 224
+Female Mortality per Thousand: 85
+Male and Female Mortality per Thousand: 153
+
+Country Name: Lebanon
+Country Year: 1990
+Male Mortality per Thousand: 280
+Female Mortality per Thousand: 150
+Male and Female Mortality per Thousand: 214
+
+Country Name: Panama
+Country Year: 1990
+Male Mortality per Thousand: 146
+Female Mortality per Thousand: 101
+Male and Female Mortality per Thousand: 124
+
+Country Name: Cyprus
+Country Year: 2000
+Male Mortality per Thousand: 107
+Female Mortality per Thousand: 56
+Male and Female Mortality per Thousand: 83
+
+Country Name: Czech Republic
+Country Year: 2013
+Male Mortality per Thousand: 127
+Female Mortality per Thousand: 57
+Male and Female Mortality per Thousand: 93
+
+Country Name: Egypt
+Country Year: 2012
+Male Mortality per Thousand: 196
+Female Mortality per Thousand: 120
+Male and Female Mortality per Thousand: 159
+
+Country Name: Romania
+Country Year: 2000
+Male Mortality per Thousand: 237
+Female Mortality per Thousand: 106
+Male and Female Mortality per Thousand: 173
+
+Country Name: Malta
+Country Year: 2012
+Male Mortality per Thousand: 77
+Female Mortality per Thousand: 45
+Male and Female Mortality per Thousand: 61
+
+Country Name: Brunei Darussalam
+Country Year: 1990
+Male Mortality per Thousand: 151
+Female Mortality per Thousand: 112
+Male and Female Mortality per Thousand: 133
+
+Country Name: Belize
+Country Year: 2000
+Male Mortality per Thousand: 204
+Female Mortality per Thousand: 107
+Male and Female Mortality per Thousand: 157
+
+Country Name: Rwanda
+Country Year: 1990
+Male Mortality per Thousand: 487
+Female Mortality per Thousand: 406
+Male and Female Mortality per Thousand: 447
+
+Country Name: Cuba
+Country Year: 2013
+Male Mortality per Thousand: 115
+Female Mortality per Thousand: 73
+Male and Female Mortality per Thousand: 94
+
+Country Name: South Africa
+Country Year: 2012
+Male Mortality per Thousand: 463
+Female Mortality per Thousand: 350
+Male and Female Mortality per Thousand: 403
+
+Country Name: Tunisia
+Country Year: 2013
+Male Mortality per Thousand: 130
+Female Mortality per Thousand: 69
+Male and Female Mortality per Thousand: 100
+
+Country Name: Guinea-Bissau
+Country Year: 2013
+Male Mortality per Thousand: 393
+Female Mortality per Thousand: 325
+Male and Female Mortality per Thousand: 359
+
+Country Name: Iraq
+Country Year: 2000
+Male Mortality per Thousand: 164
+Female Mortality per Thousand: 102
+Male and Female Mortality per Thousand: 133
+
+Country Name: Morocco
+Country Year: 2013
+Male Mortality per Thousand: 170
+Female Mortality per Thousand: 121
+Male and Female Mortality per Thousand: 146
+
+Country Name: Niger
+Country Year: 2012
+Male Mortality per Thousand: 257
+Female Mortality per Thousand: 246
+Male and Female Mortality per Thousand: 253
+
+Country Name: Benin
+Country Year: 2012
+Male Mortality per Thousand: 284
+Female Mortality per Thousand: 240
+Male and Female Mortality per Thousand: 262
+
+Country Name: Central African Republic
+Country Year: 1990
+Male Mortality per Thousand: 447
+Female Mortality per Thousand: 376
+Male and Female Mortality per Thousand: 411
+
+Country Name: Grenada
+Country Year: 1990
+Male Mortality per Thousand: 215
+Female Mortality per Thousand: 150
+Male and Female Mortality per Thousand: 182
+
+Country Name: Belgium
+Country Year: 1990
+Male Mortality per Thousand: 139
+Female Mortality per Thousand: 75
+Male and Female Mortality per Thousand: 107
+
+Country Name: Fiji
+Country Year: 2012
+Male Mortality per Thousand: 242
+Female Mortality per Thousand: 146
+Male and Female Mortality per Thousand: 196
+
+Country Name: Poland
+Country Year: 2013
+Male Mortality per Thousand: 186
+Female Mortality per Thousand: 70
+Male and Female Mortality per Thousand: 129
+
+Country Name: Ecuador
+Country Year: 2000
+Male Mortality per Thousand: 192
+Female Mortality per Thousand: 113
+Male and Female Mortality per Thousand: 154
+
+Country Name: Germany
+Country Year: 1990
+Male Mortality per Thousand: 157
+Female Mortality per Thousand: 77
+Male and Female Mortality per Thousand: 119
+
+Country Name: China
+Country Year: 1990
+Male Mortality per Thousand: 173
+Female Mortality per Thousand: 127
+Male and Female Mortality per Thousand: 151
+
+Country Name: Oman
+Country Year: 2013
+Male Mortality per Thousand: 116
+Female Mortality per Thousand: 73
+Male and Female Mortality per Thousand: 100
+
+Country Name: Democratic People's Republic of Korea
+Country Year: 1990
+Male Mortality per Thousand: 168
+Female Mortality per Thousand: 105
+Male and Female Mortality per Thousand: 134
+
+Country Name: Burkina Faso
+Country Year: 2000
+Male Mortality per Thousand: 400
+Female Mortality per Thousand: 365
+Male and Female Mortality per Thousand: 380
+
+Country Name: Mexico
+Country Year: 2012
+Male Mortality per Thousand: 177
+Female Mortality per Thousand: 90
+Male and Female Mortality per Thousand: 132
+
+Country Name: Netherlands
+Country Year: 2012
+Male Mortality per Thousand: 72
+Female Mortality per Thousand: 54
+Male and Female Mortality per Thousand: 63
+
+Country Name: Hungary
+Country Year: 2013
+Male Mortality per Thousand: 201
+Female Mortality per Thousand: 91
+Male and Female Mortality per Thousand: 146
+
+Country Name: Ireland
+Country Year: 2013
+Male Mortality per Thousand: 82
+Female Mortality per Thousand: 49
+Male and Female Mortality per Thousand: 65
+
+Country Name: Libya
+Country Year: 2012
+Male Mortality per Thousand: 119
+Female Mortality per Thousand: 81
+Male and Female Mortality per Thousand: 101
+
+Country Name: Kuwait
+Country Year: 2013
+Male Mortality per Thousand: 59
+Female Mortality per Thousand: 42
+Male and Female Mortality per Thousand: 52
+
+Country Name: Marshall Islands
+Country Year: 2013
+Male Mortality per Thousand: 153
+Female Mortality per Thousand: 104
+Male and Female Mortality per Thousand: 129
+
+Country Name: Mozambique
+Country Year: 2012
+Male Mortality per Thousand: 466
+Female Mortality per Thousand: 453
+Male and Female Mortality per Thousand: 459
+
+Country Name: Antigua and Barbuda
+Country Year: 2012
+Male Mortality per Thousand: 203
+Female Mortality per Thousand: 147
+Male and Female Mortality per Thousand: 175
+
+Country Name: Honduras
+Country Year: 2012
+Male Mortality per Thousand: 176
+Female Mortality per Thousand: 122
+Male and Female Mortality per Thousand: 149
+
+Country Name: Seychelles
+Country Year: 2012
+Male Mortality per Thousand: 217
+Female Mortality per Thousand: 101
+Male and Female Mortality per Thousand: 163
+
+Country Name: Mali
+Country Year: 2013
+Male Mortality per Thousand: 277
+Female Mortality per Thousand: 275
+Male and Female Mortality per Thousand: 275
+
+Country Name: Portugal
+Country Year: 2012
+Male Mortality per Thousand: 114
+Female Mortality per Thousand: 49
+Male and Female Mortality per Thousand: 81
+
+Country Name: Spain
+Country Year: 2012
+Male Mortality per Thousand: 86
+Female Mortality per Thousand: 40
+Male and Female Mortality per Thousand: 63
+
+Country Name: Ukraine
+Country Year: 2000
+Male Mortality per Thousand: 377
+Female Mortality per Thousand: 136
+Male and Female Mortality per Thousand: 258
+
+Country Name: United States of America
+Country Year: 1990
+Male Mortality per Thousand: 173
+Female Mortality per Thousand: 91
+Male and Female Mortality per Thousand: 132
+
+Country Name: Nigeria
+Country Year: 1990
+Male Mortality per Thousand: 408
+Female Mortality per Thousand: 364
+Male and Female Mortality per Thousand: 386
+
+Country Name: Trinidad and Tobago
+Country Year: 2012
+Male Mortality per Thousand: 229
+Female Mortality per Thousand: 130
+Male and Female Mortality per Thousand: 181
+
+Country Name: Tuvalu
+Country Year: 2012
+Male Mortality per Thousand: 240
+Female Mortality per Thousand: 185
+Male and Female Mortality per Thousand: 213
+
+Country Name: Indonesia
+Country Year: 1990
+Male Mortality per Thousand: 266
+Female Mortality per Thousand: 204
+Male and Female Mortality per Thousand: 235
+
+Country Name: Botswana
+Country Year: 1990
+Male Mortality per Thousand: 243
+Female Mortality per Thousand: 242
+Male and Female Mortality per Thousand: 243
+
+Country Name: Côte d'Ivoire
+Country Year: 2013
+Male Mortality per Thousand: 410
+Female Mortality per Thousand: 398
+Male and Female Mortality per Thousand: 405
+
+Country Name: Saudi Arabia
+Country Year: 2013
+Male Mortality per Thousand: 89
+Female Mortality per Thousand: 67
+Male and Female Mortality per Thousand: 80
+
+Country Name: San Marino
+Country Year: 2012
+Male Mortality per Thousand: 55
+Female Mortality per Thousand: 47
+Male and Female Mortality per Thousand: 51
+
+Country Name: Kyrgyzstan
+Country Year: 2013
+Male Mortality per Thousand: 272
+Female Mortality per Thousand: 130
+Male and Female Mortality per Thousand: 201
+
+Country Name: Vanuatu
+Country Year: 2012
+Male Mortality per Thousand: 164
+Female Mortality per Thousand: 116
+Male and Female Mortality per Thousand: 140
+
+Country Name: Madagascar
+Country Year: 2000
+Male Mortality per Thousand: 302
+Female Mortality per Thousand: 268
+Male and Female Mortality per Thousand: 284
+
+Country Name: Jamaica
+Country Year: 2013
+Male Mortality per Thousand: 173
+Female Mortality per Thousand: 105
+Male and Female Mortality per Thousand: 139
+
+Country Name: Palau
+Country Year: 1990
+Male Mortality per Thousand: 268
+Female Mortality per Thousand: 217
+Male and Female Mortality per Thousand: 244
+
+Country Name: Slovakia
+Country Year: 2013
+Male Mortality per Thousand: 168
+Female Mortality per Thousand: 67
+Male and Female Mortality per Thousand: 118
+
+Country Name: Solomon Islands
+Country Year: 2000
+Male Mortality per Thousand: 259
+Female Mortality per Thousand: 219
+Male and Female Mortality per Thousand: 239
+
+Country Name: Venezuela (Bolivarian Republic of)
+Country Year: 2000
+Male Mortality per Thousand: 185
+Female Mortality per Thousand: 98
+Male and Female Mortality per Thousand: 143
+
+Country Name: Thailand
+Country Year: 2013
+Male Mortality per Thousand: 177
+Female Mortality per Thousand: 90
+Male and Female Mortality per Thousand: 133
+
+Country Name: Uzbekistan
+Country Year: 2000
+Male Mortality per Thousand: 252
+Female Mortality per Thousand: 151
+Male and Female Mortality per Thousand: 202
+
+Country Name: Finland
+Country Year: 1990
+Male Mortality per Thousand: 183
+Female Mortality per Thousand: 70
+Male and Female Mortality per Thousand: 128
+
+Country Name: Micronesia (Federated States of)
+Country Year: 2012
+Male Mortality per Thousand: 182
+Female Mortality per Thousand: 155
+Male and Female Mortality per Thousand: 169
+
+Country Name: Georgia
+Country Year: 2013
+Male Mortality per Thousand: 174
+Female Mortality per Thousand: 66
+Male and Female Mortality per Thousand: 118
+
+Country Name: Somalia
+Country Year: 2012
+Male Mortality per Thousand: 382
+Female Mortality per Thousand: 299
+Male and Female Mortality per Thousand: 341
+
+Country Name: Bolivia (Plurinational State of)
+Country Year: 2012
+Male Mortality per Thousand: 238
+Female Mortality per Thousand: 175
+Male and Female Mortality per Thousand: 206
+
+Country Name: Lesotho
+Country Year: 2000
+Male Mortality per Thousand: 592
+Female Mortality per Thousand: 561
+Male and Female Mortality per Thousand: 574
+
+Country Name: Iran (Islamic Republic of)
+Country Year: 2012
+Male Mortality per Thousand: 156
+Female Mortality per Thousand: 84
+Male and Female Mortality per Thousand: 121
+
+Country Name: United Arab Emirates
+Country Year: 2000
+Male Mortality per Thousand: 114
+Female Mortality per Thousand: 89
+Male and Female Mortality per Thousand: 108
+
+Country Name: Haiti
+Country Year: 2000
+Male Mortality per Thousand: 353
+Female Mortality per Thousand: 318
+Male and Female Mortality per Thousand: 335
+
+Country Name: Samoa
+Country Year: 1990
+Male Mortality per Thousand: 300
+Female Mortality per Thousand: 194
+Male and Female Mortality per Thousand: 248
+
+Country Name: Kenya
+Country Year: 2013
+Male Mortality per Thousand: 299
+Female Mortality per Thousand: 250
+Male and Female Mortality per Thousand: 274
+
+Country Name: Sao Tome and Principe
+Country Year: 2000
+Male Mortality per Thousand: 249
+Female Mortality per Thousand: 197
+Male and Female Mortality per Thousand: 221
+
+Country Name: Latvia
+Country Year: 2012
+Male Mortality per Thousand: 226
+Female Mortality per Thousand: 86
+Male and Female Mortality per Thousand: 154
+
+Country Name: Cameroon
+Country Year: 2012
+Male Mortality per Thousand: 371
+Female Mortality per Thousand: 349
+Male and Female Mortality per Thousand: 360
+
+Country Name: Peru
+Country Year: 2013
+Male Mortality per Thousand: 116
+Female Mortality per Thousand: 90
+Male and Female Mortality per Thousand: 103
+
+Country Name: Egypt
+Country Year: 1990
+Male Mortality per Thousand: 232
+Female Mortality per Thousand: 145
+Male and Female Mortality per Thousand: 189
+
+Country Name: Malaysia
+Country Year: 2013
+Male Mortality per Thousand: 169
+Female Mortality per Thousand: 86
+Male and Female Mortality per Thousand: 127
+
+Country Name: Czech Republic
+Country Year: 2012
+Male Mortality per Thousand: 126
+Female Mortality per Thousand: 58
+Male and Female Mortality per Thousand: 93
+
+Country Name: Bahamas
+Country Year: 2000
+Male Mortality per Thousand: 217
+Female Mortality per Thousand: 137
+Male and Female Mortality per Thousand: 176
+
+Country Name: Nicaragua
+Country Year: 1990
+Male Mortality per Thousand: 171
+Female Mortality per Thousand: 122
+Male and Female Mortality per Thousand: 147
+
+Country Name: South Africa
+Country Year: 1990
+Male Mortality per Thousand: 344
+Female Mortality per Thousand: 219
+Male and Female Mortality per Thousand: 282
+
+Country Name: Cuba
+Country Year: 2012
+Male Mortality per Thousand: 124
+Female Mortality per Thousand: 74
+Male and Female Mortality per Thousand: 100
+
+Country Name: Italy
+Country Year: 2000
+Male Mortality per Thousand: 101
+Female Mortality per Thousand: 51
+Male and Female Mortality per Thousand: 76
+
+Country Name: Costa Rica
+Country Year: 2012
+Male Mortality per Thousand: 113
+Female Mortality per Thousand: 65
+Male and Female Mortality per Thousand: 90
+
+Country Name: Guinea-Bissau
+Country Year: 2012
+Male Mortality per Thousand: 354
+Female Mortality per Thousand: 307
+Male and Female Mortality per Thousand: 330
+
+Country Name: New Zealand
+Country Year: 2013
+Male Mortality per Thousand: 80
+Female Mortality per Thousand: 52
+Male and Female Mortality per Thousand: 66
+
+Country Name: Niger
+Country Year: 1990
+Male Mortality per Thousand: 317
+Female Mortality per Thousand: 295
+Male and Female Mortality per Thousand: 305
+
+Country Name: Morocco
+Country Year: 2012
+Male Mortality per Thousand: 172
+Female Mortality per Thousand: 124
+Male and Female Mortality per Thousand: 148
+
+Country Name: Saint Vincent and the Grenadines
+Country Year: 2000
+Male Mortality per Thousand: 259
+Female Mortality per Thousand: 165
+Male and Female Mortality per Thousand: 215
+
+Country Name: Fiji
+Country Year: 1990
+Male Mortality per Thousand: 266
+Female Mortality per Thousand: 194
+Male and Female Mortality per Thousand: 231
+
+Country Name: Republic of Korea
+Country Year: 2012
+Male Mortality per Thousand: 98
+Female Mortality per Thousand: 40
+Male and Female Mortality per Thousand: 69
+
+Country Name: Zambia
+Country Year: 2000
+Male Mortality per Thousand: 704
+Female Mortality per Thousand: 633
+Male and Female Mortality per Thousand: 670
+
+Country Name: Poland
+Country Year: 2012
+Male Mortality per Thousand: 180
+Female Mortality per Thousand: 69
+Male and Female Mortality per Thousand: 125
+
+Country Name: Kiribati
+Country Year: 2013
+Male Mortality per Thousand: 206
+Female Mortality per Thousand: 134
+Male and Female Mortality per Thousand: 172
+
+Country Name: Lithuania
+Country Year: 2013
+Male Mortality per Thousand: 254
+Female Mortality per Thousand: 88
+Male and Female Mortality per Thousand: 170
+
+Country Name: Oman
+Country Year: 2012
+Male Mortality per Thousand: 119
+Female Mortality per Thousand: 74
+Male and Female Mortality per Thousand: 102
+
+Country Name: Dominican Republic
+Country Year: 2000
+Male Mortality per Thousand: 171
+Female Mortality per Thousand: 129
+Male and Female Mortality per Thousand: 150
+
+Country Name: Netherlands
+Country Year: 1990
+Male Mortality per Thousand: 116
+Female Mortality per Thousand: 67
+Male and Female Mortality per Thousand: 92
+
+Country Name: Belarus
+Country Year: 2013
+Male Mortality per Thousand: 299
+Female Mortality per Thousand: 100
+Male and Female Mortality per Thousand: 199
+
+Country Name: Burundi
+Country Year: 2000
+Male Mortality per Thousand: 504
+Female Mortality per Thousand: 425
+Male and Female Mortality per Thousand: 465
+
+Country Name: Uruguay
+Country Year: 2013
+Male Mortality per Thousand: 148
+Female Mortality per Thousand: 79
+Male and Female Mortality per Thousand: 113
+
+Country Name: Cambodia
+Country Year: 1990
+Male Mortality per Thousand: 400
+Female Mortality per Thousand: 317
+Male and Female Mortality per Thousand: 358
+
+Country Name: Libya
+Country Year: 1990
+Male Mortality per Thousand: 194
+Female Mortality per Thousand: 142
+Male and Female Mortality per Thousand: 171
+
+Country Name: Algeria
+Country Year: 2000
+Male Mortality per Thousand: 183
+Female Mortality per Thousand: 138
+Male and Female Mortality per Thousand: 161
+
+Country Name: Ireland
+Country Year: 2012
+Male Mortality per Thousand: 83
+Female Mortality per Thousand: 50
+Male and Female Mortality per Thousand: 67
+
+Country Name: Estonia
+Country Year: 2000
+Male Mortality per Thousand: 319
+Female Mortality per Thousand: 121
+Male and Female Mortality per Thousand: 219
+
+Country Name: Antigua and Barbuda
+Country Year: 1990
+Male Mortality per Thousand: 205
+Female Mortality per Thousand: 143
+Male and Female Mortality per Thousand: 174
+
+Country Name: Honduras
+Country Year: 1990
+Male Mortality per Thousand: 239
+Female Mortality per Thousand: 179
+Male and Female Mortality per Thousand: 210
+
+Country Name: Seychelles
+Country Year: 1990
+Male Mortality per Thousand: 318
+Female Mortality per Thousand: 127
+Male and Female Mortality per Thousand: 227
+
+Country Name: Lebanon
+Country Year: 2000
+Male Mortality per Thousand: 124
+Female Mortality per Thousand: 91
+Male and Female Mortality per Thousand: 107
+
+Country Name: Portugal
+Country Year: 1990
+Male Mortality per Thousand: 176
+Female Mortality per Thousand: 80
+Male and Female Mortality per Thousand: 127
+
+Country Name: Mali
+Country Year: 2012
+Male Mortality per Thousand: 282
+Female Mortality per Thousand: 277
+Male and Female Mortality per Thousand: 278
+
+Country Name: Luxembourg
+Country Year: 2012
+Male Mortality per Thousand: 81
+Female Mortality per Thousand: 51
+Male and Female Mortality per Thousand: 66
+
+Country Name: Trinidad and Tobago
+Country Year: 1990
+Male Mortality per Thousand: 248
+Female Mortality per Thousand: 166
+Male and Female Mortality per Thousand: 207
+
+Country Name: Brunei Darussalam
+Country Year: 2000
+Male Mortality per Thousand: 115
+Female Mortality per Thousand: 83
+Male and Female Mortality per Thousand: 100
+
+Country Name: Saint Kitts and Nevis
+Country Year: 2012
+Male Mortality per Thousand: 166
+Female Mortality per Thousand: 80
+Male and Female Mortality per Thousand: 123
+
+Country Name: Cook Islands
+Country Year: 2013
+Male Mortality per Thousand: 163
+Female Mortality per Thousand: 73
+Male and Female Mortality per Thousand: 120
+
+Country Name: Rwanda
+Country Year: 2000
+Male Mortality per Thousand: 480
+Female Mortality per Thousand: 466
+Male and Female Mortality per Thousand: 472
+
+Country Name: Israel
+Country Year: 2012
+Male Mortality per Thousand: 72
+Female Mortality per Thousand: 39
+Male and Female Mortality per Thousand: 55
+
+Country Name: Slovenia
+Country Year: 2013
+Male Mortality per Thousand: 112
+Female Mortality per Thousand: 49
+Male and Female Mortality per Thousand: 82
+
+Country Name: Côte d'Ivoire
+Country Year: 2012
+Male Mortality per Thousand: 409
+Female Mortality per Thousand: 396
+Male and Female Mortality per Thousand: 404
+
+Country Name: Saudi Arabia
+Country Year: 2012
+Male Mortality per Thousand: 90
+Female Mortality per Thousand: 68
+Male and Female Mortality per Thousand: 81
+
+Country Name: Ghana
+Country Year: 2000
+Male Mortality per Thousand: 309
+Female Mortality per Thousand: 285
+Male and Female Mortality per Thousand: 297
+
+Country Name: Papua New Guinea
+Country Year: 2013
+Male Mortality per Thousand: 319
+Female Mortality per Thousand: 243
+Male and Female Mortality per Thousand: 282
+
+Country Name: Zimbabwe
+Country Year: 2000
+Male Mortality per Thousand: 738
+Female Mortality per Thousand: 764
+Male and Female Mortality per Thousand: 751
+
+Country Name: United Republic of Tanzania
+Country Year: 2000
+Male Mortality per Thousand: 454
+Female Mortality per Thousand: 427
+Male and Female Mortality per Thousand: 440
+
+Country Name: Jamaica
+Country Year: 2012
+Male Mortality per Thousand: 177
+Female Mortality per Thousand: 107
+Male and Female Mortality per Thousand: 142
+
+Country Name: Grenada
+Country Year: 2000
+Male Mortality per Thousand: 213
+Female Mortality per Thousand: 123
+Male and Female Mortality per Thousand: 167
+
+Country Name: Nauru
+Country Year: 2013
+Male Mortality per Thousand: 88
+Female Mortality per Thousand: 44
+Male and Female Mortality per Thousand: 67
+
+Country Name: Slovakia
+Country Year: 2012
+Male Mortality per Thousand: 170
+Female Mortality per Thousand: 67
+Male and Female Mortality per Thousand: 119
+
+Country Name: Germany
+Country Year: 2000
+Male Mortality per Thousand: 124
+Female Mortality per Thousand: 63
+Male and Female Mortality per Thousand: 94
+
+Country Name: Thailand
+Country Year: 2012
+Male Mortality per Thousand: 182
+Female Mortality per Thousand: 90
+Male and Female Mortality per Thousand: 136
+
+Country Name: China
+Country Year: 2000
+Male Mortality per Thousand: 150
+Female Mortality per Thousand: 106
+Male and Female Mortality per Thousand: 129
+
+Country Name: Djibouti
+Country Year: 2000
+Male Mortality per Thousand: 366
+Female Mortality per Thousand: 298
+Male and Female Mortality per Thousand: 333
+
+Country Name: Mongolia
+Country Year: 2013
+Male Mortality per Thousand: 309
+Female Mortality per Thousand: 148
+Male and Female Mortality per Thousand: 229
+
+Country Name: Micronesia (Federated States of)
+Country Year: 1990
+Male Mortality per Thousand: 210
+Female Mortality per Thousand: 187
+Male and Female Mortality per Thousand: 198
+
+Country Name: Argentina
+Country Year: 2013
+Male Mortality per Thousand: 151
+Female Mortality per Thousand: 83
+Male and Female Mortality per Thousand: 117
+
+Country Name: Georgia
+Country Year: 2012
+Male Mortality per Thousand: 176
+Female Mortality per Thousand: 66
+Male and Female Mortality per Thousand: 119
+
+Country Name: Bolivia (Plurinational State of)
+Country Year: 1990
+Male Mortality per Thousand: 299
+Female Mortality per Thousand: 245
+Male and Female Mortality per Thousand: 272
+
+Country Name: Iran (Islamic Republic of)
+Country Year: 1990
+Male Mortality per Thousand: 239
+Female Mortality per Thousand: 217
+Male and Female Mortality per Thousand: 229
+
+Country Name: Comoros
+Country Year: 2013
+Male Mortality per Thousand: 281
+Female Mortality per Thousand: 234
+Male and Female Mortality per Thousand: 257
+
+Country Name: Sudan
+Country Year: 2013
+Male Mortality per Thousand: 274
+Female Mortality per Thousand: 212
+Male and Female Mortality per Thousand: 244
+
+Country Name: Malawi
+Country Year: 2000
+Male Mortality per Thousand: 584
+Female Mortality per Thousand: 605
+Male and Female Mortality per Thousand: 595
+
+Country Name: Australia
+Country Year: 2013
+Male Mortality per Thousand: 78
+Female Mortality per Thousand: 45
+Male and Female Mortality per Thousand: 61
+
+Country Name: Myanmar
+Country Year: 2013
+Male Mortality per Thousand: 240
+Female Mortality per Thousand: 183
+Male and Female Mortality per Thousand: 210
+
+Country Name: Kenya
+Country Year: 2012
+Male Mortality per Thousand: 307
+Female Mortality per Thousand: 261
+Male and Female Mortality per Thousand: 284
+
+Country Name: Bahrain
+Country Year: 1990
+Male Mortality per Thousand: 117
+Female Mortality per Thousand: 103
+Male and Female Mortality per Thousand: 112
+
+Country Name: Nigeria
+Country Year: 2000
+Male Mortality per Thousand: 414
+Female Mortality per Thousand: 385
+Male and Female Mortality per Thousand: 400
+
+Country Name: Barbados
+Country Year: 2013
+Male Mortality per Thousand: 116
+Female Mortality per Thousand: 65
+Male and Female Mortality per Thousand: 91
+
+Country Name: Armenia
+Country Year: 2013
+Male Mortality per Thousand: 227
+Female Mortality per Thousand: 95
+Male and Female Mortality per Thousand: 162
+
+Country Name: Bhutan
+Country Year: 2013
+Male Mortality per Thousand: 219
+Female Mortality per Thousand: 212
+Male and Female Mortality per Thousand: 216
+
+Country Name: Peru
+Country Year: 2012
+Male Mortality per Thousand: 118
+Female Mortality per Thousand: 91
+Male and Female Mortality per Thousand: 105
+
+Country Name: Czech Republic
+Country Year: 1990
+Male Mortality per Thousand: 230
+Female Mortality per Thousand: 95
+Male and Female Mortality per Thousand: 163
+
+Country Name: Malaysia
+Country Year: 2012
+Male Mortality per Thousand: 172
+Female Mortality per Thousand: 89
+Male and Female Mortality per Thousand: 130
+
+Country Name: Montenegro
+Country Year: 2013
+Male Mortality per Thousand: 152
+Female Mortality per Thousand: 79
+Male and Female Mortality per Thousand: 116
+
+Country Name: Tajikistan
+Country Year: 2012
+Male Mortality per Thousand: 178
+Female Mortality per Thousand: 154
+Male and Female Mortality per Thousand: 166
+
+Country Name: Cuba
+Country Year: 1990
+Male Mortality per Thousand: 155
+Female Mortality per Thousand: 111
+Male and Female Mortality per Thousand: 133
+
+Country Name: Suriname
+Country Year: 2012
+Male Mortality per Thousand: 160
+Female Mortality per Thousand: 94
+Male and Female Mortality per Thousand: 127
+
+Country Name: Costa Rica
+Country Year: 1990
+Male Mortality per Thousand: 129
+Female Mortality per Thousand: 86
+Male and Female Mortality per Thousand: 108
+
+Country Name: Palau
+Country Year: 2000
+Male Mortality per Thousand: 211
+Female Mortality per Thousand: 160
+Male and Female Mortality per Thousand: 186
+
+Country Name: Guinea-Bissau
+Country Year: 1990
+Male Mortality per Thousand: 365
+Female Mortality per Thousand: 286
+Male and Female Mortality per Thousand: 326
+
+Country Name: Morocco
+Country Year: 1990
+Male Mortality per Thousand: 224
+Female Mortality per Thousand: 172
+Male and Female Mortality per Thousand: 197
+
+Country Name: Jordan
+Country Year: 2013
+Male Mortality per Thousand: 131
+Female Mortality per Thousand: 96
+Male and Female Mortality per Thousand: 114
+
+Country Name: Uganda
+Country Year: 2012
+Male Mortality per Thousand: 389
+Female Mortality per Thousand: 360
+Male and Female Mortality per Thousand: 375
+
+Country Name: Republic of Korea
+Country Year: 1990
+Male Mortality per Thousand: 237
+Female Mortality per Thousand: 102
+Male and Female Mortality per Thousand: 171
+
+Country Name: Finland
+Country Year: 2000
+Male Mortality per Thousand: 143
+Female Mortality per Thousand: 63
+Male and Female Mortality per Thousand: 104
+
+Country Name: Poland
+Country Year: 1990
+Male Mortality per Thousand: 263
+Female Mortality per Thousand: 102
+Male and Female Mortality per Thousand: 184
+
+Country Name: Norway
+Country Year: 2013
+Male Mortality per Thousand: 73
+Female Mortality per Thousand: 47
+Male and Female Mortality per Thousand: 61
+
+Country Name: Serbia
+Country Year: 1990
+Male Mortality per Thousand: 184
+Female Mortality per Thousand: 94
+Male and Female Mortality per Thousand: 140
+
+Country Name: Sierra Leone
+Country Year: 2013
+Male Mortality per Thousand: 444
+Female Mortality per Thousand: 423
+Male and Female Mortality per Thousand: 433
+
+Country Name: Oman
+Country Year: 1990
+Male Mortality per Thousand: 215
+Female Mortality per Thousand: 151
+Male and Female Mortality per Thousand: 189
+
+Country Name: Canada
+Country Year: 2013
+Male Mortality per Thousand: 81
+Female Mortality per Thousand: 52
+Male and Female Mortality per Thousand: 66
+
+Country Name: Swaziland
+Country Year: 2012
+Male Mortality per Thousand: 494
+Female Mortality per Thousand: 411
+Male and Female Mortality per Thousand: 451
+
+Country Name: Belarus
+Country Year: 2012
+Male Mortality per Thousand: 287
+Female Mortality per Thousand: 98
+Male and Female Mortality per Thousand: 192
+
+Country Name: Eritrea
+Country Year: 2013
+Male Mortality per Thousand: 301
+Female Mortality per Thousand: 229
+Male and Female Mortality per Thousand: 264
+
+Country Name: Hungary
+Country Year: 1990
+Male Mortality per Thousand: 305
+Female Mortality per Thousand: 133
+Male and Female Mortality per Thousand: 219
+
+Country Name: Ireland
+Country Year: 1990
+Male Mortality per Thousand: 134
+Female Mortality per Thousand: 81
+Male and Female Mortality per Thousand: 108
+
+Country Name: Turkmenistan
+Country Year: 2013
+Male Mortality per Thousand: 376
+Female Mortality per Thousand: 200
+Male and Female Mortality per Thousand: 290
+
+Country Name: Kuwait
+Country Year: 1990
+Male Mortality per Thousand: 128
+Female Mortality per Thousand: 81
+Male and Female Mortality per Thousand: 108
+
+Country Name: Marshall Islands
+Country Year: 1990
+Male Mortality per Thousand: 268
+Female Mortality per Thousand: 217
+Male and Female Mortality per Thousand: 244
+
+Country Name: Croatia
+Country Year: 2012
+Male Mortality per Thousand: 143
+Female Mortality per Thousand: 60
+Male and Female Mortality per Thousand: 102
+
+Country Name: Mali
+Country Year: 1990
+Male Mortality per Thousand: 348
+Female Mortality per Thousand: 340
+Male and Female Mortality per Thousand: 343
+
+Country Name: Gabon
+Country Year: 2013
+Male Mortality per Thousand: 296
+Female Mortality per Thousand: 235
+Male and Female Mortality per Thousand: 266
+
+Country Name: Luxembourg
+Country Year: 1990
+Male Mortality per Thousand: 160
+Female Mortality per Thousand: 79
+Male and Female Mortality per Thousand: 121
+
+Country Name: Malta
+Country Year: 2000
+Male Mortality per Thousand: 88
+Female Mortality per Thousand: 53
+Male and Female Mortality per Thousand: 71
 
