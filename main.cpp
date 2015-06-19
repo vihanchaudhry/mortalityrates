@@ -15,7 +15,7 @@ Developers: Jason Liang, Jaison Tiu, Vihan Chaudhry, Victor La
 using namespace std;
 
 // Function Prototypes
-void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable);
+bool parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable);
 void display(Country &anItem);
 void mainCommandManager(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable);
 void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable);
@@ -43,7 +43,8 @@ int main()
     
 	// Welcome message and read from file
     introduceProgram();
-	parser(uniqueList, secondaryList, hashTable);
+	if (!parser(uniqueList, secondaryList, hashTable))
+		return -1;
 
 	// Launch menu
 	mainCommandManager(uniqueList, secondaryList, hashTable);        // Read commands and execute.
@@ -83,13 +84,13 @@ void writeToFile(HashTable<Country> *hashTable){
 //	The function reads data from a file      *
 //  into two BSTs and a Hash Table           *
 //********************************************
-void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable)
+bool parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *> *secondaryList, HashTable<Country> *hashTable)
 {
 	ifstream infile("data.csv");
 	if (!infile)
 	{
 		cout << "File not found" << endl;
-		return;
+		return false;
 	}
 	int i = 0;
 	string country;
@@ -128,6 +129,7 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 	cout << "Building Finished " << i << " Unique Entries entered." << endl;
 
 	cout << "Time elapsed : " << (double)(clock() - start)/CLOCKS_PER_SEC << " seconds" << endl << endl;
+	return true;
 }
 
 //********************************************
