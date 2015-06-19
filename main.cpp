@@ -119,7 +119,7 @@ void parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 		i++;
 	}
     
-    if (hashTable->getOverflowCount() != 0)         // Rehash if we have overflow.
+    if (hashTable->getLoadFactor() >= 0.75)         // Rehash if we have overflow.
     {
         hashTable->rehash();
     }

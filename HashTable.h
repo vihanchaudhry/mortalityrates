@@ -218,7 +218,6 @@ template <class T>
 void HashTable<T>::rehash()
 {
     // Store every pointer in overflow vector, and clear hash table.
-    
 	for (int i = 0; i < hashTableSize; i++)
     {
 
