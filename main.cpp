@@ -409,6 +409,7 @@ char uniqueBSTCommandManager(BinarySearchTree<Country *> *uniqueList)
 			cout << endl << "Breadth-first Traversal" << endl << endl;
 			uniqueList->breadthFirst(display);
 			cout << endl;
+			break;
 		case 't':
 		case 'T':
 			cout << "Print by Level" << endl << endl;
