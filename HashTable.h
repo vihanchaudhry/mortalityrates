@@ -245,7 +245,6 @@ template <class T>
 void HashTable<T>::rehash()
 {
 	vector<T *> *temp = new vector<T *>;
-
 	// Store every pointer in overflow vector, and clear hash table.
 	for (int i = 0; i < hashTableSize; i++)
     {
@@ -262,21 +261,21 @@ void HashTable<T>::rehash()
 	}
 	overflow->clear();
 
-	hashTableSize = getPrime(hashTableSize*2);                      // Increase size so to get less overflow.
-	
-	table = new vector<T *>[hashTableSize];       // create a new Hash Table.
+	// Increase size so to get less overflow.
+	hashTableSize = getPrime(hashTableSize*2);     
+
+	// create a new Hash Table
+	table = new vector<T *>[hashTableSize];       
     collisionCount = 0;
     elementsFilled = 0.0;
     fullBuckets = 0;
-    
-	for (int i = 0; temp->size() > 0; )     // Refill the Hash table.
+
+	// Refill the Hash table.
+	for (int i = 0; temp->size() > 0; )     
     {
 		insert((*temp)[i]);
 		(*temp).erase((*temp).begin());
-        
-		
     }
-	
 }
 
 

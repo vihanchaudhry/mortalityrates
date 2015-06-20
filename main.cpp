@@ -146,12 +146,11 @@ bool parser(BinarySearchTree<Country *> *uniqueList, BinarySearchTree<Country *>
 		// Increase entry count
 		i++;
 	}
-    
-    if (hashTable->getLoadFactor() >= 0.75)         // Rehash if we have overflow.
+	// Rehash if load factor is over 75%
+    if (hashTable->getLoadFactor() >= 0.75)         
     {
         hashTable->rehash();
     }
-
 	infile.close();
 	cout << "Building Finished " << i << " Unique Entries entered." << endl;
 
@@ -691,7 +690,11 @@ void insertStuffGlobal(BinarySearchTree<Country *> *uniqueList, BinarySearchTree
 	else{
 		cout << "Country and year already in data set and is displayed above" << endl;
 	}
-
+	// Rehash if load factor is over 75%
+	if (hashTable->getLoadFactor() >= 0.75)         
+	{
+		hashTable->rehash();
+	}
 }
 
 //********************************************
