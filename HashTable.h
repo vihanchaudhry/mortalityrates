@@ -46,7 +46,7 @@ public:
     bool insert(T *itemPtr);
     T *search(string name);
 	bool deleteItem(string key);
-    
+	int getPrime(int num);
     // Rehash
     void rehash();
 };
@@ -135,8 +135,9 @@ int HashTable<T>::getHash(string key)
 template <class T>
 bool HashTable<T>::insert(T *itemPtr)
 {
+	
     int address = getHash(itemPtr->getID());
-    if (table[address].size() < BUCKET_SIZE)
+	if (table[address].size() < BUCKET_SIZE)
     {
         table[address].push_back(itemPtr);
         
@@ -219,43 +220,63 @@ T *HashTable<T>::search(string ID)
     return NULL;        // not found.
 }
 
+template <class T>
+int HashTable<T>::getPrime(int num){
+	while (true){
+
+		int i = 2;
+		for (; i < num; i++){
+			if (num%i == 0)
+				break;
+		}
+		if (i == num){
+			return num;
+		}
+		num++;
+
+	}
+}
+
+
 /*~~~~~~~~
  This function recreates a hash table so that the overflow is empty.
 */
 template <class T>
 void HashTable<T>::rehash()
 {
-    // Store every pointer in overflow vector, and clear hash table.
+	vector<T *> *temp = new vector<T *>;
+
+	// Store every pointer in overflow vector, and clear hash table.
 	for (int i = 0; i < hashTableSize; i++)
     {
 
         for (int j = 0; j < table[i].size(); j++)
         {
-            overflow->push_back(table[i][j]);
+            temp->push_back(table[i][j]);
         }
-        
+		
         table[i].clear();
     }
-    
-	hashTableSize += 47;                      // Increase size so to get less overflow.
-    
+	for (int i = 0; i < overflow->size(); i++){
+		temp->push_back((*overflow)[i]);
+	}
+	overflow->clear();
+
+	hashTableSize = getPrime(hashTableSize*2);                      // Increase size so to get less overflow.
+	
 	table = new vector<T *>[hashTableSize];       // create a new Hash Table.
     collisionCount = 0;
     elementsFilled = 0.0;
     fullBuckets = 0;
     
-    for (int i = 0; i < overflow->size(); )     // Refill the Hash table.
+	for (int i = 0; temp->size() > 0; )     // Refill the Hash table.
     {
-        if (insert((*overflow)[i]) == false)
-        {
-            (*overflow).erase((*overflow).begin());
-            rehash();                                   // If inserted into overflow, reHash.
-        }
-        else
-        {
-            (*overflow).erase((*overflow).begin());
-        }
+		insert((*temp)[i]);
+		(*temp).erase((*temp).begin());
+        
+		
     }
+	
 }
 
 
