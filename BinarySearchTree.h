@@ -1,4 +1,15 @@
 // Specification and implementation file for the BinarySearchTree ADT class
+/*
+	Description:
+		The binary search tree class is used to sort the country data in two 
+		different ways. One BST is sorted by a unique key (country name + year)
+		and the other by a secondary key (just the country name). This allows 
+		for specific or general data to be searched for. Extra steps added to 
+		compare data by compare code.
+
+	Added by: Jaison Tiu
+		Modified by: Victor La
+*/
 #ifndef BINARYSEARCHTREE_H
 #define BINARYSEARCHTREE_H
 #include "BinaryTree.h"

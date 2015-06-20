@@ -1,4 +1,13 @@
 // Specification and implementation file for the BinaryTree ADT class
+/*
+	Description:
+		The binary tree class contains the parent functions for the binary 
+		search tree class. Extra steps were added to compare inserted data 
+		by a compare string and sort accordingly.
+
+	Added by: Jaison Tiu
+		Modified by: Victor La
+*/
 #ifndef BINARYTREE_H
 #define BINARYTREE_H
 #include <ctime>
@@ -162,7 +171,6 @@ void BinaryTree<ItemType>::_breadthFirst(void visit(ItemType ), BinaryNode<ItemT
 
     while (!q1.isEmpty())
 	{
-
 		q1.dequeue(item);
 		visit(item->getItem());
 		
@@ -173,25 +181,6 @@ void BinaryTree<ItemType>::_breadthFirst(void visit(ItemType ), BinaryNode<ItemT
 			q1.enqueue(item->getRightPtr());
 
 	}
-	/*
-    Queue<BinaryNode<ItemType>*> q;
-    q.enqueue(rootPtr);
-    
-    BinaryNode<ItemType> *nodePtr2;
-    
-    ItemType item;
-    
-    while(!q.isEmpty())
-    {
-        q.dequeue(nodePtr);
-        item = nodePtr2->getItem();
-        visit(item);
-        if (nodePtr->getLeftPtr() != NULL)
-            q.enqueue(nodePtr2->getLeftPtr());
-        if (nodePtr->getRightPtr() != NULL)
-            q.enqueue(nodePtr2->getRightPtr());
-    }
-	*/
 }
 
 //****************************************************************************************
@@ -281,7 +270,6 @@ void BinaryTree<ItemType>::_range(void visit(ItemType ), BinaryNode<ItemType>* n
 		if (*item >= *smallest && *item <= *largest)
 			visit(item);
 		
-		
 		_range(visit, nodePtr->getRightPtr(), smallest, largest);
 	}
 }
@@ -317,7 +305,6 @@ void BinaryTree<ItemType>::_print(void visit(ItemType), BinaryNode<ItemType> *no
 		visit(nodePtr->getItem());
 		cout << endl;
 		_print(visit, nodePtr->getLeftPtr(), n + 1);
-
 	}
 
 }

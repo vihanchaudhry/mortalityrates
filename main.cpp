@@ -1,9 +1,36 @@
-/**
+/*
 CIS 22C Group Project - Spring 2015
 Project: Mortality Rates
 Group #1
 Developers: Jason Liang, Jaison Tiu, Vihan Chaudhry, Victor La
+
+	Description:
+		This is the program driver file. All operations done by the data
+		structure is controlled by global functions called by main.
+		*******************
+		*Work Distribution*
+		*******************
+		Jaison:
+		-->Various Function Managers
+		-->Global insert and remove
+		-->Data miner
+		-->Debugging
+		Jason:
+		-->Hash Table manager
+		-->Hash functions
+		-->Debugging
+		Vihan:
+		-->Team Coordination
+		-->Code standardization
+		-->Program Documentation
+		-->Output formatting
+		-->Debugging
+		Victor:
+		-->Second BST manager
+		-->Program Documentation
+		-->Debugging
 */
+
 #include <iostream>
 #include <iomanip>
 #include <fstream>
@@ -12,6 +39,7 @@ Developers: Jason Liang, Jaison Tiu, Vihan Chaudhry, Victor La
 #include "BinarySearchTree.h"
 #include "Country.h"
 #include "HashTable.h"
+
 using namespace std;
 
 // Function Prototypes

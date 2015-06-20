@@ -1,4 +1,12 @@
 // Specification and implementation file for the BinaryNode ADT class
+/*
+	Description:
+		The BinaryNode class holds pointers country objects created during the file read 
+		process. They are then inserted into two BSTs sorted by different keys.
+
+	Added by: Jaison Tiu
+	Using: CIS22C Original File
+*/
 #ifndef BINARYNODE_H
 #define BINARYNODE_H
 

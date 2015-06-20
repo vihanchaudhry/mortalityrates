@@ -1,4 +1,12 @@
 // Specification and implementation file for the HashTable ADT class
+/*
+	Description:
+		The hashtable ADT stores country objects into a two dimensional vector
+		with a specific address obtained from a hash function. This allows for 
+		data to be found either instantaneously or with few steps.
+
+	Added by: Jason Liang
+*/
 #ifndef HASHTABLE_H
 #define HASHTABLE_H
 #include <iostream>

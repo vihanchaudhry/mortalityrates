@@ -1,4 +1,13 @@
 // Specification and implementation file for the Country class
+/*
+	Description:
+		The country class holds the data for each country read from the input file.
+		This allows for all the information for an indiviual country to be consolidated
+		in a single object rather than having multiple data members in a tree's binary node
+		or hashtable slot.
+
+	Added by: Jaison Tiu
+*/
 #ifndef COUNTRY_H
 #define COUNTRY_H
 #include <string>
@@ -88,6 +97,10 @@ bool operator>(Country country, Country otherCountry){
 	return country.getName() > otherCountry.getName();
 };
 
+/*******************************************
+* Allows the country object to be directly *
+* used by output streams.				   *
+********************************************/
 ostream& operator<<(ostream& os, const Country& country)
 {
 	os << "Country Name: " << country.getName() << endl
