@@ -110,4 +110,5 @@ ostream& operator<<(ostream& os, const Country& country)
 	   << "Male and Female Mortality per Thousand: " << country.getCombinedMortality() << endl;
 	return os;
 }
+
 #endif

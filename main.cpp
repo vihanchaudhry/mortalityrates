@@ -10,27 +10,26 @@ Developers: Jason Liang, Jaison Tiu, Vihan Chaudhry, Victor La
 		*******************
 		*Work Distribution*
 		*******************
-		Jaison:
+		Jaison Tiu:
 		-->Various Function Managers
 		-->Global insert and remove
 		-->Data miner
 		-->Debugging
-		Jason:
+		Jason Liang:
 		-->Hash Table manager
 		-->Hash functions
 		-->Debugging
-		Vihan:
+		Vihan Chaudhry:
 		-->Team Coordination
 		-->Code standardization
 		-->Program Documentation
 		-->Output formatting
 		-->Debugging
-		Victor:
+		Victor La:
 		-->Second BST manager
 		-->Program Documentation
 		-->Debugging
 */
-
 #include <iostream>
 #include <iomanip>
 #include <fstream>
@@ -39,7 +38,6 @@ Developers: Jason Liang, Jaison Tiu, Vihan Chaudhry, Victor La
 #include "BinarySearchTree.h"
 #include "Country.h"
 #include "HashTable.h"
-
 using namespace std;
 
 // Function Prototypes
@@ -86,7 +84,8 @@ int main()
     delete secondaryList;
     delete hashTable;
 
-	system("pause");	// Stops the program from terminating
+	// Stop the program from terminating
+	system("pause");	
 	return 0;
 }
 
